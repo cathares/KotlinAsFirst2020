@@ -70,6 +70,8 @@ fun minBiRoot(a: Double, b: Double, c: Double): Double {
  */
 fun ageDescription(age: Int): String = TODO()
 
+
+
 /**
  * Простая (2 балла)
  *
@@ -81,7 +83,12 @@ fun timeForHalfWay(
     t1: Double, v1: Double,
     t2: Double, v2: Double,
     t3: Double, v3: Double
-): Double = TODO()
+): Double {
+    val s = t1 * v1 + t2 * v2 + t3 * v3
+    val V = s / (t1 + t2 + t3)
+    val T = (s / 2) / V
+    return T
+}
 
 /**
  * Простая (2 балла)
@@ -112,7 +119,8 @@ fun rookOrBishopThreatens(
     kingX: Int, kingY: Int,
     rookX: Int, rookY: Int,
     bishopX: Int, bishopY: Int
-): Int = TODO()
+): Int =TODO()
+
 
 /**
  * Простая (2 балла)
