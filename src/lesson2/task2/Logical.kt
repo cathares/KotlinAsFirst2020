@@ -48,7 +48,8 @@ fun daysInMonth(month: Int, year: Int): Int = TODO()
 fun circleInside(
     x1: Double, y1: Double, r1: Double,
     x2: Double, y2: Double, r2: Double
-): Boolean = TODO()
+): Boolean = sqr(x2 - x1) + sqr(y2 - y1) <= sqr(r2 - r1)
+
 
 /**
  * Средняя (3 балла)
@@ -59,4 +60,8 @@ fun circleInside(
  * кирпич 4 х 4 х 4 пройдёт через отверстие 4 х 4.
  * Вернуть true, если кирпич пройдёт
  */
-fun brickPasses(a: Int, b: Int, c: Int, r: Int, s: Int): Boolean = TODO()
+fun brickPasses(a: Int, b: Int, c: Int, r: Int, s: Int): Boolean =
+    (((a <= r) && (b <= s)) || (c <= r)) ||
+            (((b <= r) && (c <= s)) || (a <= s)) ||
+            (((c <= r) && ( a <= s)) || (b <= r))
+

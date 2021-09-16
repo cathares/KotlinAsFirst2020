@@ -89,12 +89,8 @@ fun timeForHalfWay(
     t1: Double, v1: Double,
     t2: Double, v2: Double,
     t3: Double, v3: Double
-): Double {
-    val s = t1 * v1 + t2 * v2 + t3 * v3
-    val V = s / (t1 + t2 + t3)
-    val T = (s / 2) / V
-    return T
-}
+): Double = TODO()
+
 
 /**
  * Простая (2 балла)
@@ -142,9 +138,9 @@ fun triangleKind(a: Double, b: Double, c: Double): Int {
     val c1 = c * c
     val a1 = a * a
     val b1 = b * b
-    if (c > a && c > b) {
-        if (c1 == a1 + b1) return 1 else if (c1 > a1 + b1) return 2 else return 0
-}
+    if ((c1 > a1 + b1) || (a1 > b1 + c1) || (b1 > c1 + a1))
+        return 2 else if ((c1 == a1 + b1) || (b1 == a1 + c1) || ( a1 == b1 + c1)) return 1
+    else return 0
 }
 
 
@@ -157,4 +153,12 @@ fun triangleKind(a: Double, b: Double, c: Double): Int {
  * Найти длину пересечения отрезков AB и CD.
  * Если пересечения нет, вернуть -1.
  */
-fun segmentLength(a: Int, b: Int, c: Int, d: Int): Int = TODO()
+fun segmentLength(a: Int, b: Int, c: Int, d: Int): Int {
+    if ((a > d) || (b < c)) return -1
+    if ((c <= a) && (d >= b)) return b - a
+    if ((a <= d) && (d <= b) && (a <= c)) return d - c
+    if ((a <= c) && (b <= d) && (b >= c)) return b - c
+else return d - a
+
+}
+
