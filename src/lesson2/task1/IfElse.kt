@@ -71,7 +71,7 @@ fun minBiRoot(a: Double, b: Double, c: Double): Double {
  */
 fun ageDescription(age: Int): String {
     return if (age in 1..20) {
-        return if (age in 2..4) "$age лет"
+        return if (age in 2..4) "$age года"
         else if (age in 5..20) "$age лет"
         else "$age год"
     }
@@ -198,8 +198,8 @@ fun triangleKind(a: Double, b: Double, c: Double): Int {
 fun segmentLength(a: Int, b: Int, c: Int, d: Int): Int {
     return if (c >= a && d <= b) d - c
     else if (a >= c && d >= b) b - a
-    else if (c >= a && d >= b) b - c
-    else if (c <= a && d >= a) d - a
+    else if (c in a..b && d >= b) b - c
+    else if (c <= a && d in a..b) d - a
     else -1
 }
 
