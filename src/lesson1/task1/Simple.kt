@@ -66,9 +66,10 @@ fun main() {
  * Рассчитать время в секундах, прошедшее с начала суток (30035 в данном случае).
  */
 fun seconds(hours: Int, minutes: Int, seconds: Int): Int {
-    val x = hours * 60 * 60 + minutes * 60 + seconds
-    return x
+    return hours * 60 * 60 + minutes * 60 + seconds
 }
+
+
 
 
 
@@ -80,8 +81,8 @@ fun seconds(hours: Int, minutes: Int, seconds: Int): Int {
  * 1 сажень = 3 аршина = 48 вершков, 1 вершок = 4.445 см.
  */
 fun lengthInMeters(sagenes: Int, arshins: Int, vershoks: Int): Double {
-    val x = ((sagenes * 48 + arshins * 16 + vershoks) * 4.445) / 100
-    return x
+    return ((sagenes * 48 + arshins * 16 + vershoks) * 4.445) / 100
+
 }
 
 
@@ -118,8 +119,8 @@ fun thirdDigit(number: Int): Int = TODO()
  * Определите время поезда в пути в минутах (в данном случае 216).
  */
 fun travelMinutes(hoursDepart: Int, minutesDepart: Int, hoursArrive: Int, minutesArrive: Int) : Int {
-    val x = (minutesArrive - minutesDepart) + (hoursArrive - hoursDepart) * 60
-    return x
+   return (minutesArrive - minutesDepart) + (hoursArrive - hoursDepart) * 60
+
 }
 
 
