@@ -5,7 +5,7 @@ package lesson3.task1
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
-
+import kotlin.math.pow
 // Урок 3: циклы
 // Максимальное количество баллов = 9
 // Рекомендуемое количество баллов = 7
@@ -82,7 +82,8 @@ fun digitNumber(n: Int): Int = TODO()
  * Найти число Фибоначчи из ряда 1, 1, 2, 3, 5, 8, 13, 21, ... с номером n.
  * Ряд Фибоначчи определён следующим образом: fib(1) = 1, fib(2) = 1, fib(n+2) = fib(n) + fib(n+1)
  */
-fun fib(n: Int): Int = TODO()
+fun fib(n: Int): Int = if (n<3) 1 else fib(n-1) + fib(n-2)
+
 
 /**
  * Простая (2 балла)
@@ -139,7 +140,13 @@ fun lcm(m: Int, n: Int): Int {
  * Взаимно простые числа не имеют общих делителей, кроме 1.
  * Например, 25 и 49 взаимно простые, а 6 и 8 -- нет.
  */
-fun isCoPrime(m: Int, n: Int): Boolean = TODO()
+fun isCoPrime(m: Int, n: Int): Boolean {
+    val a = min(m, n)
+    for (k in 2..a) {
+        if ((n % k == 0) && (m % k ==0)) return false
+    }
+    return true
+    }
 
 /**
  * Средняя (3 балла)
@@ -149,6 +156,9 @@ fun isCoPrime(m: Int, n: Int): Boolean = TODO()
  * Использовать операции со строками в этой задаче запрещается.
  */
 fun revert(n: Int): Int = TODO()
+
+
+
 
 /**
  * Средняя (3 балла)
@@ -182,6 +192,7 @@ fun hasDifferentDigits(n: Int): Boolean = TODO()
  */
 fun sin(x: Double, eps: Double): Double = TODO()
 
+
 /**
  * Средняя (4 балла)
  *
@@ -202,7 +213,25 @@ fun cos(x: Double, eps: Double): Double = TODO()
  *
  * Использовать операции со строками в этой задаче запрещается.
  */
-fun squareSequenceDigit(n: Int): Int = TODO()
+fun Int.pow(n: Int): Int {
+    //2.0.pow(4)
+    var result = 1
+    for (i in 1..n) {
+        result *= this
+    }
+    return result
+}
+fun squareSequenceDigit(n: Int): Int {
+    2.pow(4)
+    var digitNumber = 0
+    var i = 1
+    while (true) {
+        digitNumber += 0
+        if (digitNumber >= n) break
+    }
+return (i / Math.pow(10) % 10).toInt()
+
+}
 
 /**
  * Сложная (5 баллов)

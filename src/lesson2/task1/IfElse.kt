@@ -69,13 +69,12 @@ fun minBiRoot(a: Double, b: Double, c: Double): Double {
  * вернуть строку вида: «21 год», «32 года», «12 лет».
  */
 fun ageDescription(age: Int): String {
-    if (age % 100 in 5..20) return "$age лет"
-    if (age % 10 == 1) return "$age год"
-    if (age % 10 in 2..4) return "$age года"
-    else return "$age лет"
+    return if (age % 100 in 5..20) "$age лет"
+    else if (age % 10 == 1) "$age год"
+    else if (age % 10 in 2..4) "$age года"
+    else "$age лет"
 
 }
-
 
 
 /**
@@ -121,7 +120,7 @@ fun rookOrBishopThreatens(
     kingX: Int, kingY: Int,
     rookX: Int, rookY: Int,
     bishopX: Int, bishopY: Int
-): Int =TODO()
+): Int = TODO()
 
 
 /**
@@ -133,32 +132,35 @@ fun rookOrBishopThreatens(
  * Если такой треугольник не существует, вернуть -1.
  */
 fun triangleKind(a: Double, b: Double, c: Double): Int {
-    if ((a > b + c) || (b > a + c) || (c > a + b))
+    if (a > b + c || b > a + c || c > a + b)
         return -1
     val c1 = c * c
     val a1 = a * a
     val b1 = b * b
-    if ((c1 > a1 + b1) || (a1 > b1 + c1) || (b1 > c1 + a1))
-        return 2 else if ((c1 == a1 + b1) || (b1 == a1 + c1) || ( a1 == b1 + c1)) return 1
-    else return 0
+    return when {
+        c1 > a1 + b1 || a1 > b1 + c1 || b1 > c1 + a1 -> 2
+        c1 == a1 + b1 || b1 == a1 + c1 || a1 == b1 + c1 -> 1
+        else -> 0
+    }
 }
 
 
 
-/**
- * Средняя (3 балла)
- *
- * Даны четыре точки на одной прямой: A, B, C и D.
- * Координаты точек a, b, c, d соответственно, b >= a, d >= c.
- * Найти длину пересечения отрезков AB и CD.
- * Если пересечения нет, вернуть -1.
- */
-fun segmentLength(a: Int, b: Int, c: Int, d: Int): Int {
-    if ((a > d) || (b < c)) return -1
-    if ((c <= a) && (d >= b)) return b - a
-    if ((a <= d) && (d <= b) && (a <= c)) return d - c
-    if ((a <= c) && (b <= d) && (b >= c)) return b - c
+
+    /**
+     * Средняя (3 балла)
+     *
+     * Даны четыре точки на одной прямой: A, B, C и D.
+     * Координаты точек a, b, c, d соответственно, b >= a, d >= c.
+     * Найти длину пересечения отрезков AB и CD.
+     * Если пересечения нет, вернуть -1.
+     */
+    fun segmentLength(a: Int, b: Int, c: Int, d: Int): Int {
+if ((a > d) || (b < c)) return -1
+if ((c <= a) && (d >= b)) return b - a
+if ((a <= d) && (d <= b) && (a <= c)) return d - c
+if ((a <= c) && (b <= d) && (b >= c)) return b - c
 else return d - a
+    }
 
-}
 
