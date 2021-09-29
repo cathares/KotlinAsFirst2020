@@ -2,10 +2,12 @@
 
 package lesson3.task1
 
+import lesson1.task1.sqr
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sqrt
 import kotlin.math.pow
+
 // Урок 3: циклы
 // Максимальное количество баллов = 9
 // Рекомендуемое количество баллов = 7
@@ -74,7 +76,12 @@ fun digitCountInNumber(n: Int, m: Int): Int =
  *
  * Использовать операции со строками в этой задаче запрещается.
  */
-fun digitNumber(n: Int): Int = TODO()
+fun digitNumber(n: Int): Int =
+    when (n) {
+        in 0..9 -> 1
+        else -> 1 + digitNumber(n / 10)
+
+    }
 
 /**
  * Простая (2 балла)
@@ -82,7 +89,7 @@ fun digitNumber(n: Int): Int = TODO()
  * Найти число Фибоначчи из ряда 1, 1, 2, 3, 5, 8, 13, 21, ... с номером n.
  * Ряд Фибоначчи определён следующим образом: fib(1) = 1, fib(2) = 1, fib(n+2) = fib(n) + fib(n+1)
  */
-fun fib(n: Int): Int = if (n<3) 1 else fib(n-1) + fib(n-2)
+fun fib(n: Int): Int = if (n < 3) 1 else fib(n - 1) + fib(n - 2)
 
 
 /**
@@ -124,13 +131,9 @@ fun collatzSteps(x: Int): Int = TODO()
  * минимальное число k, которое делится и на m и на n без остатка
  */
 fun lcm(m: Int, n: Int): Int {
-    for (k in max(m, n)..m*n) if ((k % m == 0) && (k % n == 0)) return k
+    for (k in max(m, n)..m * n) if ((k % m == 0) && (k % n == 0)) return k
     return m * n
 }
-
-
-
-
 
 
 /**
@@ -143,10 +146,10 @@ fun lcm(m: Int, n: Int): Int {
 fun isCoPrime(m: Int, n: Int): Boolean {
     val a = min(m, n)
     for (k in 2..a) {
-        if ((n % k == 0) && (m % k ==0)) return false
+        if ((n % k == 0) && (m % k == 0)) return false
     }
     return true
-    }
+}
 
 /**
  * Средняя (3 балла)
@@ -156,8 +159,6 @@ fun isCoPrime(m: Int, n: Int): Boolean {
  * Использовать операции со строками в этой задаче запрещается.
  */
 fun revert(n: Int): Int = TODO()
-
-
 
 
 /**
@@ -221,25 +222,34 @@ fun Int.pow(n: Int): Int {
     }
     return result
 }
-fun squareSequenceDigit(n: Int): Int {
-    2.pow(4)
-    var digitNumber = 0
-    var i = 1
-    while (true) {
-        digitNumber += 0
-        if (digitNumber >= n) break
-    }
-return (i / Math.pow(10) % 10).toInt()
 
+fun squareSequenceDigit(n: Int): Int {
+    var sum = 0
+    var i = 0
+    while (sum < n) {
+        i++
+        sum += digitNumber(sqr(i))
+       if (sum >= n) break
+    }
+    return (sqr(i) / 10.pow(sum - n).toInt()) % 10
 }
 
-/**
- * Сложная (5 баллов)
- *
- * Найти n-ю цифру последовательности из чисел Фибоначчи (см. функцию fib выше):
- * 1123581321345589144...
- * Например, 2-я цифра равна 1, 9-я 2, 14-я 5.
- *
- * Использовать операции со строками в этой задаче запрещается.
- */
-fun fibSequenceDigit(n: Int): Int = TODO()
+    /**
+     * Сложная (5 баллов)
+     *
+     * Найти n-ю цифру последовательности из чисел Фибоначчи (см. функцию fib выше):
+     * 1123581321345589144...
+     * Например, 2-я цифра равна 1, 9-я 2, 14-я 5.
+     *
+     * Использовать операции со строками в этой задаче запрещается.
+     */
+    fun fibSequenceDigit(n: Int): Int {
+        var sum = 0
+        var i = 0
+        while ( sum < n) {
+            i++
+            sum+= digitNumber(fib(i))
+            if (sum >= n) break
+        }
+        return (fib(i)) / 10.pow(sum - n).toInt() % 10
+    }
