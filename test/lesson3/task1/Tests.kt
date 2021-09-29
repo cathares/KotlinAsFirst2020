@@ -160,6 +160,7 @@ class Tests {
     @Test
     @Tag("3")
     fun revert() {
+        assertEquals(321, revert(123))
         assertEquals(87431, revert(13478))
         assertEquals(0, revert(0))
         assertEquals(3, revert(3))
@@ -214,6 +215,7 @@ class Tests {
         assertNotEquals(kotlin.math.cos(0.5), cos(-0.5, 1.0))
     }
 
+
     @Test
     @Tag("4")
     fun squareSequenceDigit() {
@@ -225,6 +227,7 @@ class Tests {
         assertEquals(9, squareSequenceDigit(27))
     }
 
+
     @Test
     @Tag("5")
     fun fibSequenceDigit() {
@@ -234,5 +237,10 @@ class Tests {
         assertEquals(2, fibSequenceDigit(9))
         assertEquals(5, fibSequenceDigit(14))
         assertEquals(2, fibSequenceDigit(20))
+    }
+
+    @Test
+    fun gcd() {
+        assertEquals(3, gcd(39, 75))
     }
 }

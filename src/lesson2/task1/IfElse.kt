@@ -69,10 +69,11 @@ fun minBiRoot(a: Double, b: Double, c: Double): Double {
  * Мой возраст. Для заданного 0 < n < 200, рассматриваемого как возраст человека,
  * вернуть строку вида: «21 год», «32 года», «12 лет».
  */
-fun ageDescription(age: Int): String = if (age in 11..19 || age in 111..119) "$age лет"
-else if (age % 10 == 1) "$age год"
-else if (age % 10 in 2..4) "$age года"
-else "$age лет"
+fun ageDescription(age: Int): String =
+    if (age in 11..19 || age in 111..119) "$age лет"
+    else if (age % 10 == 1) "$age год"
+    else if (age % 10 in 2..4) "$age года"
+    else "$age лет"
 
 
 /**
@@ -112,11 +113,12 @@ fun whichRookThreatens(
     kingX: Int, kingY: Int,
     rookX1: Int, rookY1: Int,
     rookX2: Int, rookY2: Int
-): Int = if (kingX == rookX1 || kingY == rookY1) {
-    if (kingX == rookX2 || kingY == rookY2) 3
-    else 1
-} else if (kingX == rookX2 || kingY == rookY2) 2
-else 0
+): Int =
+    if (kingX == rookX1 || kingY == rookY1) {
+        if (kingX == rookX2 || kingY == rookY2) 3
+        else 1
+    } else if (kingX == rookX2 || kingY == rookY2) 2
+    else 0
 
 
 /**
@@ -133,11 +135,12 @@ fun rookOrBishopThreatens(
     kingX: Int, kingY: Int,
     rookX: Int, rookY: Int,
     bishopX: Int, bishopY: Int
-): Int = if (kingX == rookX || kingY == rookY) {
-    if (abs(kingX - bishopX) == abs(kingY - bishopY)) 3
-    else 1
-} else if (abs(kingX - bishopX) == abs(kingY - bishopY)) 2
-else 0
+): Int =
+    if (kingX == rookX || kingY == rookY) {
+        if (abs(kingX - bishopX) == abs(kingY - bishopY)) 3
+        else 1
+    } else if (abs(kingX - bishopX) == abs(kingY - bishopY)) 2
+    else 0
 
 
 /**
@@ -167,10 +170,11 @@ fun triangleKind(a: Double, b: Double, c: Double): Int {
  * Найти длину пересечения отрезков AB и CD.
  * Если пересечения нет, вернуть -1.
  */
-fun segmentLength(a: Int, b: Int, c: Int, d: Int): Int = if (c >= a && d <= b) d - c
-else if (a >= c && d >= b) b - a
-else if (c in a..b && d >= b) b - c
-else if (c <= a && d in a..b) d - a
-else -1
+fun segmentLength(a: Int, b: Int, c: Int, d: Int): Int =
+    if (c >= a && d <= b) d - c
+    else if (a >= c && d >= b) b - a
+    else if (c in a..b && d >= b) b - c
+    else if (c <= a && d in a..b) d - a
+    else -1
 
 
