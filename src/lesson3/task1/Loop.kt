@@ -79,7 +79,7 @@ fun digitCountInNumber(n: Int, m: Int): Int =
 fun digitNumber(n: Int): Int {
     var digitNumber = 0
     var a = n
-    while (a > 0)
+    while (a != 0)
     {
        digitNumber++
         a /= 10
@@ -95,7 +95,18 @@ fun digitNumber(n: Int): Int {
  * Найти число Фибоначчи из ряда 1, 1, 2, 3, 5, 8, 13, 21, ... с номером n.
  * Ряд Фибоначчи определён следующим образом: fib(1) = 1, fib(2) = 1, fib(n+2) = fib(n) + fib(n+1)
  */
-fun fib(n: Int): Int = if (n < 3) 1 else fib(n - 1) + fib(n - 2)
+fun fib(n: Int): Int  {
+    var a = 1
+    var b = 1
+    var c: Int
+    for ( i in 3..n) {
+        c = a + b
+    a = b
+    b = c
+    }
+    return b
+}
+//if (n < 3) 1 else fib(n - 1) + fib(n - 2)
 
 
 /**
