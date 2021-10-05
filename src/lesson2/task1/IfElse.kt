@@ -68,13 +68,11 @@ fun minBiRoot(a: Double, b: Double, c: Double): Double {
  * Мой возраст. Для заданного 0 < n < 200, рассматриваемого как возраст человека,
  * вернуть строку вида: «21 год», «32 года», «12 лет».
  */
-fun ageDescription(age: Int): String {
-    return if (age % 100 in 5..20) "$age лет"
+fun ageDescription(age: Int): String =
+    if (age % 100 in 5..20) "$age лет"
     else if (age % 10 == 1) "$age год"
     else if (age % 10 in 2..4) "$age года"
     else "$age лет"
-
-}
 
 
 /**
@@ -145,22 +143,20 @@ fun triangleKind(a: Double, b: Double, c: Double): Int {
 }
 
 
-
-
-    /**
-     * Средняя (3 балла)
-     *
-     * Даны четыре точки на одной прямой: A, B, C и D.
-     * Координаты точек a, b, c, d соответственно, b >= a, d >= c.
-     * Найти длину пересечения отрезков AB и CD.
-     * Если пересечения нет, вернуть -1.
-     */
-    fun segmentLength(a: Int, b: Int, c: Int, d: Int): Int {
-if ((a > d) || (b < c)) return -1
-if ((c <= a) && (d >= b)) return b - a
-if ((a <= d) && (d <= b) && (a <= c)) return d - c
-if ((a <= c) && (b <= d) && (b >= c)) return b - c
-else return d - a
-    }
+/**
+ * Средняя (3 балла)
+ *
+ * Даны четыре точки на одной прямой: A, B, C и D.
+ * Координаты точек a, b, c, d соответственно, b >= a, d >= c.
+ * Найти длину пересечения отрезков AB и CD.
+ * Если пересечения нет, вернуть -1.
+ */
+fun segmentLength(a: Int, b: Int, c: Int, d: Int): Int = when {
+    (a > d) || (b < c) -> -1
+    (c <= a) && (d >= b) -> b - a
+    (a <= d) && (d <= b) && (a <= c) -> d - c
+    (a <= c) && (b <= d) && (b >= c) -> b - c
+    else -> d - a
+}
 
 
