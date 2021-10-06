@@ -79,13 +79,12 @@ fun digitCountInNumber(n: Int, m: Int): Int =
 fun digitNumber(n: Int): Int {
     var digitNumber = 0
     var a = n
-    while (a != 0)
-    {
-       digitNumber++
+    while (a != 0) {
+        digitNumber++
         a /= 10
     }
-    if (n == 0) return 1
-    else return digitNumber
+    return if (n == 0) 1
+    else digitNumber
 }
 
 
@@ -95,14 +94,14 @@ fun digitNumber(n: Int): Int {
  * Найти число Фибоначчи из ряда 1, 1, 2, 3, 5, 8, 13, 21, ... с номером n.
  * Ряд Фибоначчи определён следующим образом: fib(1) = 1, fib(2) = 1, fib(n+2) = fib(n) + fib(n+1)
  */
-fun fib(n: Int): Int  {
+fun fib(n: Int): Int {
     var a = 1
     var b = 1
-    var c: Int
-    for ( i in 3..n) {
+    for (i in 3..n) {
+        var c: Int
         c = a + b
-    a = b
-    b = c
+        a = b
+        b = c
     }
     return b
 }
@@ -246,27 +245,27 @@ fun squareSequenceDigit(n: Int): Int {
     while (sum < n) {
         i++
         sum += digitNumber(sqr(i))
-       if (sum >= n) break
+        if (sum >= n) break
     }
-    return (sqr(i) / 10.pow(sum - n).toInt()) % 10
+    return (sqr(i) / 10.pow(sum - n)) % 10
 }
 
-    /**
-     * Сложная (5 баллов)
-     *
-     * Найти n-ю цифру последовательности из чисел Фибоначчи (см. функцию fib выше):
-     * 1123581321345589144...
-     * Например, 2-я цифра равна 1, 9-я 2, 14-я 5.
-     *
-     * Использовать операции со строками в этой задаче запрещается.
-     */
-    fun fibSequenceDigit(n: Int): Int {
-        var sum = 0
-        var i = 0
-        while ( sum < n) {
-            i++
-            sum+= digitNumber(fib(i))
-            if (sum >= n) break
-        }
-        return (fib(i)) / 10.pow(sum - n).toInt() % 10
+/**
+ * Сложная (5 баллов)
+ *
+ * Найти n-ю цифру последовательности из чисел Фибоначчи (см. функцию fib выше):
+ * 1123581321345589144...
+ * Например, 2-я цифра равна 1, 9-я 2, 14-я 5.
+ *
+ * Использовать операции со строками в этой задаче запрещается.
+ */
+fun fibSequenceDigit(n: Int): Int {
+    var sum = 0
+    var i = 0
+    while (sum < n) {
+        i++
+        sum += digitNumber(fib(i))
+        if (sum >= n) break
     }
+    return (fib(i)) / 10.pow(sum - n) % 10
+}
