@@ -3,6 +3,8 @@
 package lesson4.task1
 
 import lesson1.task1.discriminant
+import lesson3.task1.pow
+import kotlin.math.roundToInt
 import kotlin.math.sqrt
 
 // Урок 4: списки
@@ -172,7 +174,12 @@ fun polynom(p: List<Int>, x: Int): Int = TODO()
  *
  * Обратите внимание, что данная функция должна изменять содержание списка list, а не его копии.
  */
-fun accumulate(list: MutableList<Int>): MutableList<Int> = TODO()
+fun accumulate(list: MutableList<Int>): MutableList<Int> {
+    for (i in 1..list.size - 1) {
+        list[i] += list[i - 1]
+    }
+    return list
+}
 
 /**
  * Средняя (3 балла)
@@ -181,7 +188,19 @@ fun accumulate(list: MutableList<Int>): MutableList<Int> = TODO()
  * Результат разложения вернуть в виде списка множителей, например 75 -> (3, 5, 5).
  * Множители в списке должны располагаться по возрастанию.
  */
-fun factorize(n: Int): List<Int> = TODO()
+fun factorize(n: Int): List<Int> {
+    var div = 2
+    var k = n
+    val list = mutableListOf<Int>()
+    for (i in 2..sqrt(k.toDouble()).toInt()) {
+        if (k % div == 0) {
+            k /= div
+            list.add(div)
+        } else div++
+    }
+    return list
+}
+
 
 /**
  * Сложная (4 балла)
@@ -190,7 +209,18 @@ fun factorize(n: Int): List<Int> = TODO()
  * Результат разложения вернуть в виде строки, например 75 -> 3*5*5
  * Множители в результирующей строке должны располагаться по возрастанию.
  */
-fun factorizeToString(n: Int): String = TODO()
+fun factorizeToString(n: Int): String {
+    var div = 2
+    var k = n
+    val list = mutableListOf<Int>()
+    for (i in 2..sqrt(k.toDouble()).toInt() + 1) {
+        if (k % div == 0) {
+            k /= div
+            list.add(div)
+        } else div++
+    }
+    return list.joinToString(separator = "*")
+}
 
 /**
  * Средняя (3 балла)
@@ -199,7 +229,16 @@ fun factorizeToString(n: Int): String = TODO()
  * Результат перевода вернуть в виде списка цифр в base-ичной системе от старшей к младшей,
  * например: n = 100, base = 4 -> (1, 2, 1, 0) или n = 250, base = 14 -> (1, 3, 12)
  */
-fun convert(n: Int, base: Int): List<Int> = TODO()
+fun convert(n: Int, base: Int): List<Int> {
+    var k = n
+    val list = mutableListOf<Int>()
+    while (k != 0) {
+        list.add(k % base)
+        k /= base
+    }
+    return if (n == 0) listOf(0) else
+        list.reversed();
+}
 
 /**
  * Сложная (4 балла)
@@ -212,7 +251,22 @@ fun convert(n: Int, base: Int): List<Int> = TODO()
  * Использовать функции стандартной библиотеки, напрямую и полностью решающие данную задачу
  * (например, n.toString(base) и подобные), запрещается.
  */
-fun convertToString(n: Int, base: Int): String = TODO()
+fun convertToString(n: Int, base: Int): String {
+    val list2 = "0123456789abcdefghijklmnopqrstuvwxyz"
+    var string = ""
+    var k = n
+    val list = mutableListOf<Int>()
+    while (k != 0) {
+        list.add(k % base)
+        k /= base
+    }
+    for (i in 0..list.size - 1) {
+        string += if (list[i] > 9) list2[list[i]].toString() else list[i].toString()
+    }
+    return if (n == 0) listOf(0).joinToString() else
+        string.reversed()
+}
+
 
 /**
  * Средняя (3 балла)
@@ -221,7 +275,14 @@ fun convertToString(n: Int, base: Int): String = TODO()
  * из системы счисления с основанием base в десятичную.
  * Например: digits = (1, 3, 12), base = 14 -> 250
  */
-fun decimal(digits: List<Int>, base: Int): Int = TODO()
+
+fun decimal(digits: List<Int>, base: Int): Int {
+    var k = 0
+    val list = digits.reversed()
+    for (i in 0 until list.size)
+        k += list[i] * base.pow(i)
+    return k
+}
 
 /**
  * Сложная (4 балла)
@@ -237,6 +298,7 @@ fun decimal(digits: List<Int>, base: Int): Int = TODO()
  */
 fun decimalFromString(str: String, base: Int): Int = TODO()
 
+
 /**
  * Сложная (5 баллов)
  *
@@ -245,7 +307,22 @@ fun decimalFromString(str: String, base: Int): Int = TODO()
  * 90 = XC, 100 = C, 400 = CD, 500 = D, 900 = CM, 1000 = M.
  * Например: 23 = XXIII, 44 = XLIV, 100 = C
  */
-fun roman(n: Int): String = TODO()
+fun roman(n: Int): String {
+    var str = ""
+    val A = listOf("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX")
+    val B = listOf("", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC")
+    val C = listOf("", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM")
+    val D = listOf("", "M", "MM", "MMM")
+    var k = n
+    if (k in 1..10) str += A[k] else
+        if (k < 100)
+            str += B[(k / 10)] + A[(k % 10)] else
+            if (k < 1000)
+                str += C[(k / 100)] + B[(k / 10 % 10)] + A[(k % 10)] else
+                str += D[(k / 1000)] + C[(k / 100 % 10)] + B[(k / 10 % 10)] + A[(k % 10)]
+    return str
+}
+
 
 /**
  * Очень сложная (7 баллов)
