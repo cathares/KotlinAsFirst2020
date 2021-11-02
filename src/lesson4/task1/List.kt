@@ -463,7 +463,7 @@ fun russian(n: Int): String {
             }
             4 -> {
                 if (num == 0 && t == 1) {
-                    res = "тысяча $res"
+                    res = "одна тысяча $res"
                     break
                 }
                 if (num % 10 == 1) {
