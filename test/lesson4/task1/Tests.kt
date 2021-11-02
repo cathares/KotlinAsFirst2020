@@ -181,6 +181,7 @@ class Tests {
     @Test
     @Tag("3")
     fun convert() {
+        assertEquals(listOf(0), convert(0, 2))
         assertEquals(listOf(1), convert(1, 2))
         assertEquals(listOf(1, 2, 1, 0), convert(100, 4))
         assertEquals(listOf(1, 3, 12), convert(250, 14))
@@ -226,17 +227,20 @@ class Tests {
         assertEquals("MCMLXXVIII", roman(1978))
         assertEquals("DCXCIV", roman(694))
         assertEquals("XLIX", roman(49))
+        assertEquals("MMMDCCCLXVII", roman(3867))
+
+
     }
 
     @Test
     @Tag("7")
     fun russian() {
+        assertEquals("девятьсот тысяч", russian(900000))
         assertEquals("триста семьдесят пять", russian(375))
         assertEquals("двадцать две тысячи девятьсот шестьдесят четыре", russian(22964))
         assertEquals("сто девятнадцать тысяч пятьсот восемь", russian(119508))
         assertEquals("две тысячи три", russian(2003))
         assertEquals("двести тысяч два", russian(200002))
-        assertEquals("девятьсот тысяч", russian(900000))
         assertEquals("двенадцать", russian(12))
     }
 }

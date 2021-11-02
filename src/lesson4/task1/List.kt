@@ -273,35 +273,10 @@ fun convert(n: Int, base: Int): List<Int> {
 fun convertToString(n: Int, base: Int): String {
     var res = ""
     val list = convert(n, base)
-    for (i in list.indices) {
-        when (list[i]) {
-            in 0..9 -> res += list[i].toString()
-            10 -> res += 'a'
-            11 -> res += 'b'
-            12 -> res += 'c'
-            13 -> res += 'd'
-            14 -> res += 'e'
-            15 -> res += 'f'
-            16 -> res += 'g'
-            17 -> res += 'h'
-            18 -> res += 'i'
-            19 -> res += 'j'
-            20 -> res += 'k'
-            21 -> res += 'l'
-            22 -> res += 'm'
-            23 -> res += 'n'
-            24 -> res += 'o'
-            25 -> res += 'p'
-            26 -> res += 'q'
-            27 -> res += 'r'
-            28 -> res += 's'
-            29 -> res += 't'
-            30 -> res += 'u'
-            31 -> res += 'v'
-            32 -> res += 'w'
-            33 -> res += 'x'
-            34 -> res += 'y'
-            35 -> res += 'z'
+    for (elem in list) {
+        when (elem) {
+            in 0..9 -> res += elem.toString()
+            else -> res += 'a' + (elem - 10)
         }
     }
     return res
@@ -315,7 +290,15 @@ fun convertToString(n: Int, base: Int): String {
  * из системы счисления с основанием base в десятичную.
  * Например: digits = (1, 3, 12), base = 14 -> 250
  */
-fun decimal(digits: List<Int>, base: Int): Int = TODO()
+
+fun decimal(digits: List<Int>, base: Int): Int {
+    var res = 0
+    var reversedDigits = digits.reversed()
+    for ((c, elem) in reversedDigits.withIndex()) {
+        res += base.toDouble().pow(c).toInt() * elem
+    }
+    return res
+}
 
 /**
  * Сложная (4 балла)
@@ -339,7 +322,74 @@ fun decimalFromString(str: String, base: Int): Int = TODO()
  * 90 = XC, 100 = C, 400 = CD, 500 = D, 900 = CM, 1000 = M.
  * Например: 23 = XXIII, 44 = XLIV, 100 = C
  */
-fun roman(n: Int): String = TODO()
+fun units(n: Int): String {
+    return when (n) {
+        1 -> "I"
+        2 -> "II"
+        3 -> "III"
+        4 -> "IV"
+        5 -> "V"
+        6 -> "VI"
+        7 -> "VII"
+        8 -> "VIII"
+        else -> "IX"
+    }
+}
+
+fun decades(n: Int): String {
+    return when (n) {
+        1 -> "X"
+        2 -> "XX"
+        3 -> "XXX"
+        4 -> "XL"
+        5 -> "L"
+        6 -> "LX"
+        7 -> "LXX"
+        8 -> "LXXX"
+        else -> "XC"
+    }
+}
+
+fun hundreds(n: Int): String {
+    return when (n) {
+        1 -> "C"
+        2 -> "CC"
+        3 -> "CCC"
+        4 -> "CD"
+        5 -> "D"
+        6 -> "DC"
+        7 -> "DCC"
+        8 -> "DCCC"
+        else -> "CM"
+    }
+}
+
+fun thousands(n: Int): String {
+    return when (n) {
+        1 -> "M"
+        2 -> "MM"
+        else -> "MMM"
+    }
+}
+
+fun roman(n: Int): String {
+    var num = n
+    var c = 0
+    var res = ""
+    while (num != 0) {
+        c++
+        val t = num % 10
+        num /= 10
+        if (t == 0) continue
+        when (c) {
+            1 -> res = units(t) + res
+            2 -> res = decades(t) + res
+            3 -> res = hundreds(t) + res
+            4 -> res = thousands(t) + res
+        }
+    }
+    return res
+}
 
 /**
  * Очень сложная (7 баллов)
@@ -348,4 +398,136 @@ fun roman(n: Int): String = TODO()
  * Например, 375 = "триста семьдесят пять",
  * 23964 = "двадцать три тысячи девятьсот шестьдесят четыре"
  */
-fun russian(n: Int): String = TODO()
+fun russian(n: Int): String {
+    var c = 0
+    var num = n
+    var res = ""
+    while (num != 0) {
+        c++
+        val t = num % 10
+        num /= 10
+
+        when (c) {
+            1 -> {
+                if (num % 10 == 1) {
+                    when (t) {
+                        0 -> res = "десять"
+                        1 -> res = "одиннадцать"
+                        2 -> res = "двенадцать"
+                        3 -> res = "тринадцать"
+                        4 -> res = "четырнадцать"
+                        5 -> res = "пятнадцать"
+                        6 -> res = "шестнадцать"
+                        7 -> res = "семнадцать"
+                        8 -> res = "восемнадцать"
+                        9 -> res = "девятнадцать"
+                    }
+                    c++
+                    num /= 10
+                    continue
+                }
+                when (t) {
+                    0 -> continue
+                    1 -> res = "один$res"
+                    2 -> res = "два$res"
+                    3 -> res = "три$res"
+                    4 -> res = "четыре$res"
+                    5 -> res = "пять$res"
+                    6 -> res = "шесть$res"
+                    7 -> res = "семь$res"
+                    8 -> res = "восемь$res"
+                    9 -> res = "девять$res"
+                }
+            }
+            2 -> {
+                when (t) {
+                    0 -> continue
+                    2 -> res = "двадцать $res"
+                    3 -> res = "тридцать $res"
+                    4 -> res = "сорок $res"
+                    5 -> res = "пятьдесят $res"
+                    6 -> res = "шестьдесят $res"
+                    7 -> res = "семьдесят $res"
+                    8 -> res = "восемьдесят $res"
+                    9 -> res = "девяносто $res"
+                }
+            }
+            3 -> {
+                when (t) {
+                    1 -> res = "сто $res"
+                    2 -> res = "двести $res"
+                    3 -> res = "триста $res"
+                    4 -> res = "четыреста $res"
+                    5 -> res = "пятьсот $res"
+                    6 -> res = "шестьсот $res"
+                    7 -> res = "семьсот $res"
+                    8 -> res = "восемьсот $res"
+                    9 -> res = "девятьсот $res"
+                }
+            }
+            4 -> {
+                if (num == 0 && t == 1) {
+                    res = "тысяча $res"
+                    break
+                }
+                if (num % 10 == 1) {
+                    when (t) {
+                        0 -> res = "десять тысяч $res"
+                        1 -> res = "одиннадцать тысяч $res"
+                        2 -> res = "двенадцать тысяч $res"
+                        3 -> res = "тринадцать тысяч $res"
+                        4 -> res = "четырнадцать тысяч $res"
+                        5 -> res = "пятнадцать тысяч $res"
+                        6 -> res = "шестнадцать тысяч $res"
+                        7 -> res = "семнадцать тысяч $res"
+                        8 -> res = "восемнадцать тысяч $res"
+                        9 -> res = "девятнадцать тысяч $res"
+                    }
+                    c++
+                    num /= 10
+                    continue
+                }
+                when (t) {
+                    0 -> res = "тысяч $res"
+                    1 -> res = "одна тысяча $res"
+                    2 -> res = "две тысячи $res"
+                    3 -> res = "три тысячи $res"
+                    4 -> res = "четыре тысячи $res"
+                    5 -> res = "пять тысяч $res"
+                    6 -> res = "шесть тысяч $res"
+                    7 -> res = "семь тысяч $res"
+                    8 -> res = "восемь тысяч $res"
+                    9 -> res = "девять тысяч $res"
+                }
+            }
+            5 -> {
+                when (t) {
+                    0 -> continue
+                    2 -> res = "двадцать $res"
+                    3 -> res = "тридцать $res"
+                    4 -> res = "сорок $res"
+                    5 -> res = "пятьдесят $res"
+                    6 -> res = "шестьдесят $res"
+                    7 -> res = "семьдесят $res"
+                    8 -> res = "восемьдесят $res"
+                    9 -> res = "девяносто $res"
+                }
+            }
+            6 -> {
+                when (t) {
+                    1 -> res = "сто $res"
+                    2 -> res = "двести $res"
+                    3 -> res = "триста $res"
+                    4 -> res = "четыреста $res"
+                    5 -> res = "пятьсот $res"
+                    6 -> res = "шестьсот $res"
+                    7 -> res = "семьсот $res"
+                    8 -> res = "восемьсот $res"
+                    9 -> res = "девятьсот $res"
+                }
+            }
+        }
+    }
+    res = res.trim()
+    return res
+}
