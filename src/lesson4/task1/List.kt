@@ -267,12 +267,14 @@ fun convert(n: Int, base: Int): List<Int> {
  * (например, n.toString(base) и подобные), запрещается.
  */
 fun convertToString(n: Int, base: Int): String {
-    var res = ""
+
     val list = convert(n, base)
-    for (elem in list) {
-        when (elem) {
-            in 0..9 -> res += elem.toString()
-            else -> res += 'a' + (elem - 10)
+    val res = buildString {
+        for (elem in list) {
+            when (elem) {
+                in 0..9 -> append(elem)
+                else -> append('a' + (elem - 10))
+            }
         }
     }
     return res
@@ -318,70 +320,25 @@ fun decimalFromString(str: String, base: Int): Int = TODO()
  * 90 = XC, 100 = C, 400 = CD, 500 = D, 900 = CM, 1000 = M.
  * Например: 23 = XXIII, 44 = XLIV, 100 = C
  */
-fun units(n: Int): String {
-    return when (n) {
-        1 -> "I"
-        2 -> "II"
-        3 -> "III"
-        4 -> "IV"
-        5 -> "V"
-        6 -> "VI"
-        7 -> "VII"
-        8 -> "VIII"
-        else -> "IX"
-    }
-}
-
-fun decades(n: Int): String {
-    return when (n) {
-        1 -> "X"
-        2 -> "XX"
-        3 -> "XXX"
-        4 -> "XL"
-        5 -> "L"
-        6 -> "LX"
-        7 -> "LXX"
-        8 -> "LXXX"
-        else -> "XC"
-    }
-}
-
-fun hundreds(n: Int): String {
-    return when (n) {
-        1 -> "C"
-        2 -> "CC"
-        3 -> "CCC"
-        4 -> "CD"
-        5 -> "D"
-        6 -> "DC"
-        7 -> "DCC"
-        8 -> "DCCC"
-        else -> "CM"
-    }
-}
-
-fun thousands(n: Int): String {
-    return when (n) {
-        1 -> "M"
-        2 -> "MM"
-        else -> "MMM"
-    }
-}
-
 fun roman(n: Int): String {
+    val units = listOf<String>("I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX")
+    val decades = listOf<String>("X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC")
+    val hundreds = listOf<String>("C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM")
+    val thousands = listOf<String>("M", "MM", "MMM")
     var num = n
     var c = 0
-    var res = ""
-    while (num != 0) {
-        c++
-        val t = num % 10
-        num /= 10
-        if (t == 0) continue
-        when (c) {
-            1 -> res = units(t) + res
-            2 -> res = decades(t) + res
-            3 -> res = hundreds(t) + res
-            4 -> res = thousands(t) + res
+    val res = buildString {
+        while (num != 0) {
+            c++
+            val t = num % 10
+            num /= 10
+            if (t == 0) continue
+            when (c) {
+                1 -> insert(0, units[t - 1])
+                2 -> insert(0, decades[t - 1])
+                3 -> insert(0, hundreds[t - 1])
+                4 -> insert(0, thousands[t - 1])
+            }
         }
     }
     return res
@@ -397,130 +354,78 @@ fun roman(n: Int): String {
 fun russian(n: Int): String {
     var c = 0
     var num = n
-    var res = ""
-    while (num != 0) {
-        c++
-        val t = num % 10
-        num /= 10
 
-        when (c) {
-            1 -> {
-                if (num % 10 == 1) {
-                    when (t) {
-                        0 -> res = "десять"
-                        1 -> res = "одиннадцать"
-                        2 -> res = "двенадцать"
-                        3 -> res = "тринадцать"
-                        4 -> res = "четырнадцать"
-                        5 -> res = "пятнадцать"
-                        6 -> res = "шестнадцать"
-                        7 -> res = "семнадцать"
-                        8 -> res = "восемнадцать"
-                        9 -> res = "девятнадцать"
+    val units = listOf<String>(
+        "один", "два", "три", "четыре", "пять", "шесть", "семь",
+        "восемь", "девять"
+    )
+    val firstDecade = listOf<String>(
+        "десять", "одиннадцать", "двенадцать", "тринадцать", "четырнадцать", "пятнадцать",
+        "шестнадцать", "семнадцать", "восемнадцать", "девятнадцать"
+    )
+    val decades = listOf<String>(
+        "двадцать ", "тридцать ", "сорок ", "пятьдесят ", "шестьдесят ",
+        "семьдесят ", "восемьдесят ", "девяносто "
+    )
+    val hundreds = listOf<String>(
+        "сто ", "двести ", "триста ", "четыреста ", "пятьсот ", "шестьсот ",
+        "семьсот ", "восемьсот ", "девятьсот "
+    )
+    val firstThousands = listOf<String>(
+        "тысяч ", "одна тысяча ", "две тысячи ", "три тысячи ",
+        "четыре тысячи ", "пять тысяч ", "шесть тысяч ", "семь тысяч ",
+        "восемь тысяч ", "девять тысяч "
+    )
+    var res = buildString {
+        while (num != 0) {
+            c++
+            val t = num % 10
+            num /= 10
+            when (c) {
+                1 -> {
+                    if (num % 10 == 1) {
+                        insert(0, firstDecade[t])
+                        c++
+                        num /= 10
+                        continue
                     }
-                    c++
-                    num /= 10
-                    continue
-                }
-                when (t) {
-                    0 -> continue
-                    1 -> res = "один$res"
-                    2 -> res = "два$res"
-                    3 -> res = "три$res"
-                    4 -> res = "четыре$res"
-                    5 -> res = "пять$res"
-                    6 -> res = "шесть$res"
-                    7 -> res = "семь$res"
-                    8 -> res = "восемь$res"
-                    9 -> res = "девять$res"
-                }
-            }
-            2 -> {
-                when (t) {
-                    0 -> continue
-                    2 -> res = "двадцать $res"
-                    3 -> res = "тридцать $res"
-                    4 -> res = "сорок $res"
-                    5 -> res = "пятьдесят $res"
-                    6 -> res = "шестьдесят $res"
-                    7 -> res = "семьдесят $res"
-                    8 -> res = "восемьдесят $res"
-                    9 -> res = "девяносто $res"
-                }
-            }
-            3 -> {
-                when (t) {
-                    1 -> res = "сто $res"
-                    2 -> res = "двести $res"
-                    3 -> res = "триста $res"
-                    4 -> res = "четыреста $res"
-                    5 -> res = "пятьсот $res"
-                    6 -> res = "шестьсот $res"
-                    7 -> res = "семьсот $res"
-                    8 -> res = "восемьсот $res"
-                    9 -> res = "девятьсот $res"
-                }
-            }
-            4 -> {
-                if (num == 0 && t == 1) {
-                    res = "одна тысяча $res"
-                    break
-                }
-                if (num % 10 == 1) {
                     when (t) {
-                        0 -> res = "десять тысяч $res"
-                        1 -> res = "одиннадцать тысяч $res"
-                        2 -> res = "двенадцать тысяч $res"
-                        3 -> res = "тринадцать тысяч $res"
-                        4 -> res = "четырнадцать тысяч $res"
-                        5 -> res = "пятнадцать тысяч $res"
-                        6 -> res = "шестнадцать тысяч $res"
-                        7 -> res = "семнадцать тысяч $res"
-                        8 -> res = "восемнадцать тысяч $res"
-                        9 -> res = "девятнадцать тысяч $res"
+                        0 -> continue
+                        else -> insert(0, units[t - 1])
                     }
-                    c++
-                    num /= 10
-                    continue
                 }
-                when (t) {
-                    0 -> res = "тысяч $res"
-                    1 -> res = "одна тысяча $res"
-                    2 -> res = "две тысячи $res"
-                    3 -> res = "три тысячи $res"
-                    4 -> res = "четыре тысячи $res"
-                    5 -> res = "пять тысяч $res"
-                    6 -> res = "шесть тысяч $res"
-                    7 -> res = "семь тысяч $res"
-                    8 -> res = "восемь тысяч $res"
-                    9 -> res = "девять тысяч $res"
+                2 -> {
+                    when (t) {
+                        0 -> continue
+                        else -> insert(0, decades[t - 2])
+                    }
                 }
-            }
-            5 -> {
-                when (t) {
-                    0 -> continue
-                    2 -> res = "двадцать $res"
-                    3 -> res = "тридцать $res"
-                    4 -> res = "сорок $res"
-                    5 -> res = "пятьдесят $res"
-                    6 -> res = "шестьдесят $res"
-                    7 -> res = "семьдесят $res"
-                    8 -> res = "восемьдесят $res"
-                    9 -> res = "девяносто $res"
+                3 -> {
+                    when (t) {
+                        0 -> continue
+                        else -> insert(0, hundreds[t - 1])
+                    }
                 }
-            }
-            6 -> {
-                when (t) {
-                    1 -> res = "сто $res"
-                    2 -> res = "двести $res"
-                    3 -> res = "триста $res"
-                    4 -> res = "четыреста $res"
-                    5 -> res = "пятьсот $res"
-                    6 -> res = "шестьсот $res"
-                    7 -> res = "семьсот $res"
-                    8 -> res = "восемьсот $res"
-                    9 -> res = "девятьсот $res"
+                4 -> {
+                    if (num == 0 && t == 1) {
+                        insert(0, "одна тысяча ")
+                        break
+                    }
+                    if (num % 10 == 1) {
+                        insert(0, firstDecade[t] + " тысяч ")
+                        c++
+                        num /= 10
+                        continue
+                    }
+                    insert(0, firstThousands[t])
                 }
+                5 -> {
+                    when (t) {
+                        0 -> continue
+                        else -> insert(0, decades[t - 2])
+                    }
+                }
+                6 -> insert(0, hundreds[t - 1])
             }
         }
     }
