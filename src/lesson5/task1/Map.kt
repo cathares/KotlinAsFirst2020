@@ -96,7 +96,22 @@ fun buildWordSet(text: List<String>): MutableSet<String> {
  *   buildGrades(mapOf("Марат" to 3, "Семён" to 5, "Михаил" to 5))
  *     -> mapOf(5 to listOf("Семён", "Михаил"), 3 to listOf("Марат"))
  */
-fun buildGrades(grades: Map<String, Int>): Map<Int, List<String>> = TODO()
+fun buildGrades(grades: Map<String, Int>): Map<Int, List<String>> {
+    val newGrades = mutableMapOf<Int, List<String>>()
+    val setOfGrades = mutableSetOf<Int>()
+    for (elem in grades.values) {
+        setOfGrades += elem
+    }
+    for (grade in setOfGrades) {
+        val listOfStudents = mutableListOf<String>()
+        for (student in grades.keys) {
+            if (grades[student] == grade)
+                listOfStudents.add(student)
+        }
+        newGrades[grade] = listOfStudents
+    }
+    return newGrades
+}
 
 /**
  * Простая (2 балла)
@@ -108,7 +123,20 @@ fun buildGrades(grades: Map<String, Int>): Map<Int, List<String>> = TODO()
  *   containsIn(mapOf("a" to "z"), mapOf("a" to "z", "b" to "sweet")) -> true
  *   containsIn(mapOf("a" to "z"), mapOf("a" to "zee", "b" to "sweet")) -> false
  */
-fun containsIn(a: Map<String, String>, b: Map<String, String>): Boolean = TODO()
+fun containsIn(a: Map<String, String>, b: Map<String, String>): Boolean {
+    for ((key1, value1) in a) {
+        var c = 0
+        for ((key2, value2) in b) {
+            if (key1 == key2 && value1 == value2) {
+                c = 0
+                break
+            } else c++
+            if (c == b.size) return false
+        }
+    }
+    return true
+}
+
 
 /**
  * Простая (2 балла)
@@ -124,8 +152,19 @@ fun containsIn(a: Map<String, String>, b: Map<String, String>): Boolean = TODO()
  *   subtractOf(a = mutableMapOf("a" to "z"), mapOf("a" to "z"))
  *     -> a changes to mutableMapOf() aka becomes empty
  */
-fun subtractOf(a: MutableMap<String, String>, b: Map<String, String>) {
-    TODO()
+fun subtractOf(a: MutableMap<String, String>, b: Map<String, String>): MutableMap<String, String> {
+    val elemsToRemove = mutableMapOf<String, String>()
+    for ((key1, value1) in a) {
+        for ((key2, value2) in b) {
+            if (key1 == key2 && value1 == value2) {
+                elemsToRemove[key1] = value1
+            }
+        }
+    }
+    for ((key1, value1) in elemsToRemove){
+        a.remove(key1, value1)
+    }
+    return a
 }
 
 /**
@@ -135,13 +174,25 @@ fun subtractOf(a: MutableMap<String, String>, b: Map<String, String>) {
  * В выходном списке не должно быть повторяющихся элементов,
  * т. е. whoAreInBoth(listOf("Марат", "Семён, "Марат"), listOf("Марат", "Марат")) == listOf("Марат")
  */
-fun whoAreInBoth(a: List<String>, b: List<String>): List<String> = TODO()
+fun whoAreInBoth(a: List<String>, b: List<String>): List<String> {
+    val names = mutableSetOf<String>()
+    for (name1 in a) {
+        for (name2 in b) {
+            if (name1 == name2) names.add(name1)
+        }
+    }
+    val res = mutableListOf<String>()
+    for (i in names){
+        res.add(i)
+    }
+    return res
+}
 
 /**
  * Средняя (3 балла)
  *
  * Объединить два ассоциативных массива `mapA` и `mapB` с парами
- * "имя"-"номер телефона" в итоговый ассоциативный массив, склеивая
+ * "имя"-"номер телефона"в  итоговый ассоциативный массив, склеивая
  * значения для повторяющихся ключей через запятую.
  * В случае повторяющихся *ключей* значение из mapA должно быть
  * перед значением из mapB.
@@ -154,8 +205,33 @@ fun whoAreInBoth(a: List<String>, b: List<String>): List<String> = TODO()
  *     mapOf("Emergency" to "911", "Police" to "02")
  *   ) -> mapOf("Emergency" to "112, 911", "Police" to "02")
  */
-fun mergePhoneBooks(mapA: Map<String, String>, mapB: Map<String, String>): Map<String, String> = TODO()
+fun mergePhoneBooks(mapA: Map<String, String>, mapB: Map<String, String>): Map<String, String> {
+    val mapC = mutableMapOf<String, String>()
+    mapC.putAll(mapA)
+    for ((key1, value1) in mapB)
 
+    /*for (key1 in mapA.keys) {
+        for (key2 in mapB.keys) {
+            if (key1 == key2 && mapA[key1] != mapB[key2]) {
+                val firstValue = mapA[key1]
+                val secondValue = mapB[key2]
+                mapC[key1] = "$firstValue, $secondValue"
+            }
+            else if (key1 == key2 && mapA[key1] == mapB[key2]) {
+                val firstValue = mapA[key1]
+                mapC[key1] = "$firstValue"
+            }
+            else {
+                val firstValue = mapA[key1]
+                val secondValue = mapB[key2]
+                mapC[key1] = "$firstValue"
+                mapC[key2] = "$secondValue"
+            }
+        }
+    }
+    return mapC
+}
+*/
 /**
  * Средняя (4 балла)
  *
