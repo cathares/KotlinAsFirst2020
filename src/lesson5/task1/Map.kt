@@ -283,11 +283,16 @@ fun propagateHandshakes(friends: Map<String, Set<String>>): Map<String, Set<Stri
  *   findSumOfTwo(listOf(1, 2, 3), 6) -> Pair(-1, -1)
  */
 fun findSumOfTwo(list: List<Int>, number: Int): Pair<Int, Int> {
-    if (list.isEmpty()) return Pair(-1, -1)
-    for (i in list.indices)
-        if (number - list.last() != list[0]) return Pair(-1, -1)
-    return Pair(list.indexOf(number - list.last()), list.indexOf(list.last()))
+    val map = mutableMapOf<Int, Int>()
+    for (i in list.indices) {
+        val a = map[list[i]]
+        if (a != null) return a!! to i
+        else map[number - list[i]] = i
+    }
+    return Pair(-1, -1)
 }
+
+
 
 
 /**
@@ -311,12 +316,23 @@ fun findSumOfTwo(list: List<Int>, number: Int): Pair<Int, Int> {
  *     450
  *   ) -> emptySet()
  */
-fun bagPacking(treasures: Map<String, Pair<Int, Int>>, capacity: Int): Set<String> = TODO()
-//    val
-//    for (k in 0..capacity)
-//        m[0, k] = 0
-//    for (i in 1..n)
-//        for (k in 0..capacity)
-//            if( capacity > k) m[i, k] = m[i-1, k]
-//    else m[i, k] = maxOf(m[i-1, k], m[i-1, k-capacity] + v)
-//}
+fun bagPacking(treasures: Map<String, Pair<Int, Int>>, capacity: Int): Set<String> {
+    val result = mutableSetOf<String>()
+    val listOfTreasure = mutableListOf<String>()
+    val listOfWeight = mutableListOf<Int>()
+    val values = mutableListOf<Int>()
+    val cost = Array(treasures.size + 1) { IntArray(capacity + 1) }
+    for (i in 1..treasures.size)
+        for (k in 1..capacity) {
+            if (k >= listOfWeight[i])
+                cost[i][k] = maxOf(cost[i - 1][k], cost[i - 1][k - listOfWeight[i]] + values[i - 1])
+            else cost[i][k] = cost[i - 1][k]
+        }
+    var tmp = capacity
+    for (i in treasures.size - 1..0)
+        if (cost[i][tmp] != cost[i - 1][tmp]) {
+            result.add(listOfTreasure[i - 1])
+            tmp -= listOfWeight[i - 1]
+        }
+    return result
+}
