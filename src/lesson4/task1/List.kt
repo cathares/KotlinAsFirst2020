@@ -351,19 +351,10 @@ fun russian(n: Int): String {
         result.add(hundreds[k / 100 % 10])
     } else if ( k / 100 in 1..9) result.add(hundreds[k / 100 % 10])
     if (k / 10 % 10 == 1 && k % 100 != 10) result.add(eleven[k % 10])
-//    if (k / 100 > 9) {
         else {
-//        result.add(tens[k / 10 % 10])
-//        result.add(units[k % 10])
-//        result.add(hundreds[k / 100 % 10])
         result.add(tens[k / 10 % 10])
         result.add(units[k % 10])
     }
-//    } else if (k / 10 % 10 == 1 && k % 100 != 10) result.add(eleven[k % 10])
-//    result.add(hundreds[k / 100 % 10])
-//        result.add(tens[k / 10 % 10])
-//        result.add(units[k % 10])
-//
     result.removeIf { it.isEmpty() }
     var str = result.joinToString()
     return str.replace(",", "")
