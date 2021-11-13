@@ -286,7 +286,7 @@ fun findSumOfTwo(list: List<Int>, number: Int): Pair<Int, Int> {
     val map = mutableMapOf<Int, Int>()
     for (i in list.indices) {
         val a = map[list[i]]
-        if (a != null) return a!! to i
+        if (a != null) return a to i
         else map[number - list[i]] = i
     }
     return Pair(-1, -1)
@@ -322,6 +322,7 @@ fun bagPacking(treasures: Map<String, Pair<Int, Int>>, capacity: Int): Set<Strin
     val listOfWeight = mutableListOf<Int>()
     val values = mutableListOf<Int>()
     val cost = Array(treasures.size + 1) { IntArray(capacity + 1) }
+
     for (i in 1..treasures.size)
         for (k in 1..capacity) {
             if (k >= listOfWeight[i])
