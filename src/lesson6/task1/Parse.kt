@@ -2,6 +2,10 @@
 
 package lesson6.task1
 
+import lesson3.task1.res
+import kotlin.IllegalArgumentException
+import kotlin.math.max
+
 // Урок 6: разбор строк, исключения
 // Максимальное количество баллов = 13
 // Рекомендуемое количество баллов = 11
@@ -74,7 +78,37 @@ fun main() {
  * Обратите внимание: некорректная с точки зрения календаря дата (например, 30.02.2009) считается неверными
  * входными данными.
  */
-fun dateStrToDigit(str: String): String = TODO()
+fun dateStrToDigit(str: String): String {
+    val months = mutableMapOf(
+        "января" to (1 to 31),
+        "февраля" to (2 to 28),
+        "марта" to (3 to 31),
+        "апреля" to (4 to 30),
+        "мая" to (5 to 31),
+        "июня" to (6 to 30),
+        "июля" to (7 to 31),
+        "августа" to (8 to 31),
+        "сентября" to (9 to 30),
+        "октября" to (10 to 31),
+        "ноября" to (11 to 30),
+        "декабря" to (12 to 31),
+    )
+    val parts = str.split(" ")
+    return try {
+        if (parts[1] in months.keys && months[parts[1]]?.first!! == 2 &&
+            (parts[2].toInt() % 4 == 0 && parts[2].toInt() % 100 != 0 || parts[2].toInt() % 400 == 0)
+        ) {
+            val leap = (2 to 29)
+            months[parts[1]] = leap
+        }
+        if (parts[1] in months.keys && parts[0].toInt() in (1..months[parts[1]]?.second!!)) {
+            String.format("%02d.%02d.%4d", parts[0].toInt(), months[parts[1]]!!.first, parts[2].toInt())
+        } else ""
+    } catch (e: IndexOutOfBoundsException) {
+        ""
+    }
+
+}
 
 /**
  * Средняя (4 балла)
@@ -87,7 +121,26 @@ fun dateStrToDigit(str: String): String = TODO()
  * входными данными.
  */
 fun dateDigitToStr(digital: String): String = TODO()
-
+/*val months = mutableMapOf(
+        "января" to (1 to 31),
+        "февраля" to (2 to 28),
+        "марта" to (3 to 31),
+        "апреля" to (4 to 30),
+        "мая" to (5 to 31),
+        "июня" to (6 to 30),
+        "июля" to (7 to 31),
+        "августа" to (8 to 31),
+        "сентября" to (9 to 30),
+        "октября" to (10 to 31),
+        "ноября" to (11 to 30),
+        "декабря" to (12 to 31),
+    )
+    val parts = digital.split(".").map { it.toInt() }
+    try {
+        if (parts[1] == 2 && parts[2] % 4 == 0 && (parts[2] % 100 != 0 || parts[2] % 400 == 0))
+    }
+}
+*/
 /**
  * Средняя (4 балла)
  *
@@ -102,7 +155,18 @@ fun dateDigitToStr(digital: String): String = TODO()
  *
  * PS: Дополнительные примеры работы функции можно посмотреть в соответствующих тестах.
  */
-fun flattenPhoneNumber(phone: String): String = TODO()
+fun flattenPhoneNumber(phone: String): String {
+    val notLegit = Regex("""[^0-9-\s+()]|(\(\D*\))|(\w\+)""")
+    if (phone.contains(notLegit)) return ""
+    else {
+        return buildString {
+            for (i in phone) {
+                if (i.isDigit() || i == '+')
+                    append(i)
+            }
+        }
+    }
+}
 
 /**
  * Средняя (5 баллов)
@@ -114,7 +178,18 @@ fun flattenPhoneNumber(phone: String): String = TODO()
  * Прочитать строку и вернуть максимальное присутствующее в ней число (717 в примере).
  * При нарушении формата входной строки или при отсутствии в ней чисел, вернуть -1.
  */
-fun bestLongJump(jumps: String): Int = TODO()
+fun bestLongJump(jumps: String): Int {
+    var res = -1
+    val sample = Regex("""^(\d+|-|%)\s(\d+\s|%\s|-\s)*(\d+|%|-)$""")
+    val matchResult = Regex("""(\d+)""").find(jumps)
+    if (jumps.matches(sample)) {
+        if (matchResult == null) return res
+        for (i in Regex("""(\d+)""").findAll(jumps)) {
+            res = max(res, i.value.toInt())
+        }
+    }
+    return res
+}
 
 /**
  * Сложная (6 баллов)
@@ -127,7 +202,19 @@ fun bestLongJump(jumps: String): Int = TODO()
  * При нарушении формата входной строки, а также в случае отсутствия удачных попыток,
  * вернуть -1.
  */
-fun bestHighJump(jumps: String): Int = TODO()
+fun bestHighJump(jumps: String): Int {
+    val sample = Regex("""^(\d+\s[+%-]+\s)*(\d+\s[+%-]+)$""")
+    var res = -1
+    val matchResult = Regex("""(\d\s[%-]*\+)""").find(jumps)
+    if (jumps.matches(sample)) {
+        if (matchResult == null) return res
+        for (i in Regex("""(\d+\s[%-]*\+)""").findAll(jumps)) {
+            val t = Regex("""\d+""").find(i.value)!!.value
+            res = max(res, t.toInt())
+        }
+    }
+    return res
+}
 
 /**
  * Сложная (6 баллов)
@@ -138,7 +225,21 @@ fun bestHighJump(jumps: String): Int = TODO()
  * Вернуть значение выражения (6 для примера).
  * Про нарушении формата входной строки бросить исключение IllegalArgumentException
  */
-fun plusMinus(expression: String): Int = TODO()
+fun plusMinus(expression: String): Int {
+    val sample = Regex("""(\d+\s[+-]\s)*\d+""")
+    var res = 0
+    if (expression.matches(sample)) {
+        for (i in Regex("""([+-]\s\d+)""").findAll(expression)) {
+            val num = Regex("""\d+""").find(i.value)!!.value.toInt()
+            val sign = Regex("""[+-]""").find(i.value)!!.value
+            if (sign == "+") res += num
+            else res -= num
+        }
+    } else throw IllegalArgumentException()
+    val firstNum = Regex("""^\d+""")
+    res += firstNum.find(expression)!!.value.toInt()
+    return res
+}
 
 /**
  * Сложная (6 баллов)
