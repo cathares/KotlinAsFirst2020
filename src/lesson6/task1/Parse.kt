@@ -2,10 +2,29 @@
 
 package lesson6.task1
 
+import kotlin.math.max
+
 // Урок 6: разбор строк, исключения
 // Максимальное количество баллов = 13
 // Рекомендуемое количество баллов = 11
 // Вместе с предыдущими уроками (пять лучших, 2-6) = 40/54
+
+///** 7;8;7;6;6;5;4;5;4;3
+// * 4;5;6;8;8;6;4;5;
+// *
+// */
+//
+//fun myFun(input: String): String {
+//    val parts = input.split(";")
+//    val list = mutableListOf<Pair<Int, Int>>()
+//    for (i in 1 until parts.size - 1) {
+//        if (!parts[i - 1].get(0).isDigit())
+//            throw IllegalArgumentException()
+//        if (parts[i].toInt() - parts[i - 1].toInt() > 1 || parts[i].toInt() - parts[i - 1].toInt() < -1)
+//            return list.add(Pair(parts[i - 1].toInt(), parts[i].toInt())).toString()
+//    }
+//    return ""
+//}
 
 /**
  * Пример
@@ -114,7 +133,21 @@ fun flattenPhoneNumber(phone: String): String = TODO()
  * Прочитать строку и вернуть максимальное присутствующее в ней число (717 в примере).
  * При нарушении формата входной строки или при отсутствии в ней чисел, вернуть -1.
  */
-fun bestLongJump(jumps: String): Int = TODO()
+fun bestLongJump(jumps: String): Int {
+    val parts = jumps.split(" ")
+    if (!parts.get(0).get(0).isDigit()) return -1
+    val count = mutableListOf<Int>()
+    var result = 0
+    for (i in 0..parts.size - 1) {
+        if (!parts[i].get(0).isDigit() && parts[i] != "-" && parts[i] != "%")
+            return -1
+        if (parts[i].get(0).isDigit())
+            count.add(parts[i].toInt())
+    }
+    var maxCount = count.sortedDescending()
+    result = maxCount[0]
+    return result
+}
 
 /**
  * Сложная (6 баллов)
@@ -138,7 +171,38 @@ fun bestHighJump(jumps: String): Int = TODO()
  * Вернуть значение выражения (6 для примера).
  * Про нарушении формата входной строки бросить исключение IllegalArgumentException
  */
-fun plusMinus(expression: String): Int = TODO()
+fun plusMinus(expression: String): Int {
+    val parts = expression.split(" ")
+    if ((parts.get(0) == "+" || parts.get(0) == "-") || (!parts.get(0).get(0).isDigit()) && parts.get(0).length > 1)
+        throw IllegalArgumentException(expression)
+    var sum = 0
+    val count = mutableListOf<Int>()
+    count.add(parts.get(0).toInt())
+    var i = 2
+    while (i < parts.size) {
+//    for (i in 1..parts.size - 1) {
+        if (!parts[i].get(0).isDigit() && parts[i].length > 1)
+            throw IllegalArgumentException(expression)
+        if ((parts[i - 1].length > 1 && (parts[i - 1].get(0).equals("+") || parts[i - 1].get(0).equals("-")))
+            || (parts[i].length > 1 && (parts[i].get(0).equals("+") || parts[i].get(0).equals("-")))
+        )
+            throw IllegalArgumentException(expression)
+        if ((parts[i - 1] == "+" || parts[i - 1] == "-") && (parts[i] == "+"
+                    || parts[i] == "-") && (parts[i - 1] != "+" || parts[i] != "-")
+        )
+            throw IllegalArgumentException(expression)
+        if (parts[i - 1] == "+")
+            count.add(parts[i].toInt())
+        else count.add(parts[i].toInt() * -1)
+        i += 2
+    }
+    for (i in 0..count.size - 1) {
+        sum += count[i]
+
+    }
+    return sum
+}
+
 
 /**
  * Сложная (6 баллов)
@@ -149,7 +213,17 @@ fun plusMinus(expression: String): Int = TODO()
  * Вернуть индекс начала первого повторяющегося слова, или -1, если повторов нет.
  * Пример: "Он пошёл в в школу" => результат 9 (индекс первого 'в')
  */
-fun firstDuplicateIndex(str: String): Int = TODO()
+fun firstDuplicateIndex(str: String): Int {
+    val parts = str.split(" ")
+    var name = 0
+    for (i in 1..parts.size - 1) {
+        if (parts[i - 1].toLowerCase() == parts[i].toLowerCase())
+            return name
+        else name += parts[i - 1].length + 1
+
+    }
+    return -1
+}
 
 /**
  * Сложная (6 баллов)
@@ -163,6 +237,18 @@ fun firstDuplicateIndex(str: String): Int = TODO()
  * Все цены должны быть больше нуля либо равны нулю.
  */
 fun mostExpensive(description: String): String = TODO()
+//    val parts = description.split(";")
+//    if (description.isEmpty()) return ""
+//    var a = ""
+//    var cost = 0.0
+//    for (i in parts.indices) {
+//        val name = parts[i].split(" ")
+//        if (name[1].toDouble() >= cost)
+//            cost = name[1].toDouble()
+//        a = name[0]
+//    }
+//    return a
+//}
 
 /**
  * Сложная (6 баллов)
@@ -176,6 +262,7 @@ fun mostExpensive(description: String): String = TODO()
  * Вернуть -1, если roman не является корректным римским числом
  */
 fun fromRoman(roman: String): Int = TODO()
+
 
 /**
  * Очень сложная (7 баллов)
