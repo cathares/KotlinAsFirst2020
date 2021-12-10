@@ -227,7 +227,7 @@ fun convert(n: Int, base: Int): List<Int> {
  */
 fun convertToString(n: Int, base: Int): String {
     val list2 = "0123456789abcdefghijklmnopqrstuvwxyz"
-    var string = ""
+    var string = StringBuilder()
     var k = n
     val list = mutableListOf<Int>()
     while (k != 0) {
@@ -235,10 +235,10 @@ fun convertToString(n: Int, base: Int): String {
         k /= base
     }
     for (i in 0..list.size - 1) {
-        string += if (list[i] > 9) list2[list[i]].toString() else list[i].toString()
+        string.append(if (list[i] > 9) list2[list[i]].toString() else list[i].toString())
     }
     return if (n == 0) listOf(0).joinToString() else
-        string.reversed()
+        string.reversed().toString()
 }
 
 
