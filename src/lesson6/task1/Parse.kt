@@ -95,7 +95,7 @@ val months = mutableMapOf(
 fun leap(x: Int): Boolean = (x % 400 == 0 || (x % 100 != 0 && x % 4 == 0))
 
 fun dateStrToDigit(str: String): String {
-    if (!str.matches(Regex("""\d{1,2}\s[а-я]+\s\d{4}"""))) return ""
+    if (!str.matches(Regex("""\d{1,2}\s[а-я]+\s\d+"""))) return ""
 
     val parts = str.split(" ")
     val day = parts[0].toInt()
@@ -105,7 +105,7 @@ fun dateStrToDigit(str: String): String {
         return if (day in 0..29) String.format("%02d.%02d.%4d", day, months[month]!!.first, year)
         else ""
     }
-    return if (month in months.keys && day in 1..months[month]!!.second) String.format("%02d.%02d.%4d", day, months[month]!!.first, year)
+    return if (month in months.keys && day in 1..months[month]!!.second) String.format("%02d.%02d.%d", day, months[month]!!.first, year)
     else ""
 }
 /**

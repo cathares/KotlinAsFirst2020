@@ -123,6 +123,7 @@ fun countSubstrings(inputName: String, substrings: List<String>): Map<String, In
  *
  */
 fun sibilants(inputName: String, outputName: String) {
+    TODO()
     /** val writer = File(outputName).bufferedWriter()
     val reader = File(inputName).bufferedReader()
     var symbol = reader.read()
