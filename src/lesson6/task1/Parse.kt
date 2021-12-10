@@ -9,19 +9,21 @@ import kotlin.math.max
 // Рекомендуемое количество баллов = 11
 // Вместе с предыдущими уроками (пять лучших, 2-6) = 40/54
 
-///** 7;8;7;6;6;5;4;5;4;3
-// * 4;5;6;8;8;6;4;5;
-// *
-// */
-//
+/** 7;8;7;6;6;5;4;5;4;3
+ * 4;5;6;8;8;6;4;5;
+ *
+ */
+
 //fun myFun(input: String): String {
-//    val parts = input.split(";")
-//    val list = mutableListOf<Pair<Int, Int>>()
-//    for (i in 1 until parts.size - 1) {
-//        if (!parts[i - 1].get(0).isDigit())
-//            throw IllegalArgumentException()
+//    val regex = Regex(""" \d;+\d""")
+//    if (input.matches(regex))
+//        throw IllegalArgumentException(input)
+//    val parts = Regex(""";""").split(input)
+//    var a = " "
+//    for (i in 1..parts.size - 1) {
 //        if (parts[i].toInt() - parts[i - 1].toInt() > 1 || parts[i].toInt() - parts[i - 1].toInt() < -1)
-//            return list.add(Pair(parts[i - 1].toInt(), parts[i].toInt())).toString()
+//           a = (Pair(parts[i - 1].toInt(),parts[i].toInt())).toString()
+//        return a
 //    }
 //    return ""
 //}
@@ -229,7 +231,7 @@ fun firstDuplicateIndex(str: String): Int {
  * Сложная (6 баллов)
  *
  * Строка содержит названия товаров и цены на них в формате вида
- * "Хлеб 39.9; Молоко 62; Курица 184.0; Конфеты 89.9".
+ * "Хлеб 39.9; Молоко 62.5; Курица 184.0; Конфеты 89.9".
  * То есть, название товара отделено от цены пробелом,
  * а цена отделена от названия следующего товара точкой с запятой и пробелом.
  * Вернуть название самого дорогого товара в списке (в примере это Курица),
@@ -237,15 +239,17 @@ fun firstDuplicateIndex(str: String): Int {
  * Все цены должны быть больше нуля либо равны нулю.
  */
 fun mostExpensive(description: String): String = TODO()
-//    val parts = description.split(";")
-//    if (description.isEmpty()) return ""
 //    var a = ""
+//    if (!description.matches(Regex(""" ([^\s]+ \d+(\.\d+)?; )+""")))
+//        return " "
+//    val parts = Regex(""";""").split(description)
 //    var cost = 0.0
 //    for (i in parts.indices) {
-//        val name = parts[i].split(" ")
-//        if (name[1].toDouble() >= cost)
+//        val name = Regex(""" """).split(parts[i])
+//        if (name[1].toDouble() >= cost) {
 //            cost = name[1].toDouble()
-//        a = name[0]
+//            a = name[0]
+//        }
 //    }
 //    return a
 //}

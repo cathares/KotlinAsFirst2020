@@ -3,8 +3,6 @@
 package lesson4.task1
 
 import lesson1.task1.discriminant
-import lesson3.task1.pow
-import kotlin.math.roundToInt
 import kotlin.math.sqrt
 
 // Урок 4: списки
@@ -279,17 +277,16 @@ fun decimalFromString(str: String, base: Int): Int = TODO()
  * Например: 23 = XXIII, 44 = XLIV, 100 = C
  */
 fun roman(n: Int): String {
-    var str = ""
+    val str = StringBuilder()
     val A = listOf("", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX")
     val B = listOf("", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC")
     val C = listOf("", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM")
     val D = listOf("", "M", "MM", "MMM")
-    var k = n
-    if (k in 1..10) str += A[k]
-    else if (k < 100) str += B[k / 10] + A[k % 10]
-    else if (k < 1000) str += C[k / 100] + B[k / 10 % 10] + A[k % 10]
-    else str += D[k / 1000] + C[k / 100 % 10] + B[k / 10 % 10] + A[k % 10]
-    return str
+    if (n in 1..10) str.append(A[n])
+    else if (n < 100) str.append(B[n / 10] + A[n % 10])
+    else if (n < 1000) str.append(C[n / 100] + B[n / 10 % 10] + A[n % 10])
+    else str.append(D[n / 1000] + C[n / 100 % 10] + B[n / 10 % 10] + A[n % 10])
+    return str.toString()
 }
 
 
