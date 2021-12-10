@@ -102,7 +102,7 @@ fun dateStrToDigit(str: String): String {
     val month = parts[1]
     val year = parts[2].toInt()
     if (leap(year) && month == "февраля") {
-        return if (day in 0..29) String.format("%02d.%02d.%4d", day, months[month]!!.first, year)
+        return if (day in 0..29) String.format("%02d.%02d.%d", day, months[month]!!.first, year)
         else ""
     }
     return if (month in months.keys && day in 1..months[month]!!.second) String.format("%02d.%02d.%d", day, months[month]!!.first, year)
