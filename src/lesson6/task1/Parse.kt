@@ -78,38 +78,36 @@ fun main() {
  * Обратите внимание: некорректная с точки зрения календаря дата (например, 30.02.2009) считается неверными
  * входными данными.
  */
+val months = mutableMapOf(
+    "января" to (1 to 31),
+    "февраля" to (2 to 28),
+    "марта" to (3 to 31),
+    "апреля" to (4 to 30),
+    "мая" to (5 to 31),
+    "июня" to (6 to 30),
+    "июля" to (7 to 31),
+    "августа" to (8 to 31),
+    "сентября" to (9 to 30),
+    "октября" to (10 to 31),
+    "ноября" to (11 to 30),
+    "декабря" to (12 to 31),
+)
+fun leap(x: Int): Boolean = (x % 400 == 0 || (x % 100 != 0 && x % 4 == 0))
+
 fun dateStrToDigit(str: String): String {
-    val months = mutableMapOf(
-        "января" to (1 to 31),
-        "февраля" to (2 to 28),
-        "марта" to (3 to 31),
-        "апреля" to (4 to 30),
-        "мая" to (5 to 31),
-        "июня" to (6 to 30),
-        "июля" to (7 to 31),
-        "августа" to (8 to 31),
-        "сентября" to (9 to 30),
-        "октября" to (10 to 31),
-        "ноября" to (11 to 30),
-        "декабря" to (12 to 31),
-    )
+    if (!str.matches(Regex("""\d{1,2}\s[а-я]+\s\d{4}"""))) return ""
+
     val parts = str.split(" ")
-    return try {
-        if (parts[1] in months.keys && months[parts[1]]?.first!! == 2 &&
-            (parts[2].toInt() % 4 == 0 && parts[2].toInt() % 100 != 0 || parts[2].toInt() % 400 == 0)
-        ) {
-            val leap = (2 to 29)
-            months[parts[1]] = leap
-        }
-        if (parts[1] in months.keys && parts[0].toInt() in (1..months[parts[1]]?.second!!)) {
-            String.format("%02d.%02d.%4d", parts[0].toInt(), months[parts[1]]!!.first, parts[2].toInt())
-        } else ""
-    } catch (e: IndexOutOfBoundsException) {
-        ""
+    val day = parts[0].toInt()
+    val month = parts[1]
+    val year = parts[2].toInt()
+    if (leap(year) && month == "февраля") {
+        return if (day in 0..29) String.format("%02d.%02d.%4d", day, months[month]!!.first, year)
+        else ""
     }
-
+    return if (month in months.keys && day in 1..months[month]!!.second) String.format("%02d.%02d.%4d", day, months[month]!!.first, year)
+    else ""
 }
-
 /**
  * Средняя (4 балла)
  *

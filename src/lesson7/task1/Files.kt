@@ -5,6 +5,8 @@ package lesson7.task1
 import java.io.BufferedReader
 import java.io.File
 import java.util.*
+import kotlin.Int.Companion.MIN_VALUE
+
 
 // Урок 7: работа с файлами
 // Урок интегральный, поэтому его задачи имеют сильно увеличенную стоимость
@@ -66,14 +68,18 @@ fun alignFile(inputName: String, lineLength: Int, outputName: String) {
  */
 fun deleteMarked(inputName: String, outputName: String) {
     val writer = File(outputName).bufferedWriter()
-    for (line in File(inputName).readLines()) {
-        if (line.startsWith("_")) continue
-        else {
-            writer.write(line)
-            writer.newLine()
+    try {
+        for (line in File(inputName).readLines()) {
+            if (line.startsWith("_")) continue
+            else {
+                writer.write(line)
+                writer.newLine()
+            }
         }
     }
-    writer.close()
+    finally {
+        writer.close()
+    }
 }
 
 /**
@@ -117,7 +123,11 @@ fun countSubstrings(inputName: String, substrings: List<String>): Map<String, In
  *
  */
 fun sibilants(inputName: String, outputName: String) {
-    TODO()
+    /** val writer = File(outputName).bufferedWriter()
+    val reader = File(inputName).bufferedReader()
+    var symbol = reader.read()
+    val stop = setOf<Char>('ж')
+*/
 }
 
 /**
@@ -138,7 +148,28 @@ fun sibilants(inputName: String, outputName: String) {
  *
  */
 fun centerFile(inputName: String, outputName: String) {
-    TODO()
+    val writer = File(outputName).bufferedWriter()
+    var maxLen = MIN_VALUE
+    for (line in File(inputName).readLines()) {
+        if (line.trim().length > maxLen) maxLen = line.trim().length
+    }
+    for (line in File(inputName).readLines()) {
+        if (line.trim().length == maxLen) {
+            writer.write(line.trim())
+            writer.newLine()
+        }
+        else {
+            val t = (maxLen - line.trim().length) / 2
+            val str = buildString {
+                for (i in 1..t) {
+                    append(" ")
+                }
+            }
+            writer.write(str + line.trim())
+            writer.newLine()
+        }
+    }
+    writer.close()
 }
 
 /**
