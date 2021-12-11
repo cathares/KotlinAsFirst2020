@@ -242,7 +242,7 @@ fun mostExpensive(description: String): String {
     var a = ""
     val regex = Regex("[А-Яа-я]+\\s\\d+(\\.\\d{1})?")
     val parts = Regex(";\\s").split(description)
-    var cost = 0.0
+    var cost = -1.0
     for (i in parts.indices) {
         if (!regex.matches(parts[i])) return ""
         val name = Regex(""" """).split(parts[i])
