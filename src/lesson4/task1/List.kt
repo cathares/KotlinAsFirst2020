@@ -210,8 +210,8 @@ fun convert(n: Int, base: Int): List<Int> {
         list.add(k % base)
         k /= base
     }
-    return if (n == 0) listOf(0) else
-        list.reversed()
+    list.reverse()
+    return if (n == 0) listOf(0) else list
 }
 
 /**
