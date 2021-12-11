@@ -141,7 +141,7 @@ fun bestLongJump(jumps: String): Int {
     val count = mutableListOf<Int>()
     var result = 0
     for (i in 0..parts.size - 1) {
-        if (!parts[i].get(0).isDigit() && parts[i] != "-" && parts[i] != "%")
+        if (!parts[i].get(0).isDigit() && parts[i] != "-" && parts[i] != "%" || parts[i].get(0).isLetter())
             return -1
         if (parts[i].get(0).isDigit())
             count.add(parts[i].toInt())
@@ -175,15 +175,14 @@ fun bestHighJump(jumps: String): Int = TODO()
  */
 fun plusMinus(expression: String): Int {
     val parts = expression.split(" ")
-    if ((parts.get(0) == "+" || parts.get(0) == "-") || (!parts.get(0).get(0).isDigit()) && parts.get(0).length > 1)
+    if ((parts.get(0) == "+" || parts.get(0) == "-") || (!parts.get(0).get(0).isDigit()) && parts.get(0).length > 1 )
         throw IllegalArgumentException(expression)
     var sum = 0
     val count = mutableListOf<Int>()
     count.add(parts.get(0).toInt())
     var i = 2
     while (i < parts.size) {
-//    for (i in 1..parts.size - 1) {
-        if (!parts[i].get(0).isDigit() && parts[i].length > 1)
+        if (!parts[i].get(0).isDigit() && parts[i].length > 1 || parts[i].get(0).isLetter())
             throw IllegalArgumentException(expression)
         if ((parts[i - 1].length > 1 && (parts[i - 1].get(0).equals("+") || parts[i - 1].get(0).equals("-")))
             || (parts[i].length > 1 && (parts[i].get(0).equals("+") || parts[i].get(0).equals("-")))
