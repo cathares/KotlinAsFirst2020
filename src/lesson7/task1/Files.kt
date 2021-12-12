@@ -138,8 +138,21 @@ fun sibilants(inputName: String, outputName: String) {
  *
  */
 fun centerFile(inputName: String, outputName: String) {
-    val file = File(inputName).readLines()
-    
+    val sb = StringBuilder()
+    var max = 0
+    for (line in File(inputName).readLines()){
+        val l = line.trim()
+        sb.append(line.trim())
+        sb.append("\n")
+        max = maxOf(l.length,max)
+    }
+    val writer = File(outputName).bufferedWriter()
+    for (line in sb.toString().trim().lines()) {
+        val offset = " ".repeat((max - line.length)/2)
+        writer.write(offset + line)
+        writer.newLine()
+    }
+    writer.close()
 }
 
 /**

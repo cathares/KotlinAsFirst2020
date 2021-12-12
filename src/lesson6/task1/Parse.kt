@@ -9,16 +9,16 @@ import kotlin.math.max
 // Рекомендуемое количество баллов = 11
 // Вместе с предыдущими уроками (пять лучших, 2-6) = 40/54
 
-/** 7;8;7;6;6;5;4;5;4;3
- * 4;5;6;8;8;6;4;5;
+/** 7; 8; 7; 6; 6; 5; 4; 5; 4; 3
+ * 4; 5; 6; 8; 8; 6; 4; 5
  *
  */
 
 //fun myFun(input: String): String {
-//    val regex = Regex(""" \d;+\d""")
-//    if (input.matches(regex))
-//        throw IllegalArgumentException(input)
-//    val parts = Regex(""";""").split(input)
+//    val regex = Regex(""" [\d; ]""")
+////    if (!input.matches(regex))
+////        throw IllegalArgumentException(input)
+//    val parts = Regex("""; """).split(input)
 //    var a = " "
 //    for (i in 1..parts.size - 1) {
 //        if (parts[i].toInt() - parts[i - 1].toInt() > 1 || parts[i].toInt() - parts[i - 1].toInt() < -1)

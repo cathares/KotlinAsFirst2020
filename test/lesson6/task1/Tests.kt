@@ -13,7 +13,7 @@ class Tests {
         assertEquals(41685, timeStrToSeconds("11:34:45"))
         assertEquals(86399, timeStrToSeconds("23:59:59"))
     }
-
+//@Test
 //    fun myFun() {
 //    assertEquals("(6,8), (8,6), (6,3)", myFun("4;5;6;8;8;6;3;4;5"))
 //    assertEquals("", myFun("7;8;7;6;6;5;4;5;4;3"))
