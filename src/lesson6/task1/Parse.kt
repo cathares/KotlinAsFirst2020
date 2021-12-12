@@ -175,7 +175,7 @@ fun bestHighJump(jumps: String): Int = TODO()
  */
 fun plusMinus(expression: String): Int {
     val parts = expression.split(" ")
-    if ((parts.get(0) == "+" || parts.get(0) == "-") || (!parts.get(0).get(0).isDigit()) && parts.get(0).length > 1 )
+    if (expression.isEmpty() || (parts.get(0) == "+" || parts.get(0) == "-") || (!parts.get(0).get(0).isDigit()) && parts.get(0).length > 1 )
         throw IllegalArgumentException(expression)
     var sum = 0
     val count = mutableListOf<Int>()
@@ -218,7 +218,7 @@ fun firstDuplicateIndex(str: String): Int {
     val parts = str.split(" ")
     var name = 0
     for (i in 1..parts.size - 1) {
-        if (parts[i - 1].toLowerCase() == parts[i].toLowerCase())
+        if (parts[i - 1].lowercase() == parts[i].lowercase())
             return name
         else name += parts[i - 1].length + 1
 

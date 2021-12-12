@@ -80,8 +80,6 @@ class Tests {
         assertEquals(-1, bestLongJump("% - - % -"))
         assertEquals(754, bestLongJump("700 717 707 % 754"))
         assertEquals(-1, bestLongJump("700 + 700"))
-        assertEquals( -1, bestLongJump("jumps"))
-
     }
 
     @Test
@@ -104,7 +102,7 @@ class Tests {
         assertThrows(IllegalArgumentException::class.java) { plusMinus("4 - -2") }
         assertThrows(IllegalArgumentException::class.java) { plusMinus("44 - - 12") }
         assertThrows(IllegalArgumentException::class.java) { plusMinus("4 - + 12") }
-        assertThrows(IllegalArgumentException::class.java) { plusMinus("expression") }
+        assertThrows(IllegalArgumentException::class.java) { plusMinus("") }
     }
 
     @Test
@@ -119,7 +117,7 @@ class Tests {
     @Test
     @Tag("6")
     fun mostExpensive() {
-//        assertEquals("", mostExpensive(""))
+        assertEquals("", mostExpensive(""))
         assertEquals("Курица", mostExpensive("Хлеб 39.9; Молоко 62.5; Курица 184.0; Конфеты 89.9"))
         assertEquals("Вино", mostExpensive("Вино 255.0"))
     }
