@@ -2,7 +2,6 @@
 
 package lesson7.task1
 
-import java.io.BufferedReader
 import java.io.File
 import java.util.*
 import kotlin.Int.Companion.MIN_VALUE
@@ -76,8 +75,7 @@ fun deleteMarked(inputName: String, outputName: String) {
                 writer.newLine()
             }
         }
-    }
-    finally {
+    } finally {
         writer.close()
     }
 }
@@ -128,7 +126,7 @@ fun sibilants(inputName: String, outputName: String) {
     val reader = File(inputName).bufferedReader()
     var symbol = reader.read()
     val stop = setOf<Char>('ж')
-*/
+     */
 }
 
 /**
@@ -158,8 +156,7 @@ fun centerFile(inputName: String, outputName: String) {
         if (line.trim().length == maxLen) {
             writer.write(line.trim())
             writer.newLine()
-        }
-        else {
+        } else {
             val t = (maxLen - line.trim().length) / 2
             val str = buildString {
                 for (i in 1..t) {
@@ -505,7 +502,114 @@ fun printMultiplicationProcess(lhv: Int, rhv: Int, outputName: String) {
  * Используемые пробелы, отступы и дефисы должны в точности соответствовать примеру.
  *
  */
-fun printDivisionProcess(lhv: Int, rhv: Int, outputName: String) {
-    TODO()
+fun Int.pow(x: Int): Int {
+    return if (x == 0) 1
+    else (2..x).fold(this) { r, _ -> r * this }
 }
 
+
+fun printDivisionProcess(lhv: Int, rhv: Int, outputName: String) {
+    val writer = File(outputName).bufferedWriter()
+    val firstLine = " $lhv | $rhv"
+    var t = lhv.toString().length - 1
+    val res = (lhv / rhv).toString()
+    var ost = lhv / 10.pow(t)
+    var c = 0
+    var currResult = ""
+    val str = StringBuilder()
+    var spaces = 0
+    var lines = 0
+    var currDig = 0
+    var currOst = ""
+    writer.use { writer ->
+        writer.write(firstLine)
+        writer.newLine()
+        while (currResult != res) {
+            if (lhv < rhv) {
+                val str = StringBuilder()
+                str.append("-0")
+                spaces = firstLine.length - str.length - rhv.toString().length
+                for (i in 1..spaces) str.append(" ")
+                str.append(res)
+                writer.write(str.toString())
+                writer.newLine()
+                writer.write("--")
+                writer.newLine()
+                writer.write(" $lhv")
+                break
+
+            }
+            if (ost >= rhv) {
+                c++
+                t--
+                currDig = (rhv * (ost / rhv))
+                currOst = ((ost % rhv).toString() + ((lhv / 10.pow(t)) % 10).toString())
+                currResult += (ost / rhv).toString()
+                if (currResult == res) {
+                    currOst = (ost % rhv).toString()
+                }
+                if (c == 1) {
+                    str.append("-$currDig")
+                    writer.write(str.toString())
+                    spaces = firstLine.length - str.length - rhv.toString().length
+                    for (i in 1..spaces) writer.write(" ")
+                    writer.write(res)
+                    writer.newLine()
+                    val lines = "-$currDig".length
+                    for (i in 1..lines) writer.write("-")
+                    writer.newLine()
+                    spaces = str.length - (ost % rhv).toString().length
+                    str.clear()
+                    for (i in 1..spaces) str.append(" ")
+                    str.append(currOst)
+                    writer.write(str.toString())
+                    writer.newLine()
+                } else {
+                    spaces = str.length - "-$currDig".length
+                    str.clear()
+                    for (i in 1..spaces) str.append(" ")
+                    str.append("-$currDig")
+                    writer.write(str.toString())
+                    writer.newLine()
+                    for (i in 1..spaces) writer.write(" ")
+                    lines = "-$currDig".length
+                    for (i in 1..lines) writer.write("-")
+                    writer.newLine()
+                    spaces = str.length - (ost % rhv).toString().length
+                    str.clear()
+                    for (i in 1..spaces) str.append(" ")
+                    str.append(currOst)
+                    writer.write(str.toString())
+                    writer.newLine()
+                }
+                ost = if (ost - (rhv * (ost / rhv)) != 0) {
+                    (ost - (rhv * (ost / rhv))) * 10 + lhv / 10.pow(t) % 10
+                } else {
+                    lhv / 10.pow(t) % 10
+                }
+            } else {
+                while (ost < rhv) {
+                    t--
+                    ost = ost * 10 + lhv / 10.pow(t) % 10
+                    if (c > 0) {
+                        spaces = str.length - 2
+                        for (i in 1..spaces) writer.write(" ")
+                        writer.write("-0")
+                        writer.newLine()
+                        for (i in 1..spaces) writer.write(" ")
+                        writer.write("--")
+                        writer.newLine()
+                        str.clear()
+                        for (i in 1..spaces) str.append(" ")
+                        str.append(ost)
+                        writer.write(str.toString())
+                        writer.newLine()
+                        c++
+                        currResult = (currResult.toInt() * 10).toString()
+                    }
+                }
+
+            }
+        }
+    }
+}
