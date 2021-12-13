@@ -1,0 +1,19 @@
+val chars = mapOf(
+    2 to listOf('A', 'B', 'C'),
+    3 to listOf('D', 'E', 'F'),
+    4 to listOf('G', 'H', 'I'),
+    5 to listOf('J', 'K', 'L'),
+    6 to listOf('M', 'N', 'O'),
+    7 to listOf('P', 'Q', 'R', 'S'),
+    8 to listOf('T', 'U', 'V'),
+    9 to listOf('W', 'X', 'Y', 'Z')
+)
+
+fun myFun(names: List<String>, digits: String): List<String> {
+    val result = mutableListOf<String>()
+    for (i in chars.values) {
+
+
+    }
+
+}
