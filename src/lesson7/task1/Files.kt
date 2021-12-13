@@ -510,7 +510,7 @@ fun Int.pow(x: Int): Int {
 
 fun printDivisionProcess(lhv: Int, rhv: Int, outputName: String) {
     val writer = File(outputName).bufferedWriter()
-    val firstLine = " $lhv | $rhv"
+    val firstLine = "$lhv | $rhv"
     var t = lhv.toString().length - 1
     val res = (lhv / rhv).toString()
     var ost = lhv / 10.pow(t)
