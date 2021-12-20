@@ -92,6 +92,7 @@ val months = mutableMapOf(
     "ноября" to (11 to 30),
     "декабря" to (12 to 31),
 )
+
 fun leap(x: Int): Boolean = (x % 400 == 0 || (x % 100 != 0 && x % 4 == 0))
 
 fun dateStrToDigit(str: String): String {
@@ -105,9 +106,12 @@ fun dateStrToDigit(str: String): String {
         return if (day in 0..29) String.format("%02d.%02d.%d", day, months[month]!!.first, year)
         else ""
     }
-    return if (month in months.keys && day in 1..months[month]!!.second) String.format("%02d.%02d.%d", day, months[month]!!.first, year)
-    else ""
+    return if (months[month] != null) {
+        if (day in 1..months[month]!!.second) String.format("%02d.%02d.%d", day, months[month]!!.first, year)
+        else ""
+    } else ""
 }
+
 /**
  * Средняя (4 балла)
  *
@@ -119,26 +123,7 @@ fun dateStrToDigit(str: String): String {
  * входными данными.
  */
 fun dateDigitToStr(digital: String): String = TODO()
-/*val months = mutableMapOf(
-        "января" to (1 to 31),
-        "февраля" to (2 to 28),
-        "марта" to (3 to 31),
-        "апреля" to (4 to 30),
-        "мая" to (5 to 31),
-        "июня" to (6 to 30),
-        "июля" to (7 to 31),
-        "августа" to (8 to 31),
-        "сентября" to (9 to 30),
-        "октября" to (10 to 31),
-        "ноября" to (11 to 30),
-        "декабря" to (12 to 31),
-    )
-    val parts = digital.split(".").map { it.toInt() }
-    try {
-        if (parts[1] == 2 && parts[2] % 4 == 0 && (parts[2] % 100 != 0 || parts[2] % 400 == 0))
-    }
-}
-*/
+
 /**
  * Средняя (4 балла)
  *

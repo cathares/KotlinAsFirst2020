@@ -91,14 +91,14 @@ fun deleteMarked(inputName: String, outputName: String) {
  */
 fun countSubstrings(inputName: String, substrings: List<String>): Map<String, Int> {
     val res = mutableMapOf<String, Int>()
-    val text = File(inputName).readText().lowercase(Locale.getDefault())
-
     for (string in substrings) {
         val sample = string.lowercase(Locale.getDefault())
         var c = 0
-        for (i in (0..text.length - sample.length)) {
-            if (text.substring(i, i + sample.length) == sample) {
-                c++
+        File(inputName).forEachLine {
+            for (i in (0..it.length - sample.length)) {
+                if (it.lowercase(Locale.getDefault()).substring(i, i + sample.length) == sample) {
+                    c++
+                }
             }
         }
         res[string] = c
@@ -149,25 +149,26 @@ fun sibilants(inputName: String, outputName: String) {
 fun centerFile(inputName: String, outputName: String) {
     val writer = File(outputName).bufferedWriter()
     var maxLen = MIN_VALUE
-    for (line in File(inputName).readLines()) {
-        if (line.trim().length > maxLen) maxLen = line.trim().length
+    File(inputName).forEachLine {
+        if (it.trim().length > maxLen) maxLen = it.trim().length
     }
-    for (line in File(inputName).readLines()) {
-        if (line.trim().length == maxLen) {
-            writer.write(line.trim())
-            writer.newLine()
-        } else {
-            val t = (maxLen - line.trim().length) / 2
-            val str = buildString {
-                for (i in 1..t) {
-                    append(" ")
+    writer.use { writer ->
+        File(inputName).forEachLine {
+            if (it.trim().length == maxLen) {
+                writer.write(it.trim())
+                writer.newLine()
+            } else {
+                val t = (maxLen - it.trim().length) / 2
+                val str = buildString {
+                    for (i in 1..t) {
+                        append(" ")
+                    }
                 }
+                writer.write(str + it.trim())
+                writer.newLine()
             }
-            writer.write(str + line.trim())
-            writer.newLine()
         }
     }
-    writer.close()
 }
 
 /**
@@ -510,7 +511,7 @@ fun Int.pow(x: Int): Int {
 
 fun printDivisionProcess(lhv: Int, rhv: Int, outputName: String) {
     val writer = File(outputName).bufferedWriter()
-    val firstLine = "$lhv | $rhv"
+    val firstLine = StringBuilder()
     var t = lhv.toString().length - 1
     val res = (lhv / rhv).toString()
     var ost = lhv / 10.pow(t)
@@ -522,24 +523,35 @@ fun printDivisionProcess(lhv: Int, rhv: Int, outputName: String) {
     var currDig = 0
     var currOst = ""
     writer.use { writer ->
-        writer.write(firstLine)
-        writer.newLine()
-        while (currResult != res) {
-            if (lhv < rhv) {
-                val str = StringBuilder()
-                str.append("-0")
-                spaces = firstLine.length - str.length - rhv.toString().length
-                for (i in 1..spaces) str.append(" ")
-                str.append(res)
-                writer.write(str.toString())
-                writer.newLine()
-                writer.write("--")
-                writer.newLine()
-                writer.write(" $lhv")
-                break
+        if (lhv < rhv) {
+            firstLine.append(" $lhv | $rhv")
+            writer.write(firstLine.toString())
+            writer.newLine()
+            str.append("-0")
+            spaces = firstLine.length - str.length - rhv.toString().length
+            for (i in 1..spaces) str.append(" ")
+            str.append(res)
+            writer.write(str.toString())
+            writer.newLine()
+            writer.write("--")
+            writer.newLine()
+            writer.write(" $lhv")
+            currResult = res
+        }
 
-            }
+        while (currResult != res) {
             if (ost >= rhv) {
+                if (c == 0) {
+                    if (ost.toString().length < (rhv * (ost / rhv)).toString().length + 1) {
+                        firstLine.append(" $lhv | $rhv")
+                        writer.write(firstLine.toString())
+                        writer.newLine()
+                    } else {
+                        firstLine.append("$lhv | $rhv")
+                        writer.write(firstLine.toString())
+                        writer.newLine()
+                    }
+                }
                 c++
                 t--
                 currDig = (rhv * (ost / rhv))
