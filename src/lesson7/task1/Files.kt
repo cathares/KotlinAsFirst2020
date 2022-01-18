@@ -625,3 +625,124 @@ fun printDivisionProcess(lhv: Int, rhv: Int, outputName: String) {
         }
     }
 }
+
+
+fun game(inputName: String, move: Char): Pair<Int, Int>? {
+    val table = Array(15) { Array(15) { '-' } }
+    var i = 0
+    var res = -1 to -1
+    File(inputName).forEachLine {
+        for (j in 0..14) {
+            table[i][j] = it[j]
+        }
+        i++
+    }
+    var win = -1 to -1
+    for (i in 0..14) {    //случай, когда победная цепочка находится по горизонтали
+        for (j in 0..10) {
+            if (table[i][j] == move) {
+                var c = 0
+                for (k in 1..4) {
+                    if (table[i][j + k] == '-') {
+                        c++
+                        if (c == 1) {
+                            win = i to j +k
+                        }
+                        else {
+                            win = -1 to -1
+                        }
+                    }
+                    else if (table[i][j + k] != move) {
+                        win = -1 to -1
+                        break
+                    }
+                }
+                if (win != -1 to -1) res = win
+            }
+            if (table[i][j] == '-') {
+                for (k in 1..4) {
+                    if (table[i][j + k] != move) {
+                        win = -1 to -1
+                        break
+                    }
+                    win = i to j
+                }
+                if (win != -1 to -1) res = win
+            }
+        }
+
+    }
+
+    for (i in 0..10) {    //случай, когда победная цепочка находится по вертикали
+        for (j in 0..14) {
+            if (table[i][j] == move) {
+                var c = 0
+                for (k in 1..4) {
+                    if (table[i + k][j] == '-') {
+                        c++
+                        if (c == 1) {
+                            win = i + k to j
+                        }
+                        else {
+                            win = -1 to -1
+                        }
+                    }
+                    else if (table[i + k][j] != move) {
+                        win = -1 to -1
+                        break
+                    }
+                }
+                if (win != -1 to -1) res = win
+            }
+            if (table[i][j] == '-') {
+                for (k in 1..4) {
+                    if (table[i + k][j] != move) {
+                        win = -1 to -1
+                        break
+                    }
+                    win = i to j
+                }
+                if (win != -1 to -1) res = win
+            }
+        }
+
+    }
+    for (i in 0..10) {    //случай, когда победная цепочка находится по диагонали
+        for (j in 0..10) {
+            if (table[i][j] == move) {
+                var c = 0
+                for (k in 1..4) {
+                    if (table[i + k][j + k] == '-') {
+                        c++
+                        if (c == 1) {
+                            win = i + k to j + k
+                        }
+                        else {
+                            win = -1 to -1
+                        }
+                    }
+                    else if (table[i + k][j + k] != move) {
+                        win = -1 to -1
+                        break
+                    }
+                }
+                if (win != -1 to -1) res = win
+            }
+            if (table[i][j] == '-') {
+                for (k in 1..4) {
+                    if (table[i + k][j + k] != move) {
+                        win = -1 to -1
+                        break
+                    }
+                    win = i to j
+                }
+                if (win != -1 to -1) res = win
+            }
+        }
+
+    }
+    return if (res != -1 to -1) {
+        res
+    }
+    else null
+}

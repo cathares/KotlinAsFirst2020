@@ -387,6 +387,16 @@ Basic, Ruby, Swift.
             assertFileContent("temp.txt", res.trimIndent())
             File("temp.txt").delete()
         }
+        test(
+            2,
+            20,
+            """
+              2 | 20
+             -0   0
+             --
+              2
+             """
+        )
 
         test(
             19935,
@@ -404,17 +414,44 @@ Basic, Ruby, Swift.
                   3
              """
         )
-
         test(
-            2,
-            20,
+            99999,
+            1,
             """
-              2 | 20
-             -0   0
+              99999 | 1
+             -9       99999
              --
-              2
+              09
+              -9
+              --
+               09
+               -9
+               --
+                09
+                -9
+                --
+                 09
+                 -9
+                 --
+                  0
              """
         )
+
+        test(
+            117113,
+            6504,
+            """
+                117113 | 6504
+                -6504    18
+                -----
+                 52073
+                -52032
+                ------
+                    41
+                """
+        )
+
+
 
         test(
             99999,
@@ -440,5 +477,29 @@ Basic, Ruby, Swift.
         )
 
         File("temp.txt").delete()
+    }
+
+    @Test
+    fun game() {
+        assertEquals(
+            0 to 7,
+            game("input/game.txt", 'o')
+        )
+        assertEquals(
+            0 to 10,
+            game("input/game1.txt", 'o')
+        )
+        assertEquals(
+            11 to 9,
+            game("input/game2.txt", 'o')
+        )
+        assertEquals(
+            0 to 0,
+            game("input/game3.txt", 'x')
+        )
+        assertEquals(
+            null,
+            game("input/game3.txt", 'o')
+        )
     }
 }
