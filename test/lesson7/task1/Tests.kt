@@ -501,5 +501,9 @@ Basic, Ruby, Swift.
             null,
             game("input/game3.txt", 'o')
         )
+        assertEquals(
+            1 to 3,
+            game("input/game4.txt", 'o')
+        )
     }
 }

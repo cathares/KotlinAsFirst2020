@@ -638,6 +638,8 @@ fun game(inputName: String, move: Char): Pair<Int, Int>? {
         i++
     }
     var win = -1 to -1
+    val vectors = listOf<Pair<Int, Int>>(0 to 1, 1 to 0, 1 to 1, 1 to -1)
+
     for (i in 0..14) {    //случай, когда победная цепочка находится по горизонтали
         for (j in 0..10) {
             if (table[i][j] == move) {
@@ -707,7 +709,7 @@ fun game(inputName: String, move: Char): Pair<Int, Int>? {
         }
 
     }
-    for (i in 0..10) {    //случай, когда победная цепочка находится по диагонали
+    for (i in 0..10) {    //случай, когда победная цепочка находится по диагонали вниз
         for (j in 0..10) {
             if (table[i][j] == move) {
                 var c = 0
@@ -740,6 +742,40 @@ fun game(inputName: String, move: Char): Pair<Int, Int>? {
             }
         }
 
+    }
+
+    for (i in 0..10) {    //случай, когда победная цепочка находится по диагонали вверх
+        for (j in 14 downTo 4) {
+            if (table[i][j] == move) {
+                var c = 0
+                for (k in 1..4) {
+                    if (table[i + k][j - k] == '-') {
+                        c++
+                        if (c == 1) {
+                            win = i + k to j - k
+                        }
+                        else {
+                            win = -1 to -1
+                        }
+                    }
+                    else if (table[i + k][j - k] != move) {
+                        win = -1 to -1
+                        break
+                    }
+                }
+                if (win != -1 to -1) res = win
+            }
+            if (table[i][j] == '-') {
+                for (k in 1..4) {
+                    if (table[i + k][j - k] != move) {
+                        win = -1 to -1
+                        break
+                    }
+                    win = i to j
+                }
+                if (win != -1 to -1) res = win
+            }
+        }
     }
     return if (res != -1 to -1) {
         res
