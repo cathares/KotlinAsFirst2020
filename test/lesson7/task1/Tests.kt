@@ -482,10 +482,6 @@ Basic, Ruby, Swift.
     @Test
     fun game() {
         assertEquals(
-            0 to 7,
-            game("input/game.txt", 'o')
-        )
-        assertEquals(
             0 to 10,
             game("input/game1.txt", 'o')
         )
@@ -493,6 +489,12 @@ Basic, Ruby, Swift.
             11 to 9,
             game("input/game2.txt", 'o')
         )
+
+        assertEquals(
+            0 to 7,
+            game("input/game.txt", 'o')
+        )
+
         assertEquals(
             0 to 0,
             game("input/game3.txt", 'x')
