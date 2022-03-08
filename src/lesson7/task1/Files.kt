@@ -3,16 +3,6 @@
 package lesson7.task1
 
 import java.io.File
-import java.lang.IndexOutOfBoundsException
-import java.util.*
-import kotlin.Int.Companion.MIN_VALUE
-
-
-// Урок 7: работа с файлами
-// Урок интегральный, поэтому его задачи имеют сильно увеличенную стоимость
-// Максимальное количество баллов = 55
-// Рекомендуемое количество баллов = 20
-// Вместе с предыдущими уроками (пять лучших, 3-7) = 55/103
 
 /**
  * Пример
@@ -26,63 +16,37 @@ import kotlin.Int.Companion.MIN_VALUE
  * их следует сохранить и в выходном файле
  */
 fun alignFile(inputName: String, lineLength: Int, outputName: String) {
-    val writer = File(outputName).bufferedWriter()
+    val outputStream = File(outputName).bufferedWriter()
     var currentLineLength = 0
-    fun append(word: String) {
-        if (currentLineLength > 0) {
-            if (word.length + currentLineLength >= lineLength) {
-                writer.newLine()
-                currentLineLength = 0
-            } else {
-                writer.write(" ")
-                currentLineLength++
-            }
-        }
-        writer.write(word)
-        currentLineLength += word.length
-    }
     for (line in File(inputName).readLines()) {
         if (line.isEmpty()) {
-            writer.newLine()
+            outputStream.newLine()
             if (currentLineLength > 0) {
-                writer.newLine()
+                outputStream.newLine()
                 currentLineLength = 0
             }
             continue
         }
-        for (word in line.split(Regex("\\s+"))) {
-            append(word)
-        }
-    }
-    writer.close()
-}
-
-/**
- * Простая (8 баллов)
- *
- * Во входном файле с именем inputName содержится некоторый текст.
- * Некоторые его строки помечены на удаление первым символом _ (подчёркивание).
- * Перенести в выходной файл с именем outputName все строки входного файла, убрав при этом помеченные на удаление.
- * Все остальные строки должны быть перенесены без изменений, включая пустые строки.
- * Подчёркивание в середине и/или в конце строк значения не имеет.
- */
-fun deleteMarked(inputName: String, outputName: String) {
-    val writer = File(outputName).bufferedWriter()
-    try {
-        for (line in File(inputName).readLines()) {
-            if (line.startsWith("_")) continue
-            else {
-                writer.write(line)
-                writer.newLine()
+        for (word in line.split(" ")) {
+            if (currentLineLength > 0) {
+                if (word.length + currentLineLength >= lineLength) {
+                    outputStream.newLine()
+                    currentLineLength = 0
+                }
+                else {
+                    outputStream.write(" ")
+                    currentLineLength++
+                }
             }
+            outputStream.write(word)
+            currentLineLength += word.length
         }
-    } finally {
-        writer.close()
     }
+    outputStream.close()
 }
 
 /**
- * Средняя (14 баллов)
+ * Средняя
  *
  * Во входном файле с именем inputName содержится некоторый текст.
  * На вход подаётся список строк substrings.
@@ -90,26 +54,11 @@ fun deleteMarked(inputName: String, outputName: String) {
  * Регистр букв игнорировать, то есть буквы е и Е считать одинаковыми.
  *
  */
-fun countSubstrings(inputName: String, substrings: List<String>): Map<String, Int> {
-    val res = mutableMapOf<String, Int>()
-    for (string in substrings) {
-        val sample = string.lowercase(Locale.getDefault())
-        var c = 0
-        File(inputName).forEachLine {
-            for (i in (0..it.length - sample.length)) {
-                if (it.lowercase(Locale.getDefault()).substring(i, i + sample.length) == sample) {
-                    c++
-                }
-            }
-        }
-        res[string] = c
-    }
-    return res
-}
+fun countSubstrings(inputName: String, substrings: List<String>): Map<String, Int> = TODO()
 
 
 /**
- * Средняя (12 баллов)
+ * Средняя
  *
  * В русском языке, как правило, после букв Ж, Ч, Ш, Щ пишется И, А, У, а не Ы, Я, Ю.
  * Во входном файле с именем inputName содержится некоторый текст на русском языке.
@@ -123,15 +72,10 @@ fun countSubstrings(inputName: String, substrings: List<String>): Map<String, In
  */
 fun sibilants(inputName: String, outputName: String) {
     TODO()
-    /** val writer = File(outputName).bufferedWriter()
-    val reader = File(inputName).bufferedReader()
-    var symbol = reader.read()
-    val stop = setOf<Char>('ж')
-     */
 }
 
 /**
- * Средняя (15 баллов)
+ * Средняя
  *
  * Во входном файле с именем inputName содержится некоторый текст (в том числе, и на русском языке).
  * Вывести его в выходной файл с именем outputName, выровняв по центру
@@ -148,32 +92,11 @@ fun sibilants(inputName: String, outputName: String) {
  *
  */
 fun centerFile(inputName: String, outputName: String) {
-    val writer = File(outputName).bufferedWriter()
-    var maxLen = MIN_VALUE
-    File(inputName).forEachLine {
-        if (it.trim().length > maxLen) maxLen = it.trim().length
-    }
-    writer.use { writer ->
-        File(inputName).forEachLine {
-            if (it.trim().length == maxLen) {
-                writer.write(it.trim())
-                writer.newLine()
-            } else {
-                val t = (maxLen - it.trim().length) / 2
-                val str = buildString {
-                    for (i in 1..t) {
-                        append(" ")
-                    }
-                }
-                writer.write(str + it.trim())
-                writer.newLine()
-            }
-        }
-    }
+    TODO()
 }
 
 /**
- * Сложная (20 баллов)
+ * Сложная
  *
  * Во входном файле с именем inputName содержится некоторый текст (в том числе, и на русском языке).
  * Вывести его в выходной файл с именем outputName, выровняв по левому и правому краю относительно
@@ -204,14 +127,12 @@ fun alignFileByWidth(inputName: String, outputName: String) {
 }
 
 /**
- * Средняя (14 баллов)
+ * Средняя
  *
  * Во входном файле с именем inputName содержится некоторый текст (в том числе, и на русском языке).
  *
  * Вернуть ассоциативный массив, содержащий 20 наиболее часто встречающихся слов с их количеством.
  * Если в тексте менее 20 различных слов, вернуть все слова.
- * Вернуть ассоциативный массив с числом слов больше 20, если 20-е, 21-е, ..., последнее слова
- * имеют одинаковое количество вхождений (см. также тест файла input/onegin.txt).
  *
  * Словом считается непрерывная последовательность из букв (кириллических,
  * либо латинских, без знаков препинания и цифр).
@@ -226,7 +147,7 @@ fun alignFileByWidth(inputName: String, outputName: String) {
 fun top20Words(inputName: String): Map<String, Int> = TODO()
 
 /**
- * Средняя (14 баллов)
+ * Средняя
  *
  * Реализовать транслитерацию текста из входного файла в выходной файл посредством динамически задаваемых правил.
 
@@ -265,7 +186,7 @@ fun transliterate(inputName: String, dictionary: Map<Char, String>, outputName: 
 }
 
 /**
- * Средняя (12 баллов)
+ * Средняя
  *
  * Во входном файле с именем inputName имеется словарь с одним словом в каждой строчке.
  * Выбрать из данного словаря наиболее длинное слово,
@@ -293,7 +214,7 @@ fun chooseLongestChaoticWord(inputName: String, outputName: String) {
 }
 
 /**
- * Сложная (22 балла)
+ * Сложная
  *
  * Реализовать транслитерацию текста в заданном формате разметки в формат разметки HTML.
  *
@@ -314,8 +235,6 @@ fun chooseLongestChaoticWord(inputName: String, outputName: String) {
  * Отдельно следует заметить, что открывающая последовательность из трёх звёздочек (***) должна трактоваться как "<b><i>"
  * и никак иначе.
  *
- * При решении этой и двух следующих задач полезно прочитать статью Википедии "Стек".
- *
  * Пример входного файла:
 Lorem ipsum *dolor sit amet*, consectetur **adipiscing** elit.
 Vestibulum lobortis, ~~Est vehicula rutrum *suscipit*~~, ipsum ~~lib~~ero *placerat **tortor***,
@@ -324,15 +243,15 @@ Suspendisse ~~et elit in enim tempus iaculis~~.
  *
  * Соответствующий выходной файл:
 <html>
-<body>
-<p>
-Lorem ipsum <i>dolor sit amet</i>, consectetur <b>adipiscing</b> elit.
-Vestibulum lobortis. <s>Est vehicula rutrum <i>suscipit</i></s>, ipsum <s>lib</s>ero <i>placerat <b>tortor</b></i>.
-</p>
-<p>
-Suspendisse <s>et elit in enim tempus iaculis</s>.
-</p>
-</body>
+    <body>
+        <p>
+            Lorem ipsum <i>dolor sit amet</i>, consectetur <b>adipiscing</b> elit.
+            Vestibulum lobortis. <s>Est vehicula rutrum <i>suscipit</i></s>, ipsum <s>lib</s>ero <i>placerat <b>tortor</b></i>.
+        </p>
+        <p>
+            Suspendisse <s>et elit in enim tempus iaculis</s>.
+        </p>
+    </body>
 </html>
  *
  * (Отступы и переносы строк в примере добавлены для наглядности, при решении задачи их реализовывать не обязательно)
@@ -342,7 +261,7 @@ fun markdownToHtmlSimple(inputName: String, outputName: String) {
 }
 
 /**
- * Сложная (23 балла)
+ * Сложная
  *
  * Реализовать транслитерацию текста в заданном формате разметки в формат разметки HTML.
  *
@@ -369,27 +288,27 @@ fun markdownToHtmlSimple(inputName: String, outputName: String) {
  *     <li>Три</li>
  * </ul>
  *
- * Кроме того, весь текст целиком следует обернуть в теги <html><body><p>...</p></body></html>
+ * Кроме того, весь текст целиком следует обернуть в теги <html><body>...</body></html>
  *
  * Все остальные части исходного текста должны остаться неизменными с точностью до наборов пробелов и переносов строк.
  *
  * Пример входного файла:
 ///////////////////////////////начало файла/////////////////////////////////////////////////////////////////////////////
- * Утка по-пекински
- * Утка
- * Соус
- * Салат Оливье
-1. Мясо
- * Или колбаса
-2. Майонез
-3. Картофель
-4. Что-то там ещё
- * Помидоры
- * Фрукты
-1. Бананы
-23. Яблоки
-1. Красные
-2. Зелёные
+* Утка по-пекински
+    * Утка
+    * Соус
+* Салат Оливье
+    1. Мясо
+        * Или колбаса
+    2. Майонез
+    3. Картофель
+    4. Что-то там ещё
+* Помидоры
+* Фрукты
+    1. Бананы
+    23. Яблоки
+        1. Красные
+        2. Зелёные
 ///////////////////////////////конец файла//////////////////////////////////////////////////////////////////////////////
  *
  *
@@ -434,6 +353,46 @@ fun markdownToHtmlSimple(inputName: String, outputName: String) {
 </ul>
 </p>
 </body>
+  <body>
+    <ul>
+      <li>
+        Утка по-пекински
+        <ul>
+          <li>Утка</li>
+          <li>Соус</li>
+        </ul>
+      </li>
+      <li>
+        Салат Оливье
+        <ol>
+          <li>Мясо
+            <ul>
+              <li>
+                  Или колбаса
+              </li>
+            </ul>
+          </li>
+          <li>Майонез</li>
+          <li>Картофель</li>
+          <li>Что-то там ещё</li>
+        </ol>
+      </li>
+      <li>Помидоры</li>
+      <li>
+        Фрукты
+        <ol>
+          <li>Бананы</li>
+          <li>
+            Яблоки
+            <ol>
+              <li>Красные</li>
+              <li>Зелёные</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ul>
+  </body>
 </html>
 ///////////////////////////////конец файла//////////////////////////////////////////////////////////////////////////////
  * (Отступы и переносы строк в примере добавлены для наглядности, при решении задачи их реализовывать не обязательно)
@@ -443,7 +402,7 @@ fun markdownToHtmlLists(inputName: String, outputName: String) {
 }
 
 /**
- * Очень сложная (30 баллов)
+ * Очень сложная
  *
  * Реализовать преобразования из двух предыдущих задач одновременно над одним и тем же файлом.
  * Следует помнить, что:
@@ -455,28 +414,28 @@ fun markdownToHtml(inputName: String, outputName: String) {
 }
 
 /**
- * Средняя (12 баллов)
+ * Средняя
  *
  * Вывести в выходной файл процесс умножения столбиком числа lhv (> 0) на число rhv (> 0).
  *
  * Пример (для lhv == 19935, rhv == 111):
-19935
- *    111
+   19935
+*    111
 --------
-19935
+   19935
 + 19935
 +19935
 --------
-2212785
+ 2212785
  * Используемые пробелы, отступы и дефисы должны в точности соответствовать примеру.
  * Нули в множителе обрабатывать так же, как и остальные цифры:
-235
- *  10
+  235
+*  10
 -----
-0
+    0
 +235
 -----
-2350
+ 2350
  *
  */
 fun printMultiplicationProcess(lhv: Int, rhv: Int, outputName: String) {
@@ -485,355 +444,26 @@ fun printMultiplicationProcess(lhv: Int, rhv: Int, outputName: String) {
 
 
 /**
- * Сложная (25 баллов)
+ * Сложная
  *
  * Вывести в выходной файл процесс деления столбиком числа lhv (> 0) на число rhv (> 0).
  *
  * Пример (для lhv == 19935, rhv == 22):
-19935 | 22
--198     906
-----
-13
--0
---
-135
--132
-----
-3
+  19935 | 22
+ -198     906
+ ----
+    13
+    -0
+    --
+    135
+   -132
+   ----
+      3
 
  * Используемые пробелы, отступы и дефисы должны в точности соответствовать примеру.
  *
  */
-fun Int.pow(x: Int): Int {
-    return if (x == 0) 1
-    else (2..x).fold(this) { r, _ -> r * this }
-}
-
-
 fun printDivisionProcess(lhv: Int, rhv: Int, outputName: String) {
-    val writer = File(outputName).bufferedWriter()
-    val firstLine = StringBuilder()
-    var t = lhv.toString().length - 1
-    val res = (lhv / rhv).toString()
-    var ost = lhv / 10.pow(t)
-    var c = 0
-    var currResult = ""
-    val str = StringBuilder()
-    var spaces = 0
-    var lines = 0
-    var currDig = 0
-    var currOst = ""
-    writer.use { writer ->
-        if (lhv < rhv) {
-            firstLine.append(" $lhv | $rhv")
-            writer.write(firstLine.toString())
-            writer.newLine()
-            str.append("-0")
-            spaces = firstLine.length - str.length - rhv.toString().length
-            for (i in 1..spaces) str.append(" ")
-            str.append(res)
-            writer.write(str.toString())
-            writer.newLine()
-            writer.write("--")
-            writer.newLine()
-            writer.write(" $lhv")
-            currResult = res
-        }
-
-        while (currResult != res) {
-            if (ost >= rhv) {
-                if (c == 0) {
-                    if (ost.toString().length < (rhv * (ost / rhv)).toString().length + 1) {
-                        firstLine.append(" $lhv | $rhv")
-                        writer.write(firstLine.toString())
-                        writer.newLine()
-                    } else {
-                        firstLine.append("$lhv | $rhv")
-                        writer.write(firstLine.toString())
-                        writer.newLine()
-                    }
-                }
-                c++
-                t--
-                currDig = (rhv * (ost / rhv))
-                currOst = ((ost % rhv).toString() + ((lhv / 10.pow(t)) % 10).toString())
-                currResult += (ost / rhv).toString()
-                if (currResult == res) {
-                    currOst = (ost % rhv).toString()
-                }
-                if (c == 1) {
-                    str.append("-$currDig")
-                    writer.write(str.toString())
-                    spaces = firstLine.length - str.length - rhv.toString().length
-                    for (i in 1..spaces) writer.write(" ")
-                    writer.write(res)
-                    writer.newLine()
-                    val lines = "-$currDig".length
-                    for (i in 1..lines) writer.write("-")
-                    writer.newLine()
-                    spaces = str.length - (ost % rhv).toString().length
-                    str.clear()
-                    for (i in 1..spaces) str.append(" ")
-                    str.append(currOst)
-                    writer.write(str.toString())
-                    writer.newLine()
-                } else {
-                    spaces = str.length - "-$currDig".length
-                    str.clear()
-                    for (i in 1..spaces) str.append(" ")
-                    str.append("-$currDig")
-                    writer.write(str.toString())
-                    writer.newLine()
-                    for (i in 1..spaces) writer.write(" ")
-                    lines = "-$currDig".length
-                    for (i in 1..lines) writer.write("-")
-                    writer.newLine()
-                    spaces = str.length - (ost % rhv).toString().length
-                    str.clear()
-                    for (i in 1..spaces) str.append(" ")
-                    str.append(currOst)
-                    writer.write(str.toString())
-                    writer.newLine()
-                }
-                ost = if (ost - (rhv * (ost / rhv)) != 0) {
-                    (ost - (rhv * (ost / rhv))) * 10 + lhv / 10.pow(t) % 10
-                } else {
-                    lhv / 10.pow(t) % 10
-                }
-            } else {
-                while (ost < rhv) {
-                    t--
-                    ost = ost * 10 + lhv / 10.pow(t) % 10
-                    if (c > 0) {
-                        spaces = str.length - 2
-                        for (i in 1..spaces) writer.write(" ")
-                        writer.write("-0")
-                        writer.newLine()
-                        for (i in 1..spaces) writer.write(" ")
-                        writer.write("--")
-                        writer.newLine()
-                        str.clear()
-                        for (i in 1..spaces) str.append(" ")
-                        str.append(ost)
-                        writer.write(str.toString())
-                        writer.newLine()
-                        c++
-                        currResult = (currResult.toInt() * 10).toString()
-                    }
-                }
-
-            }
-        }
-    }
+    TODO()
 }
 
-
-fun game(inputName: String, move: Char): Pair<Int, Int>? {
-    val table = Array(15) { Array(15) { '-' } }
-    var i = 0
-    var res = -1 to -1
-    File(inputName).forEachLine {
-        for (j in 0..14) {
-            table[i][j] = it[j]
-        }
-        i++
-    }
-    var win = -1 to -1
-    val vectors = listOf<Pair<Int, Int>>(0 to 1, 1 to 0, 1 to 1, 1 to -1)
-    for (vector in vectors) {
-        for (i in 0..14) {
-            for (j in 0..14) {
-                if (table[i][j] == move) {
-                    var c = 0
-                    var y = i
-                    var x = j
-                    for (k in 1..4) {
-                        y += vector.first
-                        x += vector.second
-                        try {
-                            if (table[y][x] == '-') {
-                                c++
-                                if (c == 1) {
-                                    win = y to x
-                                } else {
-                                    win = -1 to -1
-                                }
-                            } else if (table[y][x] != move) {
-                                win = -1 to -1
-                                break
-                            }
-                        } catch (e: IndexOutOfBoundsException) {
-                            win = -1 to -1
-                            break
-                        }
-                    }
-                    if (win != -1 to -1) {
-                        res = win
-                    }
-                }
-                if (table[i][j] == '-') {
-                    var y = i
-                    var x = j
-                    for (k in 1..4) {
-                        y += vector.first
-                        x += vector.second
-                        try {
-                            if (table[y][x] != move) {
-                                win = -1 to -1
-                                break
-                            }
-                            win = i to j
-                        } catch (e: IndexOutOfBoundsException) {
-                            win = -1 to -1
-                            break
-                        }
-                    }
-                    if (win != -1 to -1) {
-                        res = win
-                    }
-                }
-            }
-        }
-    }
-    return if (res != -1 to -1) {
-        res
-    } else null
-}
-
-/*
-        for (i in 0..14) {    //случай, когда победная цепочка находится по горизонтали
-            for (j in 0..10) {
-                if (table[i][j] == move) {
-                    var c = 0
-                    for (k in 1..4) {
-                        if (table[i][j + k] == '-') {
-                            c++
-                            if (c == 1) {
-                                win = i to j + k
-                            } else {
-                                win = -1 to -1
-                            }
-                        } else if (table[i][j + k] != move) {
-                            win = -1 to -1
-                            break
-                        }
-                    }
-                    if (win != -1 to -1) res = win
-                }
-                if (table[i][j] == '-') {
-                    for (k in 1..4) {
-                        if (table[i][j + k] != move) {
-                            win = -1 to -1
-                            break
-                        }
-                        win = i to j
-                    }
-                    if (win != -1 to -1) res = win
-                }
-            }
-
-        }
-
-        for (i in 0..10) {    //случай, когда победная цепочка находится по вертикали
-            for (j in 0..14) {
-                if (table[i][j] == move) {
-                    var c = 0
-                    for (k in 1..4) {
-                        if (table[i + k][j] == '-') {
-                            c++
-                            if (c == 1) {
-                                win = i + k to j
-                            } else {
-                                win = -1 to -1
-                            }
-                        } else if (table[i + k][j] != move) {
-                            win = -1 to -1
-                            break
-                        }
-                    }
-                    if (win != -1 to -1) res = win
-                }
-                if (table[i][j] == '-') {
-                    for (k in 1..4) {
-                        if (table[i + k][j] != move) {
-                            win = -1 to -1
-                            break
-                        }
-                        win = i to j
-                    }
-                    if (win != -1 to -1) res = win
-                }
-            }
-
-        }
-        for (i in 0..10) {    //случай, когда победная цепочка находится по диагонали вниз
-            for (j in 0..10) {
-                if (table[i][j] == move) {
-                    var c = 0
-                    for (k in 1..4) {
-                        if (table[i + k][j + k] == '-') {
-                            c++
-                            if (c == 1) {
-                                win = i + k to j + k
-                            } else {
-                                win = -1 to -1
-                            }
-                        } else if (table[i + k][j + k] != move) {
-                            win = -1 to -1
-                            break
-                        }
-                    }
-                    if (win != -1 to -1) res = win
-                }
-                if (table[i][j] == '-') {
-                    for (k in 1..4) {
-                        if (table[i + k][j + k] != move) {
-                            win = -1 to -1
-                            break
-                        }
-                        win = i to j
-                    }
-                    if (win != -1 to -1) res = win
-                }
-            }
-
-        }
-
-        for (i in 0..10) {    //случай, когда победная цепочка находится по диагонали вверх
-            for (j in 14 downTo 4) {
-                if (table[i][j] == move) {
-                    var c = 0
-                    for (k in 1..4) {
-                        if (table[i + k][j - k] == '-') {
-                            c++
-                            if (c == 1) {
-                                win = i + k to j - k
-                            } else {
-                                win = -1 to -1
-                            }
-                        } else if (table[i + k][j - k] != move) {
-                            win = -1 to -1
-                            break
-                        }
-                    }
-                    if (win != -1 to -1) res = win
-                }
-                if (table[i][j] == '-') {
-                    for (k in 1..4) {
-                        if (table[i + k][j - k] != move) {
-                            win = -1 to -1
-                            break
-                        }
-                        win = i to j
-                    }
-                    if (win != -1 to -1) res = win
-                }
-            }
-        }
-
-
-        return if (res != -1 to -1) {
-            res
-        } else null
-    }
-    */
