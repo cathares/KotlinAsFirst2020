@@ -1,0 +1,7 @@
+C:\Users\kenny\Desktop\gitTest\KotlinAsFirst2020>git remote -v
+origin  https://github.com/cathares/KotlinAsFirst2020 (fetch)
+origin  https://github.com/cathares/KotlinAsFirst2020 (push)
+upstream-my     https://github.com/cathares/KotlinAsFirst2021 (fetch)
+upstream-my     https://github.com/cathares/KotlinAsFirst2021 (push)
+upstream-theirs https://github.com/Rudenches/KotlinAsFirst2021.git (fetch)
+upstream-theirs https://github.com/Rudenches/KotlinAsFirst2021.git (push)
