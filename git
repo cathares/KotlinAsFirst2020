@@ -1,0 +1,4089 @@
+[33mcommit d535f3592006b8f2593c9f881d72c05164aadc13[m[33m ([m[1;36mHEAD -> [m[1;32mupstream-theirs[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Sep 4 18:49:48 2020 +0300
+
+    Add extra check to get TODO in test for 10.1 task
+    
+    (cherry picked from commit 280a1006c2d8dfae877496ebda7ce12bfe1503a9)
+
+[33mcommit b59194c70b8733ce841d1df642758dd827315f6e[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Fri Sep 4 17:09:52 2020 +0300
+
+    Drop Coursera project link from README.md
+
+[33mcommit ced754403cfa20bebdba1be22aade78e615d334e[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Sep 4 00:03:27 2020 +0300
+
+    Fix for deleteMarked
+
+[33mcommit 279179c0c3bfd29b805332158be4e8870a36dcc5[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 3 20:44:59 2020 +0300
+
+    Fix: 2019 -> 2020
+
+[33mcommit 0e1b425091f651d613339d26b4dc6fc6babccde1[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 3 20:43:01 2020 +0300
+
+    Update references to INSYS
+
+[33mcommit e2a74c62050462952ba7ea7abb69ddb7ba7a62f0[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 3 20:40:25 2020 +0300
+
+    Chapter 11: update goals
+
+[33mcommit df18fc41e606e8e840384cacd2ef836d7928ab5c[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 3 20:38:05 2020 +0300
+
+    Chapter 10: minor extension & goals
+
+[33mcommit 5cae7cc3541e921d98820fa0d9f5aa3dd85b2fc5[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 3 20:37:53 2020 +0300
+
+    Update goals in chapters 08-09
+
+[33mcommit ffabad5471f2b9c127ed8464a390f8f8f948aa0c[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 3 20:32:19 2020 +0300
+
+    Update README accordingly to 2020 material composition
+
+[33mcommit f6cd903a1054280dc39fdadbd1b9d4f3f6e9a954[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 3 20:31:54 2020 +0300
+
+    Update goals in chapters 05-07
+
+[33mcommit cba81e1ec277c587da7e3ccbd0e832d9825576cb[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 3 19:58:34 2020 +0300
+
+    Update goals in chapters 01-04
+
+[33mcommit 36995005404bb0e5f9fbc7961137c86fec0ffab2[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 3 19:53:57 2020 +0300
+
+    Update chapter00 to year 2020
+
+[33mcommit 54d611924f9e218a8c3eaec89ee64dcb957ad977[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 3 16:48:49 2020 +0300
+
+    Add new scoring (lesson 12)
+
+[33mcommit 4af22dc9692e8625bfc26caaa84d5cad8f9a5db3[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 2 19:57:18 2020 +0300
+
+    Add new scoring (lessons 10-11)
+
+[33mcommit bfd8055789fa58f7a92326684df468a43fe4de05[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 31 12:52:34 2020 +0300
+
+    Add new scoring (lessons 8-9)
+
+[33mcommit a696325f4ad805c96bb59526dbaa3a508aa2a166[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 31 12:43:25 2020 +0300
+
+    Add new scoring (lesson 7)
+
+[33mcommit b61c9e3f32de26bd7eb04153fee2bde3303e5358[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 28 19:04:10 2020 +0300
+
+    Add new scoring (lessons 1-6)
+
+[33mcommit 5bb814ad5dcfb157ab8dd41820656735a7bc7ffe[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 31 12:28:30 2020 +0300
+
+    Lesson 7: introduce the single 'Easy' task
+
+[33mcommit e58e087709aae94020e501f3ed7b2bbacc3840d2[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 2 19:24:33 2020 +0300
+
+    Additional comments to lesson 10.2
+
+[33mcommit 79c95387b1ef07a816140f7f7883e14f66d9108b[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 2 19:17:28 2020 +0300
+
+    Add task to lesson 10.1 (#80)
+
+[33mcommit d956accb820bc68da2485515a6fd58eb86453319[m
+Author: Marat Akhin <akhin@kspt.icc.spbstu.ru>
+Date:   Tue Aug 25 19:21:49 2020 +0300
+
+    Working on #67
+
+[33mcommit fca1581703a44cee3815f0f72d6a5caffcafd680[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 24 18:43:25 2020 +0300
+
+    Lesson 7: require wrapping paragraph in markdownToHtmlList (see #91)
+
+[33mcommit 81fcdbdf58a8767ea977bb3524ef2b3fdbb84add[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 24 17:32:27 2020 +0300
+
+    Lesson 8.1: clarify findNearestCirclePair description (see #94)
+
+[33mcommit 79b4b368856367fe017db52b2f9b27b7f6c79e0d[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 24 16:49:51 2020 +0300
+
+    Lesson 5: remove wrong line from propagateHandshake description
+
+[33mcommit 0e242ec1883a8774486b908837ab93510341a6bf[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 24 16:47:56 2020 +0300
+
+    Lesson 5: make propagateHandshake description more clear (see #83)
+
+[33mcommit 0eac5157dd982de723124f1b7d5f09798d567917[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 24 16:27:44 2020 +0300
+
+    Lesson 7: clarified top20Words description & test (see #88)
+
+[33mcommit bb739e370abcd730500ab49e465d6630ef2e8be9[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 24 16:04:51 2020 +0300
+
+    Lesson 3: add tests with large numbers for isPalindrome (see #93)
+
+[33mcommit 74d05f4a18949239978ff17d48d8ab2bf9ea86ee[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 24 15:56:29 2020 +0300
+
+    Lesson 5: clarify hasAnagrams description & tests (see #84)
+
+[33mcommit 20555adf7869e6573d150a87b061aab094192147[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 24 15:46:09 2020 +0300
+
+    Lesson 5 tests: correct expect & actual order (see #96)
+
+[33mcommit 972b0c8a7bd252a537b9cd114f7b0a331a64c339[m
+Author: Marat Akhin <akhin@kspt.icc.spbstu.ru>
+Date:   Fri Aug 21 15:02:30 2020 +0300
+
+    Update to 20.0.0
+
+[33mcommit ea476d83d8b2e2de9ae4b45f92c1dc35eaf9b242[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Feb 28 00:33:21 2020 +0300
+
+    Type fix
+
+[33mcommit 3b8c3ff1dc01e7adaa8c2338916f62dbb151dc54[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Feb 12 17:06:31 2020 +0300
+
+    Lesson 11: fix Polynom rem() test
+
+[33mcommit 6a401a922f9cd8d3b597e9e5097b7375e536249c[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Feb 12 17:04:41 2020 +0300
+
+    Lesson 11: fix DimensionalValue unaryMinus() test
+
+[33mcommit e428f08d7d11a2f44d1a0b6d417b3a344722b5fe[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Nov 27 14:46:31 2019 +0300
+
+    Chapter 7: note about Unit
+
+[33mcommit f1a936621d381c1a1b093fa6d848dc78e43f7561[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Nov 27 13:11:04 2019 +0300
+
+    Fix typo
+
+[33mcommit 99021d00d7e2ebaf323060fc295e2a5711e43847[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Nov 21 09:47:32 2019 +0300
+
+    Fix typo
+
+[33mcommit a6ff4335c63e8c17761f7b261e113bd9bfe566e2[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Nov 21 09:46:55 2019 +0300
+
+    Chapter 6.5: remove five dots sample
+
+[33mcommit 3d4d3c744cb4a7028234a774e8fd6292a8ee5306[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Nov 21 09:40:56 2019 +0300
+
+    Chapter 6.5: fix five dots
+
+[33mcommit b5c1cfbacf3ec8cc92b5f3a73fcabd08ce99debf[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Nov 21 09:38:06 2019 +0300
+
+    Chapter 6.5: matchEntire
+
+[33mcommit 646906b257ca38f7815d83e412d531e844fc50f6[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Nov 21 09:35:20 2019 +0300
+
+    Typo fix
+
+[33mcommit 999234437e0512a62f24b41ec6693748c290777e[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Nov 15 10:46:50 2019 +0300
+
+    Chapter 7: add mini-part about local functions
+
+[33mcommit 97bc96928dfc92980f686334ef692432a53bc4be[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Nov 14 19:25:14 2019 +0300
+
+    Chapter 7: use same example as presentation & source
+
+[33mcommit 63cd22bb7be61e401bc461c564c1bbbbd886a737[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Nov 14 19:22:51 2019 +0300
+
+    Lesson 7: enhance example a bit
+
+[33mcommit c7854c7996206f21455a5e6b9b305592a73b147c[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Nov 14 10:27:45 2019 +0300
+
+    Chapter 7: add fragment about forEachLine & useLines
+
+[33mcommit a117302d10c13ff08cf7e259be9dea6ccf93b2ea[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Nov 6 11:11:50 2019 +0300
+
+    Map: cleanup (remove Unit return type)
+
+[33mcommit 27b933bc11b450116fac2d65b6d545b6e51bf664[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Oct 10 10:01:28 2019 +0300
+
+    Chapter 5: difficulty limit
+
+[33mcommit 423838118f7f7c0823bb21a6a763c1058194dba3[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Oct 10 10:00:21 2019 +0300
+
+    Chapter 4: difficulty limit
+
+[33mcommit 148ba62a42f8e9f3973d7fd6d5e82d9123a4ebcc[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Oct 10 09:56:48 2019 +0300
+
+    Chapter 3: difficulty limit
+
+[33mcommit 4c95130b865806f548f6bdc215767908e60fc093[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 2 10:57:08 2019 +0300
+
+    Escape <= in chapter 6.5 sample
+
+[33mcommit b18b9ed722ea8628c06db1402574c3e85d9ec0f0[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 15:37:53 2019 +0300
+
+    Hex: update comments
+    
+    (cherry picked from commit a0bfdfcaeeb11b076c548327bde52750cd35e917)
+
+[33mcommit 04097f970a9438bc8fdd5eef56a75faafc4d6816[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 15:16:17 2019 +0300
+
+    Add tips about Java SE 8/11/12
+    
+    (cherry picked from commit a58340fc1de66bcc68df3eda908e2425fc4b4e85)
+
+[33mcommit 784733340074f2dd3fdfc6ec12d8776516db9551[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Thu Sep 5 13:35:12 2019 +0300
+
+    Fix problems with lesson12.task1.TableFunctionTest
+
+[33mcommit ecd9bcc44b228af33c2626d14f31edd27648cc99[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Sep 4 15:52:01 2019 +0300
+
+    Fix flat/pointy inconsistency
+
+[33mcommit acabb12b9100e96ae2229594a5a6739fdd4f57f1[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 14:28:46 2019 +0300
+
+    Fix test for HexPoint.move()
+
+[33mcommit 905acbdc89da2cb6760cd370574f1c47210ef965[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 13:56:37 2019 +0300
+
+    Add more tasks & tests about hexes
+
+[33mcommit 8d293700d9bbd90e47c5804744afec71e7b280ed[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 13:37:17 2019 +0300
+
+    Add tasks about hex segment directions
+
+[33mcommit 2c30de6078798881a7c01b2d9b1649910e5a92c0[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Sep 4 13:20:58 2019 +0300
+
+    Add pathBetweenHexes problem to lesson8.task1.Hex
+
+[33mcommit 74c9c6712d4113eaa915290ca5589a3f5d48ed58[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 09:58:47 2019 +0300
+
+    Chapter 0: fix formatting
+
+[33mcommit 102cacc54afcac92eaee96a4320187c94825ec4e[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 09:57:36 2019 +0300
+
+    Chapter 0: 2018 > 2019
+
+[33mcommit 7510849b73ee737799a48036a0e7405dbe87c748[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 09:47:00 2019 +0300
+
+    Chapter 12: equals
+
+[33mcommit edf0077fc825af0ae0a4b4afb65a142ceec254c3[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 09:39:56 2019 +0300
+
+    Chapter 12: fix formatting
+
+[33mcommit 516648251ec15410f64da1fee1c67858ea29337b[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 09:39:28 2019 +0300
+
+    Chapter 12: add & remove
+
+[33mcommit 4b93dcec27bdcb415b206025da6f366fe9e0cc85[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 09:22:32 2019 +0300
+
+    Chapter 12: beginning
+
+[33mcommit a51b5a274f0c9919dbf69eebfdfb627b3acd40f5[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 09:09:22 2019 +0300
+
+    Chapter 12: exercises
+
+[33mcommit d53c9b3ab8c4d25cd2aab649469c39406b31de36[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 09:08:29 2019 +0300
+
+    Chapter 9: insert link to chapters 11 & 12
+
+[33mcommit a6a5104ad6df998e6b222436a42153fdd618420a[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Sep 4 09:06:56 2019 +0300
+
+    Chapter 11: minor
+
+[33mcommit c049e8140efe9601d862c0d19ef8818bfabda1b8[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Tue Sep 3 16:37:54 2019 +0300
+
+    Release 19.0.2
+
+[33mcommit 2e70d2858a8281a24d1c793e253870db6b03339b[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Tue Sep 3 10:36:00 2019 +0300
+
+    Chapter 11: rational functions & tests
+
+[33mcommit 534acca5b588facd3a5ab182985decb6533fa1cb[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Tue Sep 3 10:08:43 2019 +0300
+
+    Chapter 11: design rational number (data)
+
+[33mcommit c5a2a0037e0edad6cae287fd5695c31ee21bea54[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Mon Sep 2 20:06:25 2019 +0300
+
+    Make hashCode() be TODO() to have the tests fail with NotImplementedError
+
+[33mcommit d590676efb3f58e897086f5ac901e8f267fb5272[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Sep 2 17:11:56 2019 +0300
+
+    README: minor
+
+[33mcommit 5c2ddfcee75fe8d8f3e173c530ea018121f07cd4[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Tue Aug 6 21:30:43 2019 +0300
+
+    Fix #62 from kotoed
+
+[33mcommit 1fb2c5159d60039b44b10e27af1a2c6a6c691d69[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Aug 30 10:30:50 2019 +0300
+
+    Chapter 11: exercises part
+
+[33mcommit 11264e721032e53f60d5f24cd78f0bf06549dfc1[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Thu Aug 29 16:45:14 2019 +0300
+
+    New Kotoed URL
+
+[33mcommit 6ad71b288380e0276d036ed5de2dce0e97ab7929[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Aug 29 12:56:46 2019 +0300
+
+    Chapter 11: beginning
+
+[33mcommit a73d1cf46bc17671f475e9ab76797ab0dcfa1821[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Aug 29 11:53:53 2019 +0300
+
+    Add a short sub-chapter about program structure (#77)
+
+[33mcommit 0fa3d013380369304331684560f6f858398ae46a[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Aug 29 11:40:58 2019 +0300
+
+    Minor (#78)
+
+[33mcommit 424d388e59661be900f9aa1f67d26117170b6970[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Aug 29 11:37:01 2019 +0300
+
+    A bit more references (#58)
+
+[33mcommit b402bc66213bd183330a4000f2d8e23498b9aa59[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Aug 29 11:29:33 2019 +0300
+
+    Provide some additional hints / references, see #58, #65
+
+[33mcommit 18d9e7311477ec27f0b8c025d26dc5cdef674092[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Tue Aug 27 12:54:56 2019 +0300
+
+    Chapter 8: update exercises part
+
+[33mcommit 854c384b93f4a60d38a687c9bbecd0643965ed76[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Tue Aug 27 12:41:02 2019 +0300
+
+    Change difficulty of hexagonByThreePoints to impossible
+
+[33mcommit 8f4d626a32f9b001fb0a22d10022457e8a1408f6[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 26 10:38:43 2019 +0300
+
+    Hex: minor
+
+[33mcommit c803020676fa96aa320b9bb2bc34ea42b81917bb[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Aug 22 11:59:33 2019 +0300
+
+    Lesson 12 (data containers): add OpenHashSet task
+
+[33mcommit c9854ab19a7ec680e0b2d8c198d72e1b3ee21c0a[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Aug 22 11:23:30 2019 +0300
+
+    Add vorpal-research maven repo to fix bom importing
+
+[33mcommit 38f22a0814a1d643688deb7362abb6a3c9b4949e[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Aug 22 11:15:48 2019 +0300
+
+    Convert size() into size (SinglyLinkedList, lesson 12 example)
+
+[33mcommit 3b560fe41a0253b3422ed9c5be4f59b173401e2a[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Aug 22 11:06:42 2019 +0300
+
+    Translate & enhance comments to SinglyLinkedList example (lesson 12)
+
+[33mcommit deb13efd346e8eb7a10d7162e5d998b7da2d6207[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Mon Aug 5 18:45:30 2019 +0300
+
+    Better examples for lesson6.flattenPhoneNumber
+
+[33mcommit f83a99a9167a9b30e1a3c44812f3dea11e3fd357[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Mon Aug 5 15:58:58 2019 +0300
+
+    New version scheme + kfirst-bom
+
+[33mcommit 276930646125e7e6182ffea2f6d61767093df1cc[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Jul 31 12:44:52 2019 +0300
+
+    Lesson 12 (data containers): add other tests for train timetable task
+
+[33mcommit 37b25b0e8dbd597477369553207a7ecb14b47167[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Jul 31 11:30:06 2019 +0300
+
+    Lesson 12 (data containers): add some tests for train timetable task
+
+[33mcommit 4a02685faaf20c05ab440bc9fe5ee22a7e155a38[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Jul 31 11:19:26 2019 +0300
+
+    Lesson 12 (data containers): add train timetable task & stub for tests
+
+[33mcommit c99cf0a509156d5e6f6cda42ab998bed04a56a4f[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Jul 31 10:19:32 2019 +0300
+
+    Minor (table function)
+
+[33mcommit 87890f435f9ec1bc5eef975f08604a23684f696c[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Jul 29 14:35:32 2019 +0300
+
+    Lesson 12 (containers): add task about phone book
+
+[33mcommit 441300fa794603c98fc6e210a9497833c123c7e5[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Jul 26 11:35:45 2019 +0300
+
+    Lesson 11 (data classes): add task about Complex numbers
+
+[33mcommit b851853201e71dfdd059e56acaf2605d715eab42[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Jul 25 10:52:39 2019 +0300
+
+    Lesson 11 (data classes): add task about fixed-point numbers
+
+[33mcommit 3c3bf90cf342b6b47bc6cda8677741b5e9ba29c7[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Jul 24 11:15:39 2019 +0300
+
+    Lessons 11 & 12
+
+[33mcommit 2f99bceb846ff36309482bc2caf72169b1ca3aa2[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Tue Jul 23 11:23:30 2019 +0300
+
+    Lesson 12 (containers): add task about table function
+
+[33mcommit a99f8074db4d61130a1e5510433dd5e51bc2f0d9[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Jul 22 10:54:55 2019 +0300
+
+    Lesson 11 (data classes): add task about big integers
+
+[33mcommit 79e94558187cdc7438e223678920f4d8b286a7ed[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Jul 22 10:40:12 2019 +0300
+
+    Lesson 12: add header comment to List example
+
+[33mcommit af8e7629f7e5e22440f3ae0fb2e19d8dd944cb68[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Sun Jul 21 21:15:26 2019 +0300
+
+    Add stubs for chapters 11 & 12
+
+[33mcommit ba7fdb1c966476d11ee18e0b2585e32d5929f139[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Sun Jul 21 21:13:07 2019 +0300
+
+    Introduce lesson 12 (containers): list example from FromKotlinToJava
+
+[33mcommit 54546ed88741798afb6967ff4d8adf2af7fa5055[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Sun Jul 21 21:01:03 2019 +0300
+
+    Lesson 11 (data classes): add task about dimensional value
+
+[33mcommit 873b9b65b1b39db38d374e49eb5d4694a388ce47[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Sun Jul 21 12:34:57 2019 +0300
+
+    Lesson 11 (data classes): add task about Polynom
+
+[33mcommit 8206308b2e8419c7aad8e71ce82932a2bcd14bb1[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Sun Jul 21 12:22:18 2019 +0300
+
+    Introduce lesson 11 (data classes): rational example from FromKotlinToJava
+
+[33mcommit 679e2e486fcf937b785d72a76880c88520aef0a3[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Jul 19 23:37:38 2019 +0300
+
+    Lesson 4: replace Double with Int for most of tasks (#50)
+
+[33mcommit d5a607e3e6ad583ec871251b6c25552c7d1b2802[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Jul 19 23:29:39 2019 +0300
+
+    Add stub for hexagonal variant of geometry lesson (#68)
+
+[33mcommit 2ebab1a3b1c44b2fbb8419add67ddde5cc1da8e1[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Jul 19 22:25:35 2019 +0300
+
+    Add extra tests for countSubstrings (#76)
+
+[33mcommit 15345f64f604967a06e145133c99158da91542bc[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Jul 19 22:12:09 2019 +0300
+
+    Cleanup code accordingly to 1.3.x inspections (#79)
+
+[33mcommit 793e01e94daa014ab5ebe919b9ae21ad804c79fc[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Jul 19 22:11:28 2019 +0300
+
+    Update inspection configuration
+
+[33mcommit 6f138520739161b5864c8f7e3cd76c41368bab7c[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Jul 19 21:55:41 2019 +0300
+
+    Fix forgotten code style problems (#53)
+
+[33mcommit 91fca7d27409b4a76f77b0d1160de6182fef6b29[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Jul 19 21:51:59 2019 +0300
+
+    Migrate to kotlin 1.3.41 (#79)
+
+[33mcommit 2e85223e40d46a43570febffad8c1cad087fc13b[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Jul 19 21:43:13 2019 +0300
+
+    Add official kotlin.code.style property to pom.xml (#53)
+
+[33mcommit 1f8995a97fa12718ec5d8704e5a39ccb7e541083[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Mon Jul 15 18:27:10 2019 +0300
+
+    bestHighJump clarification
+
+[33mcommit 3438466bf09d61b952ecc53881a91cdec2910d9d[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Mon Jul 15 16:33:25 2019 +0300
+
+    Rearrange lesson5 tasks. Fixing #62
+
+[33mcommit 77edc064404a37eef9765d52aae7cd7238eb67fe[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Jul 12 10:41:32 2019 +0300
+
+    Add sub-chapter about binary prefixes (KiB, MiB, etc.) fixing #59
+
+[33mcommit 4500bda3927d41b5e07dc0d8b0b456c502e3cf47[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Jul 12 10:28:31 2019 +0300
+
+    Forbid using standard implementations of sin/cos in lesson 3 fixing #66
+
+[33mcommit fc1de29e757846921b5dfc14e883b170680fe1ed[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Jul 12 09:59:37 2019 +0300
+
+    Migrate to official code style thus fixing #53
+
+[33mcommit d50b6c34da1ca7d0216d0a783af3f79028d80f8d[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Jul 12 09:49:49 2019 +0300
+
+    Update code style configuration, see #53
+
+[33mcommit 85f19b2cf963b4b2351452eabffd44e9a8009e1b[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Jul 12 09:44:44 2019 +0300
+
+    Make digitNumber an easy task thus fixing #55
+
+[33mcommit 4424cdd929d665015ff734002217e933ff1e1ac7[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Jul 12 09:44:15 2019 +0300
+
+    Enhance .gitignore
+
+[33mcommit 0d47bfbad5b1340ec61981e4569bed2d479a6416[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Dec 3 10:54:19 2018 +0300
+
+    Chapter 7: add piece about certification / examination
+
+[33mcommit 223e2ee193c87f7d7fbd1754be1ee72c5dc033f1[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Thu Nov 8 12:38:00 2018 +0300
+
+    Fix TODO in chapter05
+
+[33mcommit c57c8ad68f8cb9150a8223096e59a87c391a3dca[m
+Author: Kirill Gagarski <kirill.gagarski@gmail.com>
+Date:   Sun Oct 28 19:01:51 2018 +0300
+
+    Clarify whoAreInBoth. Resolve #61.
+
+[33mcommit a0150ae4804556cccc0a17c0922a8558317b438d[m
+Author: Kirill Gagarski <kirill.gagarski@gmail.com>
+Date:   Sun Oct 28 18:56:07 2018 +0300
+
+    Forbid stdlib functions in convertToString/decimalFromString. Resolve #60.
+
+[33mcommit 3a6687ba96c629cf71242d6e01aaeb838551232b[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Thu Oct 25 18:21:41 2018 +0300
+
+    Fix description for flattenPhoneNumber
+
+[33mcommit 1d4321f4b144b9697d99c416a0a53f4e7160a9f9[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Thu Oct 25 18:20:35 2018 +0300
+
+    fix tests for dateDigitToStr
+
+[33mcommit 13d926c85cbe1e88779b50e8a0024773ad8805e0[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Tue Oct 23 23:01:33 2018 +0300
+
+    Test for printDivisionProcess fixed
+
+[33mcommit 7e49be54edf864d27204f66dfa2b7435bd1b88a3[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Oct 11 10:26:51 2018 +0300
+
+    Fix a bunch of inspection messages
+
+[33mcommit f8c7cc605eed21e1e28d695803415e419024b037[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Oct 10 13:59:20 2018 +0300
+
+    Sort results in lesson5.buildGrades test
+
+[33mcommit 6712b6c575e94145397eafb3f52093c1571624ff[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Oct 8 11:45:09 2018 +0300
+
+    Lesson 1 rename: grad -> deg
+
+[33mcommit 93d04e05ed7954612471c6d47544819874dc6cfb[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Oct 8 11:37:23 2018 +0300
+
+    Clarify pow description
+
+[33mcommit 377dd4c8c7080d1802ac1733460e828cd9e43c09[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Mon Oct 1 01:16:06 2018 +0300
+
+    markdownToHtmlLists description: example fixed
+
+[33mcommit 6358f6b19f598de7919cabe51846d0894cd3acb9[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Sat Sep 22 12:31:48 2018 +0300
+
+    Lesson 3: fix isPrime test
+
+[33mcommit b7267aefafc08c74cd71503448ced59bc7148abc[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Tue Sep 18 19:51:14 2018 +0300
+
+    Typo fix
+
+[33mcommit 281831a898c15dc33084469df0a25f8281c54506[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 6 23:30:38 2018 +0300
+
+    Chapter 0: add link to configuration instruction and FAQ + minor fixes
+
+[33mcommit 82ef42c5b4ead6798ad9fa443e5b32e68af4790e[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Thu Sep 6 16:17:54 2018 +0300
+
+    0.1.17 release (year 2018)
+
+[33mcommit 6d1973df2a302969ee845981eca919834a12a4b6[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Thu Sep 6 14:40:02 2018 +0300
+
+    0.1.16 release (year 2018)
+
+[33mcommit d34275ff2c4bee90ec606a80f295b600b10a4810[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Thu Sep 6 14:28:51 2018 +0300
+
+    0.1.15 release (year 2018)
+
+[33mcommit 2cb83743b2f0d24d63ea6378b0f632faa50cd2d8[m
+Merge: 8ddd53e 416434a
+Author: Marat Akhin <Marat.Akhin@gmail.com>
+Date:   Thu Sep 6 12:39:29 2018 +0300
+
+    Merge pull request #46 from Kotlin-Polytech/references
+    
+    Add references to book & kotlinlang to README
+
+[33mcommit 8ddd53e2056814909cb350057191bc85a5d47e70[m
+Merge: 9405a19 c430050
+Author: Marat Akhin <Marat.Akhin@gmail.com>
+Date:   Thu Sep 6 12:38:28 2018 +0300
+
+    Merge pull request #45 from Kotlin-Polytech/license
+    
+    Add CC BY-SA license
+
+[33mcommit 9405a194f8cd855d3ffdf845050c6389592d064b[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 6 11:24:22 2018 +0300
+
+    Typo fix (chapter 5)
+
+[33mcommit 4fba2e8b9a8aa6572e10a4d2a0feab8dbbbdccc6[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 6 11:16:27 2018 +0300
+
+    Minor README fix
+
+[33mcommit bf0af3cdae351283d7ef1ec2e8c7496c0663417e[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 6 11:16:11 2018 +0300
+
+    Minor README fix
+
+[33mcommit 416434ac50281e4bff9ab383259f1ce18e5628cb[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 6 11:01:35 2018 +0300
+
+    Add references to README
+
+[33mcommit c4300505b4c04fc76875c2927860c83ddd8872da[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 6 10:50:31 2018 +0300
+
+    Add CC BY-SA license
+
+[33mcommit 268aa40002d14c9d29f2d080de1313e069cff693[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 6 10:14:12 2018 +0300
+
+    Chapter 0: minor addition (community)
+
+[33mcommit 92860f3a8fa5073ef880ade4c581387589abf8f6[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 6 10:09:58 2018 +0300
+
+    Chapter 0: minor fix (2018) + slack
+
+[33mcommit 9b1256ccf971f5a8437397a10124a81e1fa71b09[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 6 09:48:29 2018 +0300
+
+    Chapter 6: remove section about 'null' because it's covered by chapter 5
+
+[33mcommit 033598ebc28cdf935d14c5cf42b17454d0dd2aeb[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 6 09:47:46 2018 +0300
+
+    Chapter 5: small enhancement
+
+[33mcommit 08f36f958b1327778426dfef8d63741ae8505f8e[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 6 09:44:27 2018 +0300
+
+    Update chapter00 to 2018 version and situation :)
+
+[33mcommit afca2ba80c0623f6d0052860d1e5a880a986f33e[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Sep 5 18:08:04 2018 +0300
+
+    0.1.14 release (year 2018)
+
+[33mcommit d76a5bdc50e4174d8e61ae96cef8bc6cdc2bb64c[m
+Merge: 0da2e9b 8ea5066
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Tue Sep 4 19:52:48 2018 +0300
+
+    Merge branch 'master' of github.com:Kotlin-Polytech/KotlinAsFirst
+
+[33mcommit 0da2e9bdce881de52abc519fbf48b8dc0941a710[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Tue Sep 4 19:52:42 2018 +0300
+
+    Add alternative impl for removeFillerWords
+
+[33mcommit 8ea5066083245a607d8f7edd07d0d22ca0f8ba51[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Tue Sep 4 10:50:08 2018 +0300
+
+    Update inspection configuration
+
+[33mcommit 960261224cd94eb58a718ba9a56525fc29e5faff[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Mon Sep 3 13:52:38 2018 +0300
+
+    Fix variable name for `unresolved reference`
+
+[33mcommit ad5a09996da47b1c6c38cd598e7814bd4f315937[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Sep 3 12:20:33 2018 +0300
+
+    Lesson 4: add vararg simple example
+
+[33mcommit 3ec95c051230340b35e0dc4939c9ab001dcbc922[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Sep 3 12:14:52 2018 +0300
+
+    Lesson 3: isPrime implementation from Coursera
+
+[33mcommit f8a1c3080c5457bed47c857fdc87c496a754b7b7[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Sep 3 12:10:19 2018 +0300
+
+    Lesson 2: additional examples
+
+[33mcommit c6638b00c0642e3608509eff74db7eb63f1b3323[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Aug 30 15:50:42 2018 +0300
+
+    Lessons 4-7: insert protection from non-obvious inspection from 1.2.70
+
+[33mcommit 506f4c8b7ab5680d291cddf9ca7384a828575b47[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Aug 30 15:48:01 2018 +0300
+
+    Lesson 5: remove obsolete TODO
+
+[33mcommit 00f7d3cf165389875819941e280b6c71d53d368a[m
+Merge: a78bba6 4b0bd4d
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Tue Aug 28 19:29:07 2018 +0300
+
+    Merge branch 'master' of github.com:Kotlin-Polytech/KotlinAsFirst
+
+[33mcommit a78bba6f091a74ec0ee24e15158874a613e99d9a[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Tue Aug 28 19:27:27 2018 +0300
+
+    Add the knapsack problem to lesson 5
+
+[33mcommit 4b0bd4d3585c362ffc8b5693832c38eeb422a800[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Aug 24 13:31:39 2018 +0300
+
+    Change lesson 1 main function to return 42.0
+    
+    To be used in "Configuration instruction" for Coursera as check
+    that everything was configured correctly :)
+
+[33mcommit 72622287164cfdf2ab5d3c987ccbb526b86c5f47[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Aug 24 13:29:00 2018 +0300
+
+    Downgrade printDivisionProcess to Hard difficulty
+
+[33mcommit c87d65e43e5ee40aa29e46fcea48fedb05f04388[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Aug 22 14:52:11 2018 +0300
+
+    Prepping for 2018 release
+
+[33mcommit 2c5dd39a92d76e3fb5e4708939123596bc56a772[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Aug 22 10:12:04 2018 +0300
+
+    Lesson 1: add a test (Coursera sync)
+
+[33mcommit b83d552e8bd118fa13f69ee6b6facee32f349913[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 13 10:58:34 2018 +0300
+
+    Lesson 1: increase test precision
+
+[33mcommit 96028c6b53d396db059c48ece6d5b4f24d54a2ea[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 13 10:52:00 2018 +0300
+
+    Suppress UNUSED_PARAMATER in lesson5
+
+[33mcommit ccf29b2dd1a6303fe16f68e81d3af9f04b0f46bd[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 13 10:51:18 2018 +0300
+
+    Duplicate sqr
+
+[33mcommit 56c8a48c18f1d7dcad2ba10c3789aa1459d8ee70[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 13 10:42:18 2018 +0300
+
+    Chapter 1: function rename
+
+[33mcommit 9083091fdcc21b0084f2d4520caac610eccdc2c6[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Thu Aug 9 20:15:52 2018 +0300
+
+    Minor tweaks again
+
+[33mcommit 553eb72f2aa4d48d04caf309da3b3bd685f9502c[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Thu Aug 9 15:30:28 2018 +0300
+
+    Minor tweaks
+
+[33mcommit cd6133ddc729481e034e67b15a6755aa6838ea09[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Aug 8 18:26:02 2018 +0300
+
+    Even moar problems for lesson 5
+
+[33mcommit 70415c0ba5fc488b323731a6938ee0944f643db8[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Tue Aug 7 20:11:43 2018 +0300
+
+    More problems for lesson 5
+
+[33mcommit b574557b3645bd1ab9db77ded4b2d1c3a136785a[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Aug 1 17:44:07 2018 +0300
+
+    lesson5:subtractOf()
+
+[33mcommit cb682cf86021a5b150618cb92220bce22f7aa5e9[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Aug 1 17:33:34 2018 +0300
+
+    lesson5:containsIn()
+
+[33mcommit e7e500162861df9c39b23b8b7f30143bf38d343d[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Aug 1 15:33:45 2018 +0300
+
+    lesson5:findCheapestStuff()
+
+[33mcommit 7e84f5d969bdfe00f26fbe4ce89795f89e9cff00[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Aug 1 14:42:47 2018 +0300
+
+    m
+
+[33mcommit d0c4178dbdb6c0c66814f13ce97e30ec9eb5a99b[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Tue Jul 31 19:28:26 2018 +0300
+
+    lesson5:buildGrades()
+
+[33mcommit 9a00f0a09d821067d831a3041fd5700349190c2d[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Tue Jul 31 18:47:16 2018 +0300
+
+    lesson5:averageStockPrice()
+
+[33mcommit 9823e5e4335f06aede8f49e878a9913045790fd7[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Mon Jul 30 19:33:37 2018 +0300
+
+    Started on the tasks for lesson 5
+
+[33mcommit ed1d69120f8995bdd87b3a551c385f5138b79c9d[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Jul 9 13:49:58 2018 +0300
+
+    Lesson 3: better tests for digitCountInNumber
+
+[33mcommit a5a3a24bbf2c52f9d9edd92d95a5ad7d44a1af8e[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Jul 5 23:20:31 2018 +0300
+
+    Lesson 3 test change: isPrime (make same with Coursera)
+
+[33mcommit 6592ffefac7c04e8e31da3427847f6ab320190aa[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Fri Jul 13 17:42:33 2018 +0300
+
+    Stuff about null (chapter 5)
+
+[33mcommit 5f5cd0ff3a564c6ccf833e7e825b19477c9e164e[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Thu Jul 12 20:11:26 2018 +0300
+
+    Syncing with Coursera stuff for chapter 05
+
+[33mcommit 70b84f411f131ddeb153a1504fdf6456f4acdda2[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Tue Jun 26 11:06:46 2018 +0300
+
+    Chapter 7: examination TODO
+
+[33mcommit 963d903761fd5fad9f01c54b4e440f1a26be650e[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Jun 25 13:01:05 2018 +0300
+
+    Chapter 7 minor: more accurate about constructors
+
+[33mcommit f45a470b53595d7b903c650c01a108ca8fae7a5c[m
+Author: Marat Kh. Akhin <Marat.Akhin@gmail.com>
+Date:   Thu Jun 21 12:01:45 2018 +0300
+
+    Stuff about sets
+
+[33mcommit ff27a5e1b57a2e91c39bbc06271df5572866ce4b[m
+Author: Marat Kh. Akhin <Marat.Akhin@gmail.com>
+Date:   Wed Jun 13 12:28:23 2018 +0300
+
+    m
+
+[33mcommit 992207ef35c4a1759099bcc209eb4d0a086438ed[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Jun 15 11:25:36 2018 +0300
+
+    Chapter 6: minor
+
+[33mcommit bdd978ef9218b6356c899bb53035125bd59f5d77[m
+Author: Marat Kh. Akhin <Marat.Akhin@gmail.com>
+Date:   Tue Jun 12 01:45:14 2018 +0300
+
+    Done with maps, sets are next
+
+[33mcommit 9ccc8867cefa5e6c0bc8a0bf67fce020b38a4edb[m
+Author: Marat Kh. Akhin <Marat.Akhin@gmail.com>
+Date:   Tue Jun 12 00:05:22 2018 +0300
+
+    m
+
+[33mcommit 4746525d2867d6af95736e4b7717e4061f19d071[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Sat Jun 9 16:06:12 2018 +0300
+
+    Continue work on chapter 05
+
+[33mcommit 53e6ac1b6038c6f62a942f85eb534cfd7849635b[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Sat Jun 9 10:14:33 2018 +0300
+
+    Replace java.lang.Math with kotlin.math (when possible)
+
+[33mcommit e1119fd657a66e75613156222d6ce09ffa87fe41[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Thu Jun 7 20:46:05 2018 +0300
+
+    Start work on chapter 05
+
+[33mcommit af18e92dcb8b9b6c2a14919185c2b9ab4e36ff40[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Jun 4 12:35:59 2018 +0300
+
+    Refactoring (Coursera): reorder lessons (tutorial chapters)
+    
+    Mandatory: 1,2,3,4 as before, 5 maps (new), 6 io/regex, 7 files;
+    Additional: 8 simple classes, 9 interfaces/classes, 10 parse/html
+
+[33mcommit 910a696ba2b555233cc4b9249cdd908eddd492a2[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Jun 4 12:27:18 2018 +0300
+
+    Refactoring (Coursera): reorder lessons (finish), *new -> *
+    
+    Mandatory: 1,2,3,4 as before, 5 maps (new), 6 io/regex, 7 files;
+    Additional: 8 simple classes, 9 interfaces/classes, 10 parse/html
+
+[33mcommit 63247584e1a9cff7cfd041423624124d350f77e0[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Jun 4 12:23:08 2018 +0300
+
+    Refactoring (Coursera): reorder lessons
+    
+    Mandatory: 1,2,3,4 as before, 5 maps (new), 6 io/regex, 7 files;
+    Additional: 8 simple classes, 9 interfaces/classes, 10 parse/html
+
+[33mcommit 9b556ff9b6ded1461931cc1992ef23159c016600[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Jun 4 12:01:14 2018 +0300
+
+    Style fixes in chapter 8
+
+[33mcommit cd146ba6f4a150dd78d230027e2d083d189f54af[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Jun 4 11:58:30 2018 +0300
+
+    Tutorial typo fix
+
+[33mcommit b954ff50284667d8a8482aeae0633b76ec81594d[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed May 23 14:36:50 2018 +0300
+
+    Delete pull_request_template.md
+    
+    (it is false for base project)
+
+[33mcommit 489e8163124bd703e942f8ee69c627e6df959098[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri May 11 11:10:48 2018 +0300
+
+    Minor text fix
+
+[33mcommit 29d7bfa34e874ceec46410fb356ad90d8ad0bfbe[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon May 7 21:25:06 2018 +0300
+
+    Add assertThrow tests for lesson 5 tasks
+
+[33mcommit 6d95cbd9b743318f88d8f6419c227526e411aa55[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon May 7 21:23:37 2018 +0300
+
+    Upgrade to kotlin 1.2.41
+
+[33mcommit 418c192022926017e07dcfc2f930c638bd139583[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Wed Apr 11 21:02:42 2018 +0300
+
+    More tests for date-related tasks
+
+[33mcommit 62e506339d8057b21d1e25d8b26b88b855ddfe5c[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Wed Apr 11 20:07:40 2018 +0300
+
+    m
+
+[33mcommit 57aaddd106f1a5799d29b64b94877562aeb97b9a[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Wed Apr 11 20:06:13 2018 +0300
+
+    daysInMonth to lesson2
+
+[33mcommit 5997a9dbd210d155d57b3f1c9a8ce3e7a3c6d595[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Wed Apr 11 20:03:05 2018 +0300
+
+    dateStrToDigit/dateDigitToStr + new daysInMonth task
+
+[33mcommit 8dba0f2792dc3b60d88782051c65386dd779669d[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Wed Apr 11 19:47:54 2018 +0300
+
+    mostExpensive clarification
+
+[33mcommit 120fe45cec848cbd6704b71911ea8d085042d547[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Wed Apr 11 19:45:01 2018 +0300
+
+    factorizeToString clarification
+
+[33mcommit 8df3a03cc45bd6121e304841a2e63a075a216f2f[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Wed Apr 11 19:36:29 2018 +0300
+
+    transliterate clarification
+
+[33mcommit f1d5f471f42aade2594fedcb460f2f2c422883b8[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Wed Apr 11 15:44:31 2018 +0300
+
+    m
+
+[33mcommit 56e44f1f9a9e96eff99150988263f3e50f887a6a[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Apr 9 17:42:01 2018 +0300
+
+    Forbid use of strings in lesson3 tasks
+
+[33mcommit 9b47afe9d0c87e0e2909e9df4079f9608e8e0c50[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Apr 9 17:39:17 2018 +0300
+
+    Add more tests for squareBetweenExists (lesson 3)
+
+[33mcommit 2b1236ea067b3e99d7f8dd3330377ccfe9562c0c[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Apr 9 17:30:51 2018 +0300
+
+    Lesson 2.2: reorder tests
+
+[33mcommit b1b1dae6e40a01a96a8eed1d3e891179daeaa400[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Apr 9 17:28:47 2018 +0300
+
+    Line init: assert -> require
+
+[33mcommit e7cd725b25cd5fc31acc3d35117aed737df878f4[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Apr 9 17:23:22 2018 +0300
+
+    Add task about Collatz hypothesis (lesson 3)
+
+[33mcommit c2e26d4a63f7f247225d81d85b84f3e3997919a8[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Apr 9 17:11:26 2018 +0300
+
+    Add more clarification & test for top20 task (lesson 8)
+
+[33mcommit d376cbde423e21f187f6aff14561f02d580751d1[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Dec 12 21:43:47 2017 +0300
+
+    DSL: own (very simple) DSL builder
+
+[33mcommit 29789540b69cbb334520c38d33db73e2f8cf702f[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Dec 12 21:36:20 2017 +0300
+
+    DSL: example of HTML generation using kotlinx.html
+    
+    Former-commit-id: 0ee969dd57594df40864677f6d84ac8276a772ed
+
+[33mcommit 6a1aca2c70e3ed2e38c7aef29e4cb76cad576228[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Dec 12 21:20:09 2017 +0300
+
+    DSL: straight-forward example of HTML generation
+    
+    Former-commit-id: 82d769d64810730480c06377b49dd920990aaa7a
+
+[33mcommit 8859e720ed4f1f0cb5488943d4d9fbe737e8c8db[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Wed Dec 6 00:01:16 2017 +0300
+
+    Extra test for lesson 8.5
+    
+    
+    Former-commit-id: 3b4c48f5dba5a2b24d06077ad41fa0c26ee75446
+
+[33mcommit d73964c859eea26c407b161e1386715ac1740840[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Tue Nov 28 23:16:56 2017 +0300
+
+    Tutorial Lesson 7: array of arrays -> list of lists
+    
+    
+    Former-commit-id: f88f583fd2cac3c510c80b6f01436a2d067e9d96
+
+[33mcommit fe92b8154efed5edd5c189b36b43d8fd3dda7f53[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Tue Oct 31 23:17:44 2017 +0300
+
+    Enable assertions in maven surefire plugin
+    
+    
+    Former-commit-id: 0c6fb09ac867c61b121ed4fc6391ed7efbfe489e
+
+[33mcommit 887dc7fd498168f7b3a77957395218cc33ce6f0e[m
+Author: Kirill Gagarski <gagarin.gtn@gmail.com>
+Date:   Thu Oct 5 23:08:07 2017 +0300
+
+    Create pull_request_template.md (#9)
+    
+    * Create pull_request_template.md
+    
+    * punctuation
+    
+    
+    Former-commit-id: 86775fdb7dda4f24f5851f01b576d6afea319b94
+
+[33mcommit 58524df0618420f41507ead4730d1cab2d742d21[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Sep 14 12:41:58 2017 +0300
+
+    Support release version of JUnit 5
+    
+    
+    Former-commit-id: 97e1ca7792e8feeb8b7a309740d578493ad5747c
+
+[33mcommit 8db580225e082df6844ca77cbb2103b63701dab6[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Mon Apr 9 22:28:31 2018 +0300
+
+    Removing slides
+
+[33mcommit a8350596ffaa9feb7249ae85a94dd57b00e59007[m
+Merge: 37f6a6f c520bad
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Sep 6 13:06:28 2017 +0300
+
+    Merge branch 'master' of http://github.com/Kotlin-Polytech/KotlinAsFirst
+
+[33mcommit c520bad5033218f2930ed572deef0eafe574b3bf[m
+Author: Marat Kh. Akhin <Marat.Akhin@gmail.com>
+Date:   Tue Sep 5 20:42:06 2017 +0300
+
+    And some more...
+
+[33mcommit ac405afba8d834f8152db1053b3df7d969679367[m
+Author: Marat Kh. Akhin <Marat.Akhin@gmail.com>
+Date:   Tue Sep 5 18:58:44 2017 +0300
+
+    More words about Kotoed and stuff
+
+[33mcommit 94be59a1a622ceb4b4b61cde0b6d2726503fb827[m
+Author: Marat Kh. Akhin <Marat.Akhin@gmail.com>
+Date:   Sun Sep 3 20:51:10 2017 +0300
+
+    Some words about Kotoed and stuff
+
+[33mcommit 37f6a6fb25fffb670903a4a91bb92b11f6bf0e70[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Thu Aug 17 19:32:22 2017 +0300
+
+    kfirst-runner-plugin -> 0.1.3
+
+[33mcommit 3c0984cf5c7e6d343b80e71464d550381b91999c[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Thu Aug 17 16:46:04 2017 +0300
+
+    kfirst-runner-plugin -> 0.1.2
+
+[33mcommit 42d46f7e9470e733c2421452aa5bbdce4134b1cb[m
+Merge: ac7129d 4b42124
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Aug 16 14:55:08 2017 +0300
+
+    merge
+
+[33mcommit ac7129dfefffefba8ac0c699bb94d1e7e0010617[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Aug 16 14:53:30 2017 +0300
+
+    Add kfirst-runner-plugin to pom.xml
+
+[33mcommit 4b42124205904db1ff774f443d031f0329949d0d[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 15 12:50:30 2017 +0300
+
+    Inspections: some style issues upgraded to weak warnings
+
+[33mcommit b27e7010de6744f43514aaff91211345527654e1[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 15 12:41:30 2017 +0300
+
+    Upgrade Kotlin to 1.1.4 and JUnit 5 to RC2
+
+[33mcommit 9c8744e018e58f6e65d0de49afb1f8de02df7578[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 3 10:07:01 2017 +0300
+
+    Lesson 6: add a pair of tests
+
+[33mcommit 9bf4d576f5e4af660897211dee22084e773a4397[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 3 10:03:23 2017 +0300
+
+    Lesson 8: add a pair of tests
+
+[33mcommit 036da33fcaa5ed0a303b6b2c5309e91e9331478d[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 3 09:57:27 2017 +0300
+
+    Lesson 8: convert non-unit functions to expression body
+
+[33mcommit 85c2794e4a19ea5f7448f621ef0f858cd204f871[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 3 09:55:50 2017 +0300
+
+    Correct line exact comparison, introduce approximate comparison
+
+[33mcommit c37c23b6cb70282f52b2564a9418775690f66fe3[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 2 11:13:39 2017 +0300
+
+    computeDeviceCells: minor comment fix
+
+[33mcommit 87bc9dc8a1b474309d45d27b492ab0e071d9d568[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 2 11:09:36 2017 +0300
+
+    Synchronize extra chapter with examples
+
+[33mcommit 25f244e0edb89167b25295a9c75c3af6c49f9d68[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 2 11:08:31 2017 +0300
+
+    Chapter 4: minor comment
+
+[33mcommit 54e6939e26d5b77465dc56f181ce0a0f413809a9[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 2 11:07:15 2017 +0300
+
+    Synchronize chapter 7 with examples
+
+[33mcommit 3c5949d76fcc71e8c3709f8c308b5f6ec7b7be1c[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 2 11:06:24 2017 +0300
+
+    Synchronize chapter 6.5 with examples
+
+[33mcommit be2e6d1697af3398906fcaccb2d4a37590063d57[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 2 11:02:34 2017 +0300
+
+    Synchronize chapter 4 with examples
+
+[33mcommit 87891ec95c3fc851e0179127cf0da84cb81f78e8[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 2 10:56:25 2017 +0300
+
+    Synchronized chapter 3 with examples
+
+[33mcommit 36447efb4eeaf61e53830966ab0108ef4dc5d040[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 2 10:53:40 2017 +0300
+
+    Change line representation to normalized one
+
+[33mcommit d1c4a0c1f59a2c7617083e77c6f112972cdb62de[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 2 10:39:34 2017 +0300
+
+    Additional comments to Triangle
+
+[33mcommit 22522004d94bcce91a8905adb28fc1326a282d7f[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 1 18:35:43 2017 +0300
+
+    Tests: code cleanup
+
+[33mcommit 9b8fcd2909664c8243881893f8ca7873b1824c1b[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 1 14:48:19 2017 +0300
+
+    Lesson 6.1: correct comparison of triangles
+
+[33mcommit af462ca196337f7ae89518bc0387b6eef2fdc128[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 1 13:51:29 2017 +0300
+
+    Lesson 6.1: assertion for line angle (0..PI) + correct comparison
+
+[33mcommit 89209ff2f03e8c7fbc74f6535afe83bbfd7e0e1c[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 1 13:42:14 2017 +0300
+
+    Lesson 6.1: add equals / hashCode to Segment
+
+[33mcommit 23e967b00157b44154858b4b9f2fe2e764811f2a[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 1 13:40:35 2017 +0300
+
+    Can be private inspection is also disabled
+
+[33mcommit 7c5fed35bc7c9b3a9baaa9a6da09e5159c340f86[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 1 13:36:14 2017 +0300
+
+    Add customized inspection profile, see issue #15
+
+[33mcommit 15ac9dab1a2ab14700b6b29a32a93fc19a66849f[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 21:37:58 2017 +0300
+
+    Lesson 6.1: circleByThreePoints() made hard
+
+[33mcommit 2c46f85a6e8361356a7a8c71c6838917022fb7e8[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 21:36:45 2017 +0300
+
+    Lesson 5: computeDeviceCells() made impossible back
+
+[33mcommit 7b2de832d57791341c3bb1697674bea5e816a4ae[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 21:18:15 2017 +0300
+
+    Lesson 8.2: some properties become private
+
+[33mcommit 608726b7407c9b0295de9e876a067277bb888788[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 21:17:14 2017 +0300
+
+    Lesson 7.2: style in examples
+
+[33mcommit 6f37d2e9a9efa2ffa4365c6154914bdf71240aa5[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 21:16:21 2017 +0300
+
+    Lesson 6.3: example minor optimization
+
+[33mcommit 9c8beb3ab8f9864a74d3278c3393cc6912c88837[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 21:15:46 2017 +0300
+
+    Lesson 6.2: unused import removed
+
+[33mcommit 4cb4594abbe843bb0b440b0f28057cdda6e2aa33[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 21:09:35 2017 +0300
+
+    Lesson 5: flattenPhoneNumber difficulty -> Normal
+
+[33mcommit 838baf9d721d7950bf840d5b10a9b31b2e9ff4cf[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 21:08:44 2017 +0300
+
+    Lesson 5: tests for twoDigitStr()
+
+[33mcommit 22a842f42e3845a82a0829e3678c3e55830f28fb[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 21:02:48 2017 +0300
+
+    Lesson 4: more tests for convertToString / decimalFromString
+
+[33mcommit a3c277ce616200cf0b6b466a97d14f04a86f92c2[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 20:54:22 2017 +0300
+
+    Lesson 4: more tests for factorizeToString
+
+[33mcommit 488d06ef05471c01dd340006998ac8cd882d33b6[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 20:34:30 2017 +0300
+
+    Lesson 4: style fixes
+
+[33mcommit fab1da0904912bc54fac4e56bfc6340572502ff6[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 20:31:23 2017 +0300
+
+    Lesson 3: style fix
+
+[33mcommit 1ce98fbec247564d9d3bdfa0c0b89b5eb5eda532[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 20:30:29 2017 +0300
+
+    Lesson 3: sin() / cos() difficulty -> Normal
+
+[33mcommit 90452063ac5c5de5f1850d76b31859af089cb4a8[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Jul 20 19:06:26 2017 +0300
+
+    Lesson 3: better tests for squareBetweenExists()
+
+[33mcommit 813d8297cd978504772d7c704721d6f9816755b4[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Jul 20 18:58:38 2017 +0300
+
+    Lesson 3: better tests for isCoPrime()
+
+[33mcommit f21e623cc128242adad2f1a18f1c288573c2674e[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Jul 20 18:50:44 2017 +0300
+
+    Lesson 3: better tests for sin() and cos()
+
+[33mcommit 5ae44d5538979302be5f50b1aa6eb8faccfb7c37[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Jul 20 18:48:37 2017 +0300
+
+    Lesson 3: better tests for maxDivisor()
+
+[33mcommit 99d1e28b97013510f85fec9d9bec3ca1044a98b8[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Jul 20 18:46:51 2017 +0300
+
+    Lesson 3: better tests for minDivisor()
+
+[33mcommit 9a469baf14559c7de72a7cf955eb1897146145b6[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Jul 20 17:18:53 2017 +0300
+
+    Lesson 3: better tests for lcm()
+
+[33mcommit c0bc9a67619e5809063a1e2b077cdb7df334dcbb[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Jul 20 16:55:54 2017 +0300
+
+    Lesson 3: better tests for fib()
+
+[33mcommit c496177a234d1b5d1f900a732d2b0e1a28198c62[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Jul 20 16:33:44 2017 +0300
+
+    Lesson 3: tag corrected for fib test
+
+[33mcommit fa25ebcdc429e0d2b9c268ac6194a1d10c45e827[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 20:33:35 2017 +0300
+
+    Lesson 2: more precise comment to queenThreatens
+
+[33mcommit e1f9907f85b6a00273e8a9868ea44c8f6b508a07[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Jul 20 16:31:32 2017 +0300
+
+    Enhance tests for lesson 2
+
+[33mcommit e3ffac5f836866c041dcc43746d218b4a2f5fc67[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 26 20:51:17 2017 +0300
+
+    Newer versions of Kotlin / JUnit 5
+
+[33mcommit da5064449cd83cde2535131b3ff368c76bc2c642[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Fri Apr 28 15:47:16 2017 +0300
+
+    parseExpr example bugfix. Thx to @SkripalBoris
+
+[33mcommit 05f923eb1f65391243302c6913400d4d1333d758[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Mon Mar 27 19:41:54 2017 +0300
+
+    New computeDeviceCells
+
+[33mcommit 6959004e96249d990119bb4131e805b68620c7ff[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jun 16 21:07:36 2017 +0300
+
+    Kotlin & JUnit versions updated
+
+[33mcommit ec89794ac5f285e4597ccdfeaeff1ef0102a718a[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Mar 1 14:39:00 2017 +0300
+
+    Moved to 1.1.0
+
+[33mcommit 3d65e0c444daf0b114129c9703e3e46d742d1b82[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Feb 14 18:31:32 2017 +0300
+
+    Temporary moved to 1.1.0-rc-69 version (1.1 planned)
+
+[33mcommit e24fa79f427acd4d8cfad41465dbd64acf941bce[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Feb 14 18:25:53 2017 +0300
+
+    isPrime test: made shorter & faster
+
+[33mcommit e7254fd3d432142bc93a4c7aba1777376802326e[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Feb 14 18:21:42 2017 +0300
+
+    JUnit 5: switch to milestone #3
+
+[33mcommit 1c1766b43219fb1e19f5e800cbfd1abf9365451e[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Dec 5 18:31:42 2016 +0300
+
+    Slides for lecture 8.5 (extra)
+
+[33mcommit 48c92bb7ed54b0946c5fb6147d8c21cc9a2023d5[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Dec 5 18:09:25 2016 +0300
+
+    Extra chapter: minor
+
+[33mcommit 4e1527fa7c8cf0e1b5246bf41074010e1fb43368[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Dec 5 17:40:37 2016 +0300
+
+    Extra chapter: minor
+
+[33mcommit 786604eb506b21eafbeb61eead8864176b904ea9[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Dec 1 13:01:07 2016 +0300
+
+    Update extra.adoc
+
+[33mcommit 46bc6789c8d757621afc964dfc39bdd6adc5b37e[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Dec 1 12:59:25 2016 +0300
+
+    Update extra.adoc
+
+[33mcommit f3d6429ede581d4bcb905ee61b08f61d5992c391[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Dec 1 12:57:00 2016 +0300
+
+    Update extra.adoc
+
+[33mcommit 59a72ee3c450c731af56cdea97ad93ece3f9fac7[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Dec 1 12:49:44 2016 +0300
+
+    Update extra.adoc
+
+[33mcommit ddef2d23a3965fc26eb861b58ef967e8a19c7aad[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Dec 1 12:47:21 2016 +0300
+
+    Update extra.adoc
+
+[33mcommit ede66f441d92abad77d66017a20947bc889b864a[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Dec 1 12:44:47 2016 +0300
+
+    Update extra.adoc
+
+[33mcommit 39dbcfc27f19d9790a9df661db2762f8473e7ec0[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Dec 1 12:44:13 2016 +0300
+
+    Update extra.adoc
+
+[33mcommit 3d90f90e547ad959efe096fc9f41d4f1e6739780[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Nov 30 17:58:31 2016 +0300
+
+    Extra chapter: parsing itself
+
+[33mcommit d08a36a9a13886e87a537f81cd7aa0be6b25793e[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Nov 30 17:37:16 2016 +0300
+
+    Extra chapter: expression evaluation
+
+[33mcommit 89399c3aaf11f0bc08c65ea1749dfc0980893f5d[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Nov 30 17:33:50 2016 +0300
+
+    Extra chapter: sealed class Expression description
+
+[33mcommit c6fd3f6dcca283e11df124204226a8cdca0dbe58[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Nov 28 18:36:26 2016 +0300
+
+    Slides for lecture 8
+
+[33mcommit 235e996add544efbbddfab5a9ebccd43e2c52475[m
+Author: Marat Kh. Akhin <Marat.Akhin@gmail.com>
+Date:   Tue Nov 22 21:48:22 2016 +0300
+
+    Add 50 shades of errors
+
+[33mcommit 553ff3e36da74ef8f217833336d522e42e4c48bb[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Tue Nov 22 11:24:27 2016 +0300
+
+    Extra tutorial chapter (beginning)
+
+[33mcommit f13e2315a8e3f7abb32cec12dc5d9022a9f01993[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Tue Nov 15 12:28:33 2016 +0300
+
+    Minor fix in lecture 7' slides
+
+[33mcommit 98f28586eeb9ac2ad453d471c91b7e66c79e5679[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Nov 14 18:22:13 2016 +0300
+
+    Slides for lecture 7
+
+[33mcommit 3404cc06264a317bf0b21af972f26823a0d2f2ad[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Nov 9 16:26:19 2016 +0300
+
+    Minor (use, Chapter 8)
+
+[33mcommit 6d9ad29bd2e5cd6601afbb520d24af091ba481be[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Nov 9 16:23:45 2016 +0300
+
+    README updated
+
+[33mcommit 2bb7f34d1566e832de1431eed07402b4a6988f8a[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Nov 9 16:17:07 2016 +0300
+
+    Chapter 6: destructuring
+
+[33mcommit 4d1d3c43d9af516902db46f2e90998e476f5a87c[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Nov 7 19:17:46 2016 +0300
+
+    Slides for lecture 6.5
+
+[33mcommit 331c2ac6971d6163aa252882a91a338bc636801a[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Nov 1 13:01:24 2016 +0300
+
+    Fixes and additions in lecture 6' slides
+
+[33mcommit cad1dc9cbd67cfaab8ce06af6830a768bb88d738[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Mon Oct 24 14:05:27 2016 +0300
+
+    Slides for lecture 6
+
+[33mcommit 5b16e7ebf7b8396d9533fc1f57c2cbc188d3a31b[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 19 16:46:12 2016 +0300
+
+    Chapter 8: writing (behind the curtain)
+
+[33mcommit c048df9f0839947940ea3ea2cfb24904a3cb32cf[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 19 16:28:12 2016 +0300
+
+    Chapter 8: exercises
+
+[33mcommit 38d8ca5d08342e94c8dbd0bee4b46567f5230222[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 19 16:23:34 2016 +0300
+
+    Chapter 7: typo fixed
+
+[33mcommit 1c905e5c6ef96729b0559b058154870c39aa9965[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 19 16:21:15 2016 +0300
+
+    Chapter 8: file reading (behind the curtain)
+
+[33mcommit ebd0558468367682ee4ab605793c88aa1893488d[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 19 15:50:18 2016 +0300
+
+    Chapter 8: example description
+
+[33mcommit 678da78cc754444be781a005b14f2c01678955a8[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 19 12:03:59 2016 +0300
+
+    Chapter 5.5: typo fix
+
+[33mcommit c41d34ccb5ac9b1bab9ef4a784caa2a06dfe6398[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 19 12:00:52 2016 +0300
+
+    Chapter 5.5: formatting fix
+
+[33mcommit ce22927f3ac7e102a45b9bf505eef74c42ac24aa[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 19 11:57:48 2016 +0300
+
+    Chapter 4: fold & joinToString
+
+[33mcommit 6d310c5a1575a7ae2618e2f90f2ca41e2f457421[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 19 11:42:24 2016 +0300
+
+    Chapter 5.5: some details & example
+
+[33mcommit 08cfffbd8e31f3607af096cdb41cf8736db95c72[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 19 11:01:29 2016 +0300
+
+    Chapter 5.5: formatting fixes
+
+[33mcommit 18847d88406e19276c15dc80a7a0070ac5b0577d[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Tue Oct 18 10:33:03 2016 +0300
+
+    Chapter 5.5: regex in Kotlin
+
+[33mcommit 50bea17d6c7a4579529d64c7d0f6302f8c342045[m
+Author: mglukhikh <glukhikh@mail.ru>
+Date:   Tue Oct 18 10:07:09 2016 +0300
+
+    Chapter 5.5: regex
+
+[33mcommit a648673d0976faefab265cede8d09c94c31993e6[m
+Author: Marat Kh. Akhin <Marat.Akhin@gmail.com>
+Date:   Tue Oct 18 16:15:42 2016 +0300
+
+    Added lecture about regex
+
+[33mcommit d3e693a2cb4c96ec87d4ab1b9d32305bc6cf71ba[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Tue Oct 11 13:50:05 2016 +0400
+
+    Chapter 8: beginning & example
+
+[33mcommit d8050195c0a958ed16291f46a6c2d2162d4d01ca[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Oct 10 20:30:16 2016 +0300
+
+    Slides for lecture 5
+
+[33mcommit 60580cbbfd92ccd5e661d72602eed9beea820229[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 13:19:21 2016 +0300
+
+    Update README.md
+
+[33mcommit 4c1db9f1ed765fdcc6160d705c6c74c7a672126e[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 12:11:20 2016 +0300
+
+    Chapter 6.5: DFS details
+
+[33mcommit df62f500a0046c32c35d7a03f7dc6b9787b26402[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 11:51:47 2016 +0300
+
+    Chapter 6.5: DFS
+
+[33mcommit 8be8b0045c7eb6a1224a38e6539fd86355a05215[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 11:39:25 2016 +0300
+
+    Chapter 6.5: BFS, a bit more details
+
+[33mcommit 6ea9fd6cd2455ee9427050bedc4e900160b7c984[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 11:33:20 2016 +0300
+
+    Chapter 6.5: BFS description
+
+[33mcommit 70a5afb07fc108a55b4a01b603b7683663b17df2[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 11:29:11 2016 +0300
+
+    Chapter 6.5: queue in BFS
+
+[33mcommit d8d91e042df6615688f3641a1c350ff9403244ad[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 11:18:27 2016 +0300
+
+    Chapter 6.5: graph distance
+
+[33mcommit 01f6d8dd5db48616759e59bae65f5d62c27c0f3c[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 11:17:14 2016 +0300
+
+    Chapter 6.5: graph distance image
+
+[33mcommit ba9f38ef8633619ec27c0e0fa869ccd192783cce[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 11:15:00 2016 +0300
+
+    Chapter 6.5: knight moves
+
+[33mcommit 96fb6bddb42fffe72789fb486893b6d136b30fa8[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 11:13:19 2016 +0300
+
+    Chapter 6.5: another image
+
+[33mcommit 4f076fe42f9c064c6b2757f71197e37e84e8cbf7[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 11:08:14 2016 +0300
+
+    Chapter 6.5: weighted graph image
+
+[33mcommit c51b88bb4a22c8372df12fb4f902bd9b0cd8431d[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 10:59:31 2016 +0300
+
+    Chapter 6.5: image
+
+[33mcommit 9a829fa386d5c64195f639715c086cdd7ef69b7b[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 10:58:40 2016 +0300
+
+    Chapter 6.5: 1st image
+
+[33mcommit d1691b2a4ed6ae34f5e68cb05951767f50094d2c[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Oct 7 10:57:06 2016 +0300
+
+    Chapter 6.5: picture?
+
+[33mcommit 6b502720f61a112b00d596fc1712dff3b83652da[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 22:43:15 2016 +0300
+
+    Update README.md
+
+[33mcommit 604195e704f39483324e29115002b7b55fdfdabf[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 22:41:29 2016 +0300
+
+    Chapter 7: square brackets fixed
+
+[33mcommit 997f618dd7329ad32b3c8265d60f80f73bb3011f[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 22:38:37 2016 +0300
+
+    Chapter 7: minor (hashes)
+
+[33mcommit 97bd787d9a107829042b601c84b8fa37baf6d95b[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 22:36:02 2016 +0300
+
+    Chapter 7: a bit about stars
+
+[33mcommit 2255cc4b51d4aa12388058866d8ac4a2e23196a1[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 22:28:45 2016 +0300
+
+    Chapter 7: minor fix
+
+[33mcommit a371c890dece9a2cb83cbc10edde59d45080be72[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 22:25:49 2016 +0300
+
+    Chapter 7: minor fix
+
+[33mcommit 8ddef15cb2785f5709288145c45d0776b6a1a000[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 19:21:37 2016 +0300
+
+    Chapter 7: toString
+
+[33mcommit 0e57fad210c139ee28079e34146fcbe5a7461091[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 19:10:42 2016 +0300
+
+    Chapter 7: equals / hashCode
+
+[33mcommit b9b164335ba45ba410666228ea4e1fff6c636179[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 18:58:45 2016 +0300
+
+    Chapter 6: minor fix
+
+[33mcommit af84179ba9de8377cd773b4ab6b337ed365d9de3[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 18:57:58 2016 +0300
+
+    Chapter 6: equals sample minor fix
+
+[33mcommit bdac4340b0cc19ac9250fb92a392cde6b7e76859[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 18:55:58 2016 +0300
+
+    Chapter 7: equals
+
+[33mcommit f78f3d48e7a8ee90c65585d10632d9ab29fb812f[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 18:47:59 2016 +0300
+
+    Chapter 7: map-based implementation
+
+[33mcommit d34d0b1d0be1b17600f60de2c13d6bd5cec8a195[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 18:37:55 2016 +0300
+
+    Chapter 7: array-based matrix implementation
+
+[33mcommit 20c1b8b540f8c1e983e4ef3422214b9dac397835[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 18:28:16 2016 +0300
+
+    Chapter 7: list-based matrix implementation
+
+[33mcommit bc69ae287463955c3a9930115751800f4100a137[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 18:02:23 2016 +0300
+
+    Chapter 7: implementation: height / width
+
+[33mcommit 71fabf8da3d1e940f24e134b052c79cffed583be[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 17:55:46 2016 +0300
+
+    Fix
+
+[33mcommit 998694260155cef0aabfb6c43a64c6fe5113db8d[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Oct 5 17:55:17 2016 +0300
+
+    Chapter 7: a bit more about interfaces
+
+[33mcommit 5e37db72d1652c155c76b63b8bfaa40bd8487ce2[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Oct 5 20:21:15 2016 +0400
+
+    Chapter 7: minor additions / fixes
+
+[33mcommit 74c3386e785d53ad83c070eadb8fa3d3a3c2900e[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Oct 5 20:01:37 2016 +0400
+
+    Chapter 7: skeletal implementation
+
+[33mcommit e6f79c932d86da81cd945b54ae4eea3f2fec119f[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Oct 5 19:50:24 2016 +0400
+
+    Chapter 7: exercises
+
+[33mcommit e0b9a8c8efa0830543db5a78067c906983b61a8b[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Oct 5 19:42:39 2016 +0400
+
+    Factory functions
+
+[33mcommit 6e6ed297b3ac44966d35aee4958aed148e2fe4f7[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Oct 5 19:17:02 2016 +0400
+
+    README updated
+
+[33mcommit b63240a3d2006ad6fdde56facba30abdd9ce7cb8[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Oct 5 19:01:56 2016 +0400
+
+    Chapter 7: interfaces
+
+[33mcommit fe8bf573e57c79d3e4fd3a2ee8eabaea958619d8[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Oct 5 18:32:59 2016 +0400
+
+    Chapter 6: Pair & Triple
+
+[33mcommit 7821c8b3ff58e26bb3c6672c26fba7643f7d581c[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Oct 5 18:26:36 2016 +0400
+
+    Chapter 6: headers (minor)
+
+[33mcommit bbfa2ffa75c7eb6cef008425922e9da0c3a59500[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Oct 5 18:24:44 2016 +0400
+
+    Chapter 6: manually defined equals
+
+[33mcommit f5e3b5b1aa0b7038a18acfd35f2023afe4a6cbf8[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Oct 3 18:55:14 2016 +0300
+
+    Slides for lecture 4.5
+
+[33mcommit 37139974f645546c0facc11e25c994b27dbb7a40[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Oct 3 18:01:08 2016 +0300
+
+    Slides for lecture 4: quote corrected
+
+[33mcommit 1fdf9c39f27fec11fa913e60d88036bdcf789eb1[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Oct 3 17:58:30 2016 +0300
+
+    Slides for lecture 4.2
+
+[33mcommit a616f5d005465a7875e70799882534c1130be3b0[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Oct 3 17:51:25 2016 +0300
+
+    Lecture 4: isNotPrime fixed
+
+[33mcommit b8ee8ecb35375edebd3d09941e5cc4cf4cad50f4[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Oct 3 17:22:08 2016 +0300
+
+    Slides for lecture 3: downto --> downTo
+
+[33mcommit 80f6895e6c951dc2f7f25c382d3d7aa11e013c14[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 28 22:08:19 2016 +0400
+
+    Graph search: BFS & DFS
+
+[33mcommit 4a586f7a23abd04e4c5bb0ec12b079b451fbb624[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 28 21:54:44 2016 +0400
+
+    Operator overloading
+
+[33mcommit 45f72e1495d745a5b479af910e8cc236853f4a53[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 28 21:46:27 2016 +0400
+
+    Safe operations
+
+[33mcommit fe0f1d8589e57f438eeb78d5e5f7b5826e51a5bc[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 28 20:09:27 2016 +0400
+
+    Maps: creation / indexing
+
+[33mcommit 86331875872ea76a0560c6709471da3b3e256a7b[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 28 20:03:00 2016 +0400
+
+    Maps: beginning
+
+[33mcommit 5526af27dd7303be1421865e98bf8be6664be835[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 28 19:45:43 2016 +0400
+
+    Collections
+
+[33mcommit 0be1209d4440ab6c361ba59f7d596f53bcd3e993[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 28 19:38:56 2016 +0400
+
+    Sets
+
+[33mcommit ff47ab46049e07226fb082838ce37c6483d18b22[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 28 18:46:15 2016 +0400
+
+    Class members and their visibility
+
+[33mcommit b7d5d6278ddac5ae4a412d8810d335b106181695[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Tue Sep 27 15:51:24 2016 +0400
+
+    Chapter 6.5: beginning
+
+[33mcommit a2c6a37335e53c9f9de5f41a79b68688065f5a5e[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Sep 26 17:59:29 2016 +0300
+
+    Slides for lecture 4
+
+[33mcommit 90a78ad48aee23d6cde4b232c9cdcb3cdfbba70d[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Sep 26 17:36:38 2016 +0300
+
+    Chapter 4: minor fix
+
+[33mcommit 11da3a67143682a0630896f31980759c4c12ceec[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Sep 26 10:26:07 2016 +0300
+
+    varargs
+
+[33mcommit 427510e9aff463ad60dfba2e016be56a0652c7de[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Sep 26 09:54:55 2016 +0300
+
+    toList(), toMutableList(), toTypedArray()
+
+[33mcommit 79ec1faf8e0e2b4d258893dca1b4f3dec729ef7f[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Sep 23 20:39:23 2016 +0300
+
+    No array comparison
+
+[33mcommit c63a4eb115de5979e55129009011f456f9c0dd8e[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Sep 23 20:35:19 2016 +0300
+
+    Minor fix
+
+[33mcommit 9ff6cb533f22de3eb5f525351d717f5680e99c19[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Sep 23 20:30:57 2016 +0300
+
+    A bit about arrays
+
+[33mcommit 2581683efb0fa0bf5fc8c122df5a3dc150987b94[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 21 21:04:10 2016 +0400
+
+    Minor fix
+
+[33mcommit bb3e1a0e16cd02b4d84f06e89d129ca485612555[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 21 21:02:39 2016 +0400
+
+    JVM memory organization
+
+[33mcommit 56b3ef1e879689439bd112309ad82d8814d769a1[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 21 20:43:47 2016 +0400
+
+    Reference / value operations
+
+[33mcommit e96970576ad4e91e762230ac99235ff7e6cb393d[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 21 20:35:07 2016 +0400
+
+    Mutable types as parameters
+
+[33mcommit a6d95798cef7704d29129d710f78636ea1516a6f[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 21 20:30:07 2016 +0400
+
+    Mutable and immutable types
+
+[33mcommit 932f6f27ba5345017668983142835a63e49b88e5[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 21 20:13:40 2016 +0400
+
+    References
+
+[33mcommit 0021efb3b6695c2fcd2ab045827baa174a749410[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 21 19:25:20 2016 +0400
+
+    Characters
+
+[33mcommit 299adcea01e420347722bf570ff36de3c3bacd85[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 21 19:06:20 2016 +0400
+
+    Numeral systems
+
+[33mcommit fe1a2a6774e480cf29f250e40cca0a9f611c4c54[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 21 18:56:20 2016 +0400
+
+    downto --> downTo
+
+[33mcommit eb5f2690c84ac696604fcd214044048b55b9b3b8[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Sep 19 12:15:03 2016 +0300
+
+    Slides for lecture 3
+
+[33mcommit 07203432e6ad1ffcc40c8ef048f9cea447061c02[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 15 22:38:46 2016 +0300
+
+    Update README.md
+
+[33mcommit 0a6823fa757e9190ac17a2c2fa46027759a2484b[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 15 00:31:14 2016 +0300
+
+    Minor
+
+[33mcommit efb175e96c685f5c412fb978ce417ad33997b315[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 15 00:30:44 2016 +0300
+
+    trim
+
+[33mcommit 301661dd6e265d2727fdf5643cb414fdfe402987[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 14 16:19:40 2016 +0400
+
+    Chapter 4.5: FP numbers (beginning)
+
+[33mcommit 0de0f23257a2ed5f8b3395f00bdafd9f9e3f92fe[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@gmail.com>
+Date:   Wed Sep 14 15:01:32 2016 +0400
+
+    Chapter 4.5: bytes, bits, integer numbers
+
+[33mcommit 849b731b9cfe93ce9ace6c7ad9039caff13ebc48[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Sep 12 20:31:20 2016 +0300
+
+    Minor fix
+
+[33mcommit 89859c954e360b2b87abd1e88cee573671056f90[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Sep 12 20:26:00 2016 +0300
+
+    Lessons for chapter 6
+
+[33mcommit 9a69901aae6cb46cdd4edb3eab560a2366ba0066[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Sep 12 20:17:53 2016 +0300
+
+    Chapter 6: aggregation
+
+[33mcommit 8e952f104ae5fd09cb66686debb34a3ae115dfca[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Sep 12 20:01:09 2016 +0300
+
+    Chapter 6: data classes
+
+[33mcommit 07e101216668619f992c72458a4cfc47daacd3e2[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Sep 12 19:03:17 2016 +0300
+
+    Slides for lecture 2
+
+[33mcommit 2e606b7398961a9b68ee98fee1e8001ac1abf4ae[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Sep 12 18:40:09 2016 +0300
+
+    A bit about git client installation
+
+[33mcommit bbcefce55a1d21516436109fa6eb04022d629ba5[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 8 19:37:57 2016 +0300
+
+    Additional details about project configuration in IDEA
+
+[33mcommit 67160ab18918521cc581694373bb8c589a50eaa7[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 8 00:52:59 2016 +0300
+
+    Chapter 6: member functions
+
+[33mcommit 00a851633adbf963ea4115891716ba2a10dd804e[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Sep 8 00:37:55 2016 +0300
+
+    Git instructions updated
+
+[33mcommit 9689f3eb348a9b4970e9a8a14394cc84bb3b7a21[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Wed Sep 7 16:13:57 2016 +0300
+
+    Slides for lectures 0 and 1
+
+[33mcommit 3cc8793fdff7648507fa79e7c61e227b9a8719d0[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Sep 5 12:56:55 2016 +0300
+
+    Loading from GitHub instruction fixed
+
+[33mcommit 35f580ffdf20805889384753d606779a20012d38[m
+Author: Kirill Gagarski kirill.gagarski@gmail.com <kirill.gagarski@gmail.com>
+Date:   Sun Oct 9 01:13:53 2016 +0300
+
+    roman clarification
+
+[33mcommit c24b11c275e8817964d9ca4846994f27b0071654[m
+Author: Kirill Gagarski kirill.gagarski@gmail.com <kirill.gagarski@gmail.com>
+Date:   Sun Oct 9 01:05:28 2016 +0300
+
+    convert and convertToString clarification
+
+[33mcommit 8a5fcd2486bfbfc7471f7677f89192116db5ed8f[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Sep 19 20:26:59 2016 +0300
+
+    Rook & bishops: update description
+
+[33mcommit 6e72009685376433e6d548c81c8a186ff6f0e4c1[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Tue Sep 13 15:11:41 2016 +0300
+
+    center() and accumulate task clarification
+
+[33mcommit 98340030bbb5d395034e227e71f70daca9dd5309[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Tue Sep 13 15:09:35 2016 +0300
+
+    m
+
+[33mcommit 88eba0eceb8eceb476bc4a38eb03c5f49dcfd886[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Tue Sep 13 14:58:19 2016 +0300
+
+    lesson4.task1: center() and accumulate() identity checks
+
+[33mcommit 8fa526f244916913a6412c6567963c8bb45a6bd4[m
+Author: Kirill Gagarski kirill.gagarski@gmail.com <kirill.gagarski@gmail.com>
+Date:   Sun Sep 11 03:01:49 2016 +0300
+
+    alignFileByWidth clarification
+
+[33mcommit d3d926c9b8ea26cac2e07ecea3321f785bc05e5f[m
+Author: Kirill Gagarski kirill.gagarski@gmail.com <kirill.gagarski@gmail.com>
+Date:   Sun Sep 11 01:15:56 2016 +0300
+
+    more list of doubles equality fixes
+
+[33mcommit 530c196f2af41326b1123402b9c20f0234149d8b[m
+Author: Kirill Gagarski kirill.gagarski@gmail.com <kirill.gagarski@gmail.com>
+Date:   Sun Sep 11 01:03:05 2016 +0300
+
+    Lesson 4 tests: list of doubles equality fix
+
+[33mcommit b21631a678372f237dd7c06136cb18a9fbbde549[m
+Author: Kirill Gagarski kirill.gagarski@gmail.com <kirill.gagarski@gmail.com>
+Date:   Tue Sep 6 00:12:20 2016 +0300
+
+    m
+
+[33mcommit 4ce414debe955f57a881d5c2776682801d32bcd0[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Sep 5 11:56:49 2016 +0300
+
+    Lesson 8: some difficulties increased
+
+[33mcommit d619ecf7d03835f8f422a4ced9dac8796be4049f[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Sep 5 11:34:30 2016 +0300
+
+    Chapter 4.5 deleted
+
+[33mcommit 3ed2ecc06106b60f6420292dd8d04de84fc9eccd[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Sep 5 11:34:11 2016 +0300
+
+    README updated
+
+[33mcommit ca20ff08a61fefbacc26ada9ed46f592dc4848ca[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Sep 5 11:22:45 2016 +0300
+
+    Lesson 8: regex / parsing example
+
+[33mcommit 33e1a873e0578c8012b10fa34b0120fbfefa9848[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Sep 5 09:54:54 2016 +0300
+
+    Lesson 6: graph examples refactoring
+
+[33mcommit 1852533b5a61a1509e042b2d8e1b5951d4bb85b7[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Sep 5 09:45:27 2016 +0300
+
+    Lesson 6: graph examples moved to task3 package
+
+[33mcommit 065ab95a0899ca5581e3b1f0e62b90205dbad5df[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Sep 5 09:43:08 2016 +0300
+
+    Lesson 4: minor test enhancement
+
+[33mcommit 9d0ecb50802ae831532ed0725abd3e1017cf2f45[m
+Author: Kirill Gagarski kirill.gagarski@gmail.com <kirill.gagarski@gmail.com>
+Date:   Mon Sep 5 05:15:29 2016 +0300
+
+    Lesson08: some tasks
+
+[33mcommit a19013964836a3a54276390cc902019d003980ad[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Sat Sep 3 23:11:32 2016 +0300
+
+    Graph & DFS
+
+[33mcommit ac3ebcc9dfa6b3ef4896157622662a992dc36647[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Sat Sep 3 15:24:32 2016 +0300
+
+    Graph & BFS
+
+[33mcommit 4799b436a996dcecb4997b29b4eabb30b97c07c1[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Sat Sep 3 22:23:29 2016 +0300
+
+    Lesson 8: markdown tests refactoring, tests for impossible task introduced
+
+[33mcommit 512ac93bc0bd29d77bdf840ca34c17d2534a1105[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Sat Sep 3 22:13:11 2016 +0300
+
+    Matrices: difficulty, more test for multiplication
+
+[33mcommit 4e6b55e580eb9f4fb0200876720469ccc51927c6[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Sep 2 21:03:04 2016 +0300
+
+    Example for lesson 8 (align file)
+
+[33mcommit 7be62a4971072407f6fee259ccefa97de4e6549b[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Sep 2 11:08:00 2016 +0300
+
+    Wave test deleted
+
+[33mcommit e2e6b7d3fefee1548b8dac694d90c18bfb370243[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Sep 2 11:05:53 2016 +0300
+
+    Wave example deleted
+
+[33mcommit 1c2560ef95594e3dbd03beb113045af82afbb6e4[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Sep 1 18:16:52 2016 +0300
+
+    Lesson 7: task for times()
+
+[33mcommit 4e5c0f07c96a914511b79825efe4d1b6738688a9[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Sep 1 18:08:51 2016 +0300
+
+    Lesson 7: task for unaryMinus()
+
+[33mcommit bfc07bb919ac9f2faed6f691992e916ea9352b0b[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Sep 1 18:03:07 2016 +0300
+
+    Lesson 7: example for matrix addition
+
+[33mcommit 18e2cff2715787c655d8cee165b48fb481388fbe[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Sep 1 17:50:03 2016 +0300
+
+    Additional test for wave algorithm example
+
+[33mcommit cf2c0d4f01615002d64266cdbf486cd87f0cd970[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Sep 1 14:00:13 2016 +0300
+
+    Example for lesson 6 task 2: wave algorithm
+
+[33mcommit bfdbda9d22970a132867a103c507f12904930770[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 1 09:45:30 2016 +0300
+
+    Minor
+
+[33mcommit b7a9eddc9376e95b744281f49397c601b6c84cff[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 1 09:44:56 2016 +0300
+
+    Chapter 6: start considering points
+
+[33mcommit 5b377e6d9b5497438d40d7b25172ffbbb3bf3af5[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 1 09:14:42 2016 +0300
+
+    Rename chapter6.adoc to chapter06.adoc
+
+[33mcommit 4e944a919e9fc27ba9d01c2b9bbbc960bfcf1815[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 1 09:14:14 2016 +0300
+
+    Chapter 6: title
+
+[33mcommit 5fe7b8e74ff47842a0f6a8796fdbcd028401a7b9[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 1 09:12:55 2016 +0300
+
+    Chapter 5: a bit more about exceptions
+
+[33mcommit 6acd41c84ded9f6057ae8d7cf2046b35e4a98c94[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 1 09:05:33 2016 +0300
+
+    Chapter 5: a bit more about readLine() == null
+
+[33mcommit b746af27e77f64cf4e8bd68b931b8d0e329fe5b0[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Thu Sep 1 09:02:20 2016 +0300
+
+    Chapter 5: title updated
+
+[33mcommit 094b193e47b094b30c6dfffe4a05aa396b090027[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 31 20:05:17 2016 +0300
+
+    Chapter 0: project description polished and extended
+
+[33mcommit d40e632f719331a366341413904be226ac38e4de[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Aug 31 18:37:43 2016 +0300
+
+    m+
+
+[33mcommit 8b44742b56e23a8b364ef36d0334911131f6361f[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Aug 31 18:03:51 2016 +0300
+
+    m
+
+[33mcommit 8bf670e934968ec86bfcf93b9e904994e1b46909[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Wed Aug 31 17:59:46 2016 +0300
+
+    Yada-yada about grader machinery and pull requests
+
+[33mcommit e9961e55ae575537fb181159faee7de9d82a9521[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Aug 31 10:45:38 2016 +0300
+
+    Update README.md
+
+[33mcommit 5a108b50e313914c9dd901193b64019595c2d6b3[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Tue Aug 30 21:19:45 2016 +0300
+
+    Chapter 5: console input / nullability
+
+[33mcommit aaec1cceb66d1cbfba150cf9d92c9fe9d418abe5[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Tue Aug 30 21:06:01 2016 +0300
+
+    Chapter 5: console input, example
+
+[33mcommit 70ab9230d811e1bbae01e2330682f8c0278d7f37[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Tue Aug 30 20:39:50 2016 +0300
+
+    Synchronize task difficulty (comment vs tag)
+
+[33mcommit e4ab3463989cecb1634d59a02973bec7b58446d1[m
+Author: Mikhail Belyaev <belyaev@kspt.icc.spbstu.ru>
+Date:   Tue Aug 30 20:12:28 2016 +0300
+
+    tests for lesson 8
+
+[33mcommit 3bc5498ee17fa7d9eb36d9724e4a8029d0e162d5[m
+Author: Mikhail Belyaev <belyaev@kspt.icc.spbstu.ru>
+Date:   Tue Aug 30 19:21:16 2016 +0300
+
+    m
+
+[33mcommit 1e44e493e0b32c2471200cedbb4028acfe8e48d6[m
+Author: Mikhail Belyaev <belyaev@kspt.icc.spbstu.ru>
+Date:   Tue Aug 30 19:03:00 2016 +0300
+
+    m
+
+[33mcommit 5031fcc7b86e587e4389d00f1845d8046417fd0e[m
+Merge: 28a01a5 bd46810
+Author: Mikhail Belyaev <belyaev@kspt.icc.spbstu.ru>
+Date:   Tue Aug 30 14:25:34 2016 +0300
+
+    Merge branch 'master' of https://github.com/Kotlin-Polytech/KotlinAsFirst
+
+[33mcommit 28a01a529a48fba2cd0f6e896aacf9344f67cec3[m
+Author: Mikhail Belyaev <belyaev@kspt.icc.spbstu.ru>
+Date:   Tue Aug 30 14:25:29 2016 +0300
+
+    tests for markdown task
+
+[33mcommit bd468100f5005b9164a599933568b52de999f78b[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Tue Aug 30 13:21:58 2016 +0300
+
+    Examples for lesson 7
+
+[33mcommit 80a389943f7af4eecb0056d521d330a711cd515d[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Tue Aug 30 13:08:15 2016 +0300
+
+    Examples for lesson 6
+
+[33mcommit e60c57eca86c13553ee6aceb123e5a68c250f644[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Mon Aug 29 22:56:47 2016 +0300
+
+    Chapter 5: minor fix
+
+[33mcommit 2e8b3bb6980daf732d65c97c9453e640997c36d6[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 22:55:55 2016 +0300
+
+    Chapter 5: string formatting
+
+[33mcommit f329afde6cbff74dc2461e5bfa6dbd55495c7fbd[m
+Merge: 1028480 f9dfb4a
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 22:15:07 2016 +0300
+
+    Merge branch 'master' of https://github.com/mglukhikh/KotlinAsFirst
+
+[33mcommit 102848069e2038dda19261442c60f904f6c9c003[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 22:14:52 2016 +0300
+
+    Chapter 5 formatting: use back quotes for code elements (except keywords which are still bold) + some cleanup
+
+[33mcommit 543037b3670e7e039393f3c63fd2f0297b916641[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 22:09:38 2016 +0300
+
+    Chapter 4 formatting: use back quotes for code elements (except keywords which are still bold)
+
+[33mcommit 1029e1125c66dc3d239bad2ba3ba2688d6388dd6[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 22:02:46 2016 +0300
+
+    Chapter 3 formatting: use back quotes for code elements (except keywords which are still bold)
+
+[33mcommit 6f754e6ddf248ce86bb1151559e35fc18490f9ac[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 21:58:47 2016 +0300
+
+    Chapter 2 formatting: use back quotes for code elements (except keywords which are still bold)
+
+[33mcommit fb565fef04ab79969788ab2303d5b7aaf3a6220d[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 21:52:42 2016 +0300
+
+    Chapter 1 formatting: use back quotes for code elements (except keywords which are still bold)
+
+[33mcommit f9dfb4ab55a813130e3134b437cbae71d25c9f4e[m
+Merge: 57fa842 88ba00e
+Author: Mikhail Belyaev <belyaev@kspt.icc.spbstu.ru>
+Date:   Mon Aug 29 21:41:04 2016 +0300
+
+    merge
+
+[33mcommit 57fa842a2b43477a322bd3e27bd23556b9e5a2ab[m
+Author: Mikhail Belyaev <belyaev@kspt.icc.spbstu.ru>
+Date:   Mon Aug 29 21:39:29 2016 +0300
+
+    m
+
+[33mcommit da860c7830713f742c2c2a4e0e1602184b25985a[m
+Author: Mikhail Belyaev <belyaev@kspt.icc.spbstu.ru>
+Date:   Mon Aug 29 21:39:12 2016 +0300
+
+    +task in lesson 8
+
+[33mcommit 88ba00ef8de57a1d7b0b443f02efd430edb51a60[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 21:36:20 2016 +0300
+
+    Chapter 4: more detailed description about lambda arguments
+
+[33mcommit 9b68ac4f38da94b57a4eabd4b5bf26b000529381[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 21:30:51 2016 +0300
+
+    indexOf for list
+
+[33mcommit ca45f76c2177941ff07652f1286d4396d88ff3db[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 21:26:52 2016 +0300
+
+    Chapter 2 minor: use sqr(x) function from lesson 1
+
+[33mcommit d9471be82c06ee8e2ceb19d00731dbe2328f523c[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 21:13:37 2016 +0300
+
+    printDivisionProcess: minor comment fix
+
+[33mcommit 2cd7ee8f2995634b6b3a22437f024050100de284[m
+Merge: 02a59a8 9358406
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 21:10:37 2016 +0300
+
+    Merge branch 'master' of https://github.com/mglukhikh/KotlinAsFirst
+
+[33mcommit 02a59a823dd580fdd557707b32029155cf05558c[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Aug 29 20:57:48 2016 +0300
+
+    Fix discriminant problem + some cleanup of chapter 1
+
+[33mcommit 9358406694c7617018c710c50bfe28bd185e7f46[m
+Merge: 24b1672 b19f34d
+Author: Mikhail Belyaev <belyaev@kspt.icc.spbstu.ru>
+Date:   Mon Aug 29 21:02:29 2016 +0300
+
+    Merge branch 'master' of https://github.com/Kotlin-Polytech/KotlinAsFirst
+
+[33mcommit 24b16721767d030d0fc58da9e91cc9b871bbe0b6[m
+Author: Mikhail Belyaev <belyaev@kspt.icc.spbstu.ru>
+Date:   Mon Aug 29 21:02:11 2016 +0300
+
+    Super hard tasks for lesson 8
+
+[33mcommit b19f34de12a19ce2349cf101a03488956756965b[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Mon Aug 29 19:06:41 2016 +0300
+
+    m
+
+[33mcommit 935236f7d29fd7fab3dc9b1c2999729b362bb825[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Mon Aug 29 19:01:24 2016 +0300
+
+    Lesson3 task: anagram -> palindrome
+
+[33mcommit b6d7efb1a0c42e9e6c584189e8028f82dc9cbc21[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Mon Aug 29 18:59:06 2016 +0300
+
+    Lesson4 example: anagram -> palindrome
+
+[33mcommit baf91ca53b260e0c7d8b7c8b7956a239353d2dee[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Mon Aug 29 16:14:55 2016 +0300
+
+    m
+
+[33mcommit bdd6bb9893eb0baea4a5ee39dfb376bca090d6da[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Mon Aug 29 15:51:44 2016 +0300
+
+    Tutorial: anagram -> palindrome
+
+[33mcommit b2b16c19c8801bd63119eda3bfd1e6e220f18542[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Mon Aug 29 15:31:58 2016 +0300
+
+    m
+
+[33mcommit e335c44333403c18547e6c8d98bb71150d9a5f95[m
+Author: Kirill Gagarski <gagarski@kspt.icc.spbstu.ru>
+Date:   Mon Aug 29 12:43:18 2016 +0300
+
+    m
+
+[33mcommit 4cbb6d2828a1a5b385b1d8ae81536e556693e7db[m
+Merge: a088817 b587228
+Author: Kirill Gagarski <gagarski@users.noreply.github.com>
+Date:   Mon Aug 29 12:28:49 2016 +0300
+
+    Merge pull request #4 from Kotlin-Polytech/maximpetrov-patch-1
+    
+    Update chapter03.adoc
+
+[33mcommit a088817789ba81a04990c254072eac90421e7393[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Sun Aug 28 22:56:13 2016 +0300
+
+    Chapter 5: part about exceptions
+
+[33mcommit b5872286b6a896c18c944f3ef6d9b22a0bbf315f[m
+Author: Maxim Petrov <maximpetrov@yahoo.com>
+Date:   Sat Aug 27 02:56:01 2016 +0300
+
+    Update chapter03.adoc
+
+[33mcommit c7700768b5c182fea0fc2996a29c84c006a0a4ea[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Aug 26 11:22:25 2016 +0300
+
+    Lesson 5: additional test for fromRoman
+
+[33mcommit d2294c545dcefb0b271f635728c3778e5bf68dee[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Aug 26 11:08:02 2016 +0300
+
+    Lesson 5: bestLongJump is now normal, not hard
+
+[33mcommit ef2d1441428e309273717cba0d9452c4aa9ab08c[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Aug 26 10:58:50 2016 +0300
+
+    Chapter 5: structure
+
+[33mcommit ab16d2978e55928d7a7c6eaeaf744a8f9daf6443[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Aug 26 10:38:36 2016 +0300
+
+    Lesson 5: computeDeviceCells now hard, not impossible
+
+[33mcommit eec0106b088bdfa0f15608063c589e7ab01d0a9f[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Aug 26 10:34:48 2016 +0300
+
+    Chapter 4: a few more string functions
+
+[33mcommit 9883ad55018983cca0bec8ebdddc0a4142a0b849[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 25 20:18:06 2016 +0300
+
+    Chapter 5: structure
+
+[33mcommit 78825b1883caba47e7f3cac1075b2b50bbf9b252[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 25 20:15:15 2016 +0300
+
+    Chapter 5: example for str.split()
+
+[33mcommit 49a8b79ce4645ae38259175d67894707f7a5a1af[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 25 15:36:06 2016 +0300
+
+    Chapters 4.5 and 4, readme updated
+
+[33mcommit a1fe9af416fdf172b0add90f1125471ed14457e9[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 25 15:26:41 2016 +0300
+
+    Lesson 4 : isAnagram example
+
+[33mcommit 300addc28468fb720f55a87659a46d35275f4587[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 25 14:59:15 2016 +0300
+
+    Lesson 5 : fromRoman new task
+
+[33mcommit 330f1f52f568073feec336433104b1c8f5134635[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 25 14:44:29 2016 +0300
+
+    Chapter 3: minor fixes
+
+[33mcommit 1dd8547df7971c3d2095c0cc8f2571970875f2ed[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 25 14:40:00 2016 +0300
+
+    factorial example: rolled back to result = result * i (to demonstrate quick fix)
+
+[33mcommit c75b082b66fb8f6643d2d8a79eb4297d70321132[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 25 14:36:41 2016 +0300
+
+    Chapter 4: some fixes and extensions, joinToString example
+
+[33mcommit 43759f9fb4d7a9af24e4013908f1acbc2b4efb9f[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Aug 24 19:17:59 2016 +0300
+
+    Update README.md
+
+[33mcommit cf6fb259fbbb2435c86cfbefd082eccc08fba9f3[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 23 12:16:29 2016 +0300
+
+    Game 15 solution: extra tests and details
+
+[33mcommit e9328ad585939d173e824decb59f7225a6dc5a62[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 23 12:16:29 2016 +0300
+
+    Lesson 7: impossible task about game 15 solution
+
+[33mcommit df7a63d5c97e78d1ed2b368ef479a23be240d22e[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 23 10:54:50 2016 +0300
+
+    Lesson 7: fifteen game task
+
+[33mcommit 42531458c0fa8b038baf6b302606e7129d9b416b[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 23 10:24:07 2016 +0300
+
+    Lesson 5: jump tasks corrected to avoid key set problems (x --> %, o --> +)
+
+[33mcommit 4032fc60abdfa8d7ab0161f6be8255e4474a8b3e[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 22 19:25:49 2016 +0300
+
+    Lesson 7: can open lock task
+
+[33mcommit 30b5a662e07ce720b1499f692f4b2f3684a1477f[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 22 18:55:06 2016 +0300
+
+    Lesson 7: task about sub-matrix sum
+
+[33mcommit 1b464c89424bb7f9dcb1a7be27586c2827a15f5a[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 22 14:55:56 2016 +0300
+
+    Chapter 2: in and !in as comparisons
+
+[33mcommit 7f7c9b012c485406e969871b1944a5b0b2a58f77[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 22 14:47:26 2016 +0300
+
+    6.2: knight tasks added
+
+[33mcommit 86fb540fb69432af72a069337a2865509a3a9529[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 22 14:18:54 2016 +0300
+
+    6.2: bishop tasks added
+
+[33mcommit 6e4931c2a723083ec84efa7f6bb26bfb2df84d91[m
+Author: Mikhail Belyaev <belyaev@kspt.icc.spbstu.ru>
+Date:   Fri Aug 19 21:24:01 2016 +0300
+
+    typo
+
+[33mcommit 818cddc3fa05c869052a3f6c46fa7369c0a62f9f[m
+Author: Mikhail Belyaev <belyaev@kspt.icc.spbstu.ru>
+Date:   Fri Aug 19 21:22:59 2016 +0300
+
+    Some tests for lesson 4
+
+[33mcommit 135e00256205377d2a09ba9dca161d94a23012bd[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 19:11:33 2016 +0300
+
+    Lesson 7: tags
+
+[33mcommit 52159a5119c0f0167ca9fe1812850e4585ac588a[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 19:06:46 2016 +0300
+
+    Lesson 7: split into task 1 & task 2
+
+[33mcommit 022ba880ecc6ae1ba31a9a7e93f343e1408cbb78[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 19:01:48 2016 +0300
+
+    Lesson 8: tags
+
+[33mcommit 0d4f3d5dcb320f9678844228dbfdccd8e55bf1a8[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 18:59:38 2016 +0300
+
+    Lesson 6, task 2 (chess): tags
+
+[33mcommit a71dab1efe5295c803d40f3805727a91b457ca5b[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 18:54:33 2016 +0300
+
+    Lesson 6: task 1 (geometry) and task 2 (chess)
+
+[33mcommit 5010a2680ccac57afb648b339aff412652c460ed[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 18:51:53 2016 +0300
+
+    Tags: geometry
+
+[33mcommit 7c5272c4248722ad7f59fcb82fd3b2bc7d3d586d[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 18:44:51 2016 +0300
+
+    Tags: lesson 5
+
+[33mcommit a3b946b42cfa9fe70e106915763802e5fd3b50ba[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 18:40:42 2016 +0300
+
+    Chapter 4: strings, tasks
+
+[33mcommit da7922477b0c70ab1133c7ac9fd728a54e2d7fba[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 18:40:28 2016 +0300
+
+    Minor fix
+
+[33mcommit a928ddd906e73616fe9609dbf59f30aa0a36e590[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 18:04:33 2016 +0300
+
+    Tags for lesson 4
+
+[33mcommit 59977358a35d62b4979921dbf260b39d45f96d45[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 17:54:39 2016 +0300
+
+    Tags for lesson 3
+
+[33mcommit 2966effdc863c9f55ca51ff407417516fd4f69c6[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 17:42:57 2016 +0300
+
+    Lesson 2 split into two tasks
+
+[33mcommit f625ba8ebf8cf4eeae0fc27ddbd72a32a0ceea97[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 17:37:21 2016 +0300
+
+    Tags for first two tasks
+
+[33mcommit f5d52f3ddc649455850cead27d4e35c14f37201b[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 17:19:16 2016 +0300
+
+    Chapter 4: higher-order map, all, any
+
+[33mcommit f9dddebe23a939f0143a9579a46c3163610d529a[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 14:57:54 2016 +0300
+
+    Chapter 4: lambda introduction (filter)
+
+[33mcommit 514c7f48e54690cc7e74c52bb93f1a7c9f1b1a2f[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 14:05:59 2016 +0300
+
+    Chapter 4: mutable list testing
+
+[33mcommit 1d8baac697312abf4ab68de2ce6cccb808263e5d[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 13:44:37 2016 +0300
+
+    Chapter 4: mutable list as argument
+
+[33mcommit dece618dcefbe510220852baf287358c6e3c03a1[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 13:30:13 2016 +0300
+
+    Chapter 4: negative list example
+
+[33mcommit 7b4815b0b0ecf39e0116980412260c54efc4fd0c[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 12:51:55 2016 +0300
+
+    Chapter 4: mutable lists
+
+[33mcommit 261c589e2ed7f883d02e6bf8be310c083d211be3[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 12:39:14 2016 +0300
+
+    Chapter 4: list functions
+
+[33mcommit 4a94e8bc2a76f308ec8ca30ba5bbd3eb1d2ad6ee[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 12:17:30 2016 +0300
+
+    Chapter 4: lists, introduction, example
+
+[33mcommit 8280d511ca5ea51bf50af313952fcd7643dcea5c[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Aug 19 10:59:52 2016 +0300
+
+    End of chapter 3
+
+[33mcommit 9b4895e1a77453d6d7db543021d6e0fcf764af15[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 18 12:29:53 2016 +0300
+
+    while / do..while
+
+[33mcommit a43a2e11ff93cfe9798d2a099752379ae3599b48[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 18 11:15:14 2016 +0300
+
+    README updated
+
+[33mcommit 04f9bb90ecc97220a5cf0491c7290acaecccdce2[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 18 11:14:46 2016 +0300
+
+    Chapter 4 stub
+
+[33mcommit a4be8d782cd4ac9e855e27986f5bf631a49d2395[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 18 11:13:26 2016 +0300
+
+    Matrix: comment fixed
+
+[33mcommit 41327562bccae8c9958f988eb04b4c4b6f74b5b1[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 18 11:08:05 2016 +0300
+
+    Chapter 2: minor fixes
+
+[33mcommit 5b4bf620ddf2de13c15525fcb11a5589ea2acfd7[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 18 11:06:10 2016 +0300
+
+    Chapter 2: minor fixes, logical tasks extracted from IfElse
+
+[33mcommit f791897def014cde4fd5c8f72b37063edcd4dad6[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 18 11:00:23 2016 +0300
+
+    Chapter 2: logical operations
+
+[33mcommit 36b082c7015e75ee236ac5d88a3799ac234d82b9[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 18 10:51:29 2016 +0300
+
+    Chapter 3: break / continue / some details
+
+[33mcommit 198cdc2808926ac1afd0b4ca5c84af9a4b0068a7[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 17 20:27:44 2016 +0300
+
+    isPerfect example
+
+[33mcommit 6e109bcc831a8cf93325fe2f4f65f9aa5e4d4636[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 17 20:23:51 2016 +0300
+
+    Some refactoring
+
+[33mcommit 8b53f4e860a1371b3aa77e5f40a59bed0a807b48[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 17 20:14:55 2016 +0300
+
+    Prime numbers, break
+
+[33mcommit 131daad79ca6703d1f1ff2693b813a38166e9a4b[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 17 19:38:14 2016 +0300
+
+    'discriminant' example moved to lesson 1, tests added
+
+[33mcommit 7590e42dd55160b129060eca06a48ee32dbb3790[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 15 19:46:35 2016 +0300
+
+    Minor
+
+[33mcommit 672c519088f7baf1896ceed45b19a9104220017f[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 15 19:45:35 2016 +0300
+
+    Chapter 3: beginning, factorial function (used as an example in lesson 3)
+
+[33mcommit d76cd0fb4b3089147dcc4e6051d09b1347f144a2[m
+Merge: 9393645 776fc50
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Mon Aug 15 18:25:51 2016 +0300
+
+    Merge branch 'master' of https://github.com/mglukhikh/KotlinAsFirst
+
+[33mcommit 9393645ff918535a36523319cbabca56fb25c69b[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Mon Aug 15 18:25:29 2016 +0300
+
+    Use Java 1.8 in tests
+
+[33mcommit 776fc5087f6bfc5757e6cd1dac5d18379f75a54d[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 15 17:29:20 2016 +0300
+
+    Chapter 1 fix: JUnit 5
+
+[33mcommit ab2126e854475b5e61467f6248ce735420bdb41c[m
+Merge: ab2a67c 7d7ef6f
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Mon Aug 15 16:04:45 2016 +0300
+
+    Merge branch 'master' of https://github.com/mglukhikh/KotlinAsFirst
+
+[33mcommit ab2a67c66e01d0d26c0fa98a759e3d8f241fa83c[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Mon Aug 15 16:03:48 2016 +0300
+
+    Switch to JUnit 5
+
+[33mcommit 7d7ef6fae01b44563485ef6c79e1d938b13442a4[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 15 12:16:36 2016 +0300
+
+    Chapter 2: some formatting stuff
+
+[33mcommit 26b7f143740594c313cb3d2245d71895803c6e41[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 15 11:58:43 2016 +0300
+
+    Chapter 2: formatting fix
+
+[33mcommit c5dcd84b3df3920a835abdd953341ce0180ea281[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 15 11:57:53 2016 +0300
+
+    Chapter 2: formatting, boolean example
+
+[33mcommit 711aea02bf735b6bcb059be040ec1253dca0bccf[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 15 11:35:38 2016 +0300
+
+    Chapter 2: details, test in lesson 2
+
+[33mcommit 149dbb588c0e6c6239260fbf3bed142235aeb977[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Aug 12 20:21:41 2016 +0300
+
+    Chapter 2: formatting fix + more details
+
+[33mcommit 0dff0e243e9680bb6d6f79b29b9350a77b3f3751[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Aug 12 20:10:49 2016 +0300
+
+    Tutorial: complex if / else example for chapter 2
+
+[33mcommit 6ac9f6697248b34be4d9f78b1758f7d2b70ef966[m
+Merge: da4ce0b fe5789e
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Fri Aug 12 18:15:37 2016 +0300
+
+    Merge branch 'master' of https://github.com/mglukhikh/KotlinAsFirst
+
+[33mcommit da4ce0bc36e6fa3bf1832004106ade6c4c4b4cd0[m
+Author: ice-phoenix <Marat.Akhin@gmail.com>
+Date:   Fri Aug 12 18:15:09 2016 +0300
+
+    King -> Rook
+
+[33mcommit fe5789e5177b0d81af629c6110538b4edc0a5fd6[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 11 20:44:22 2016 +0300
+
+    Tutorial: minor fixes in chapter 2
+
+[33mcommit 7c5e7ca98bcea36216b904b7fb2c01a9e42e2acf[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 11 20:34:05 2016 +0300
+
+    Tutorial: when, tasks
+
+[33mcommit a04d6c714f1df2400727b298ac361436f66c2134[m
+Merge: bf997f7 21befa8
+Author: Kirill Gagarski <gagarski@users.noreply.github.com>
+Date:   Thu Aug 11 17:09:05 2016 +0300
+
+    Merge pull request #2 from lancelote/patch-2
+    
+    Missing parentheses
+
+[33mcommit 21befa87d561e6cd412617b956e538eb9654295a[m
+Author: Pavel Karateev <lancelote.du.lac@gmail.com>
+Date:   Thu Aug 11 16:44:09 2016 +0300
+
+    Missing parentheses
+
+[33mcommit bf997f7604f280b64e56d9715e405f0e0171d9cc[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 11 14:20:38 2016 +0300
+
+    Tutorial: another main example
+
+[33mcommit 6d2fb5d82e474770d7be5fd9699c275d88f8b662[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 11 14:16:37 2016 +0300
+
+    Tutorial: main function, function calls
+
+[33mcommit 33f23e08633ca88ef15b58716bb62a8616c5d7b0[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 11 14:11:04 2016 +0300
+
+    Tutorial: minor fix
+
+[33mcommit 15e7ebc20963292b250f37002b5f9c321fec1214[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 11 14:10:45 2016 +0300
+
+    Tutorial: tasks for chapter 1
+
+[33mcommit bba9c1d13dec04fd14a214cd1cb6afac1f246e7a[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 11 13:03:34 2016 +0300
+
+    Formatting
+
+[33mcommit daa2a7542c7f294bd664a265ce0b31080f9248ba[m
+Merge: d633301 5c402df
+Author: Kirill Gagarski <gagarski@users.noreply.github.com>
+Date:   Thu Aug 11 12:51:32 2016 +0300
+
+    Merge pull request #1 from lancelote/patch-1
+    
+    Fixes formatting
+
+[33mcommit d633301690e67613d2db4e5fb5aa8ff2fb5790af[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Thu Aug 11 12:50:12 2016 +0300
+
+    README updated
+
+[33mcommit 5c402dfc773b5b600c38fc1e7c0216e2a42df8dd[m
+Author: Pavel Karateev <lancelote.du.lac@gmail.com>
+Date:   Thu Aug 11 12:02:20 2016 +0300
+
+    Fixes formatting
+
+[33mcommit 91e605673bb41267e05757bef42e229e6862a30e[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Aug 11 11:07:32 2016 +0300
+
+    Branching: when
+
+[33mcommit eef9ebb20d40f6c467d005740f8e46a41fae7f06[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Aug 11 11:02:00 2016 +0300
+
+    Branching: continue
+
+[33mcommit 4db1f6433b5a8b972c351a2c16ed899753742a6c[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 10 11:07:40 2016 +0300
+
+    Separate test / source in src / test accordingly
+
+[33mcommit 5f47b62b47f64025666dd283adf0edf0eb637a57[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 10 10:58:55 2016 +0300
+
+    Lesson 6: alternative chess tasks
+
+[33mcommit 04964f600eb9b0a89e82687c6efabb8fb5d2b17d[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 10 10:14:24 2016 +0300
+
+    DataClass.kt --> Geometry.kt
+
+[33mcommit 31e07ef32b3bd534cdcb5255d07b95be80562d54[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue Aug 9 17:52:07 2016 +0300
+
+    Branching: intro
+
+[33mcommit b988eccefe928e070079677742fbc8c3dd122fe7[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 8 19:47:16 2016 +0300
+
+    Introduction (begin from)
+
+[33mcommit a58c194cffdd43af6313c9872119bbccbd5d5e50[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 8 19:21:53 2016 +0300
+
+    Introduction (part)
+
+[33mcommit db82d43307d08e8103b3dace8e1c7bfb392900ce[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 8 16:47:03 2016 +0300
+
+    Manual testing
+
+[33mcommit e1e983eb2b570cda60a9aa6d50c29fcb1b858933[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 8 16:40:43 2016 +0300
+
+    Test functions
+
+[33mcommit 779800b01c600b5f828fa675b1d8af9e9037a79a[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Mon Aug 8 16:14:47 2016 +0300
+
+    println, main, details
+
+[33mcommit 284d86a6b180a511c329e636ad11abd595e21f7c[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Aug 5 17:12:13 2016 +0300
+
+    Minor matrix fix
+
+[33mcommit 51a9429619759de95ebdd4f3e17a09ae6c0ad6a6[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Aug 5 17:09:26 2016 +0300
+
+    Minor matrix fix: not-null get result, default element in creation
+
+[33mcommit 3d374aef15d73c15620704fa1d1653211b7c16df[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 3 14:50:28 2016 +0300
+
+    Minor
+
+[33mcommit 6bac48d3c202650073aea9544e4f9f810298bcd9[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 3 14:46:08 2016 +0300
+
+    Terms: vals
+
+[33mcommit 6c948d62cb82544dc2c14ed3f419ac45b80ab736[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 3 14:20:02 2016 +0300
+
+    Terms refactoring
+
+[33mcommit bda6ff17a091871eded39f238a968418210c2cb7[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 3 13:34:07 2016 +0300
+
+    Fix: determinant --> discriminant
+
+[33mcommit 6de6dc963fa2d3aedd55da80f36eb84ce9bae655[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 3 13:29:22 2016 +0300
+
+    Terms: literals, operations, mathematical functions
+
+[33mcommit 579503c547ea8f42bffa99818d5c70571ff0df04[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 3 12:55:51 2016 +0300
+
+    minor fix
+
+[33mcommit 3a889f549c07ec9435496d8afaf5c8ed332657cf[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 3 12:54:40 2016 +0300
+
+    lowbar fix
+
+[33mcommit 7af0795070b4a84e05c9a3f4b70021c816499055[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 3 12:51:47 2016 +0300
+
+    Tutorial: terms (functions, types, parameters, names)
+
+[33mcommit ddb9e2aa7c3f4da19a56ce1f701a5f1ddad922d5[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 3 12:09:49 2016 +0300
+
+    Tutorial: introduction, terms (beginning)
+
+[33mcommit 165ea872579469f36bb3f16cdbcd3ffec08c8538[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Aug 3 11:34:52 2016 +0300
+
+    zip added to gitignore
+
+[33mcommit 8398e14786fcdb5ee11f45d21449b33ef77649d4[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 29 15:11:34 2016 +0300
+
+    Synchronization with course builder: get rid of src
+
+[33mcommit 370c54a5d83426bbe71a844603d11a3303bcfe31[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 29 14:54:53 2016 +0300
+
+    Synchronization with course builder: get rid of ru.spbstu.kfirst
+
+[33mcommit acadfb1775f61bec67654b89a39c0c0520b92c2c[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 29 14:48:10 2016 +0300
+
+    Synchronization with course builder: src/main/java changed to just src
+
+[33mcommit b46f05a91d2d21858c9e5a2daeb850268a063f67[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 29 14:41:52 2016 +0300
+
+    kotlin: 1.0.1-2 --> 1.0.3
+
+[33mcommit 98f2764cda00236ffc1a6a2924083405c403a3dc[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 29 13:06:27 2016 +0300
+
+    All Tests.kt moved to 'main' root, 'test' root was deleted
+
+[33mcommit 75e0901a71a08cfdb6c640c070744468e1ad0079[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 29 12:42:22 2016 +0300
+
+    task1 is introduced for all 8 lessons
+
+[33mcommit 5f14eb726eaf6f588ca2bb1a66b0c505f5dcfc13[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 27 12:50:49 2016 +0300
+
+    Update readme
+
+[33mcommit 83c9af6e9c09b2cdb50265122f70b25e368a6fb0[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 27 12:50:13 2016 +0300
+
+    Lesson 8 (files): 2nd task (longest word with different letters)
+
+[33mcommit b77f52ef4955df80008be0d32fa19b997527a9f9[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 27 12:37:19 2016 +0300
+
+    Lesson 8 (files): 1st task (transliterate)
+
+[33mcommit b8d57cb8bccacbd642ed341bc71ec17e9974e02e[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 27 12:06:05 2016 +0300
+
+    Extra task for lesson 5 (special device)
+
+[33mcommit 9efcfa4bdfdd42b51166ce4a964ca78e311c69b6[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Tue Jul 26 16:14:15 2016 +0300
+
+    Update README.md
+
+[33mcommit 31f9fc404e9d084ba2aa3a6d83939590419b90fb[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 22 13:11:05 2016 +0300
+
+    Updated README.md
+
+[33mcommit 2d0d67e4dc7c862b8cc120e58c88f06897000ca1[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 22 12:53:37 2016 +0300
+
+    Lesson 7: minor
+
+[33mcommit 8681aa1ec58d6db510b7eb275d822b57b04c0628[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 22 12:51:26 2016 +0300
+
+    Lesson 7: findHoles
+
+[33mcommit 6829a97f98bde89a5202082b38545ea876fd1c64[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 22 12:38:52 2016 +0300
+
+    Lesson 7: sumNeighbours
+
+[33mcommit ff1ed103a067b8afe3bd7f7cc267592d9c539de8[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 22 12:23:40 2016 +0300
+
+    Lesson 7: isLatinSquare
+
+[33mcommit e75c594f622e66788c65c0cc75672185262604d5[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 22 12:11:33 2016 +0300
+
+    Lesson 7: rotate
+
+[33mcommit 2933bfc6e7deddd9f12bd2326724102df0c7cf06[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 22 11:55:30 2016 +0300
+
+    Lesson 7: generate snake
+
+[33mcommit fd882c9b609838be190837f29cdf808775b12875[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 22 11:43:14 2016 +0300
+
+    Lesson 7: generate rectangles
+
+[33mcommit d37bdd5a4b6d0d88dec92468359910994027e9fa[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 22 11:24:40 2016 +0300
+
+    Lesson 7: generate spiral
+
+[33mcommit 994f04aaa9c5f48f1cc64755832a71abcba23270[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Fri Jul 22 10:57:27 2016 +0300
+
+    Lesson 7: matrix interface / class
+
+[33mcommit da4daa5928fcb385d6c8309bedf55b232ea8a162[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 20 15:08:22 2016 +0300
+
+    Lesson 6: data classes
+
+[33mcommit 8ddd61d6f7e5f58f55d6e8cff9ddaa4f7d5b80a0[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jul 20 11:29:50 2016 +0300
+
+    Tasks renamed to lessons
+
+[33mcommit 808cb71ad79ce6c06573e9f19260d12d7fec035c[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Jul 15 12:08:39 2016 +0300
+
+    Task 5 (parsing): most expensive good
+
+[33mcommit 948ae06fb01f0d1caeb3197cd8cde2ddc74ca88f[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Jul 15 11:54:10 2016 +0300
+
+    All test files renamed to Tests.kt (necessary for course automatic building)
+
+[33mcommit fec79adfc9cb88e1409b50475893f7834ae0e52a[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Fri Jul 15 11:52:19 2016 +0300
+
+    Task 5 (parsing): first duplicate index
+
+[33mcommit 78b3e75b57b5969ad86439d008a671a7f73348eb[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Tue Jun 21 22:47:55 2016 +0300
+
+    Task 5 (parsing): plus / minus
+
+[33mcommit ca016cd8204fae7c6481126728c7948232f7ccfc[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Tue Jun 21 21:42:48 2016 +0300
+
+    Task 5 (parsing): high jumps
+
+[33mcommit e53974f0356e6836a376122d9edc965d20088f58[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Jun 8 14:34:35 2016 +0300
+
+    Update README.md
+
+[33mcommit a8ed9abb1ad5f6efce4ff3f134fac7b65d7c7e07[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Wed Jun 8 14:34:10 2016 +0300
+
+    Update README.md
+
+[33mcommit 27b66930abcb96ae5510f6a90d7792f5ea7eaf3f[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Wed Jun 8 11:34:51 2016 +0300
+
+    Task 5 (parsing): jumps
+
+[33mcommit a3031ad187f12dd042b34c9dcbd2edbacb6adc73[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Wed Jun 8 11:13:22 2016 +0300
+
+    Task 5 (parsing): phone numbers
+
+[33mcommit 9ce367fb473b82c065a3df106ac6d6441253c273[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Wed Jun 8 10:40:18 2016 +0300
+
+    Task 5 (parsing): dates
+
+[33mcommit 96a3e0feac89a9f732fe182a635ae91c28e219d8[m
+Author: Mikhail Glukhikh <glukhikh@mail.ru>
+Date:   Fri Jun 3 09:42:29 2016 +0300
+
+    Create README.md
+
+[33mcommit 14880984b92c53201a42e8d8ff628bccfd10518b[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Jun 2 18:59:39 2016 +0300
+
+    Task 4 (list): russian numbers
+
+[33mcommit ebe11e56d579d39786ea432641cc6a5e57f88214[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Jun 2 17:55:04 2016 +0300
+
+    Task 4 (list): roman numbers
+
+[33mcommit 4ea1bcfd6353f7c69c4949db2642ea2ff7ec4b72[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Jun 2 17:45:52 2016 +0300
+
+    Minor refactoring (task 4)
+
+[33mcommit 555ab14caed7f911eee7733b890704f95a052411[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Jun 2 17:43:46 2016 +0300
+
+    Task 4 (lists): accumulate
+
+[33mcommit 14e785cac5175c25e7c25929c1a44d475745b262[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Jun 2 17:37:43 2016 +0300
+
+    Task 4 (lists): polynom
+
+[33mcommit 6462eebe1cbe25dd16cc0fcdbd5819f73ffb07ca[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Jun 2 17:27:27 2016 +0300
+
+    Task 4 (lists): times / abs
+
+[33mcommit 0141513240b36b56e7a74a845e42c1b046b93e2f[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Jun 2 17:12:29 2016 +0300
+
+    Task 4 (lists): mean / center
+
+[33mcommit b314764805ee2cff4f0acc1c42d28dcdcc8834f7[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Jun 2 16:50:50 2016 +0300
+
+    UNUSED_PARAMETER suppressed everywhere
+
+[33mcommit 9aa797848a2224b31349bffa7d38ed9a17694566[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Jun 2 16:47:54 2016 +0300
+
+    Task 4 (lists): convert from numeral system
+
+[33mcommit 12e207bfaf48e95829ad052b1ec20c40040b820b[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jun 1 19:45:22 2016 +0300
+
+    Task 4 (lists): convert to numeral system
+
+[33mcommit 639d9fa2dc93782d6bb41498dfdab57ea6d85e6f[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Wed Jun 1 19:27:04 2016 +0300
+
+    Task 4 (lists): number factorization
+
+[33mcommit c2b7811e167e6d88e7992cb68033716ef4b39330[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu May 19 13:42:21 2016 +0300
+
+    Task 3: factorial / sin / cos
+
+[33mcommit 69296aadf0745e0d058607a83eebd598d2835ad2[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu May 19 13:26:42 2016 +0300
+
+    Task 3: has different digits
+
+[33mcommit 67cdcbc5fc8bf3b45eb019029dfbceebbd439e66[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu May 19 13:20:25 2016 +0300
+
+    Task 3: max divisor
+
+[33mcommit 74e058d5e7bdcdddb0381873461197fa28723807[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu May 19 13:16:22 2016 +0300
+
+    Task 3: square between
+
+[33mcommit 0bbaf40d8d265280cd6927edafee8d716d069b4f[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu May 19 13:05:34 2016 +0300
+
+    Task 3: co-primes
+
+[33mcommit d604659915ab5e857bef849d6c2d4432dee15de2[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu May 19 12:58:55 2016 +0300
+
+    Task 3: digit number, digit sequences
+
+[33mcommit 572f0c9473855ed7990a01c55cfee11dbcaaf8eb[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu May 19 12:39:15 2016 +0300
+
+    Task 3: revert number, anagram
+
+[33mcommit dbe1078c7504e8d4913833a18d8d28c091286e2c[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu May 19 12:26:28 2016 +0300
+
+    Task 3: min divisor
+
+[33mcommit c2d3f9c85acd5c8199304ef8efffe35bcbcabcd6[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue May 17 10:32:03 2016 +0300
+
+    Task3: loops (least common multiple)
+
+[33mcommit 43845dfd646e78ce27ae6f23a9dc81963bc36f99[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue May 17 10:25:09 2016 +0300
+
+    Task3: loops (fibonacci)
+
+[33mcommit 64589f866003027c05d51e4384defb32e6cf91b6[m
+Author: Mikhail Glukhikh <Mikhail.Glukhikh@jetbrains.com>
+Date:   Tue May 17 10:15:34 2016 +0300
+
+    Package rename: task1, task2
+
+[33mcommit d28e699de89cb21283528f9bb4e06f3007345da0[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Apr 28 16:02:35 2016 +0300
+
+    .gitignore: no out directory
+
+[33mcommit 909560e30adfee1bfdf4052f4e2f1f457f038268[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Apr 28 16:00:21 2016 +0300
+
+    Mavenize: *.iml removed
+
+[33mcommit 984257ab96a76233dd1b4a3261b3d88f4a1e3de7[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Apr 28 16:00:09 2016 +0300
+
+    Mavenize: standard directory structure
+
+[33mcommit 1090bcc2bc6891d0043713dc24cff97923f00776[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Apr 28 15:59:43 2016 +0300
+
+    pom.xml: maven-compiler-plugin dependency added
+
+[33mcommit 2798bae144b8766e10c1b98185440df5e6e2c6a9[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Apr 28 15:44:30 2016 +0300
+
+    Mavenize: .idea deleted + .gitignore
+
+[33mcommit 8ce82fc1d0d2210f1209eaa4c2e5a59d61b41ae3[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Apr 28 15:43:05 2016 +0300
+
+    Mavenize: + pom.xml
+
+[33mcommit 004c321ac8f04378464dfc25b2c7c5900c8ac0f1[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Apr 28 15:40:06 2016 +0300
+
+    Base package: ru.spbstu.kfirst everywhere
+
+[33mcommit c72e190355379531476ba41f9f50c18426c5889a[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Thu Apr 28 15:35:44 2016 +0300
+
+    Rename: java --> src
+
+[33mcommit ab8ea5051b6d6d03fbd6739f8652ac59d16a4d88[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Mon Apr 25 11:34:51 2016 +0300
+
+    Task 2 (first part)
+
+[33mcommit a94c541cc6b6487f73912a510e21753f8e24cb76[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Sun Apr 24 17:37:07 2016 +0300
+
+    git ignore
+
+[33mcommit 59cdd3e8f4cb4292b7d32e76b23fcae72dcc49aa[m
+Author: Mikhail Glukhikh <mikhail.glukhikh@jetbrains.com>
+Date:   Sat Apr 23 21:46:58 2016 +0300
+
+    Initial commit: task 1 (simple)
